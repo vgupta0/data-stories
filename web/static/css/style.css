@@ -1,0 +1,59 @@
+@font-face{
+	font-family: 'Aaargh';
+	src: url('../fonts/aaargh/aaargh_normal_macroman/Aaargh-webfont.woff') format('woff');
+}
+
+#data-stories-menu.pure-menu {
+  background-color: rgb(61, 79, 93);
+  border: none;
+  text-transform: uppercase;
+}
+
+h1.brand-title {
+  padding-bottom: 7px;
+}
+
+[go-click]:hover,
+[go-click]:focus {
+  cursor: pointer;
+}
+
+h2.brand-tagline {
+  color: #82edfe;
+}
+
+.pure-menu li > a {
+  color: #52bcc0;
+}
+
+
+.content-header h1 {
+  color: rgb(97, 126, 148);
+}
+
+div#ng-view * {
+  font-family: Aaargh, sans-serif;
+  line-height: 1.5em;
+}
+
+/* about page */
+
+.about-photo-g * {
+  padding: 0 5px;
+  color: rgb(61, 79, 93);
+}
+
+.about-photo-content {
+  padding: 0 5px;
+  font-size: 130%;
+}
+
+
+/* projects page */
+
+.project.post {
+  background-color: #dddddd;
+  padding: 5px 10px 5px 15px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}
