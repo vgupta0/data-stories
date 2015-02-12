@@ -11,4 +11,6 @@ This repo contains both the web code and the raw analysis (mostly done in mathem
 
 * `techniques/` is a special project folder that actually just has posts about the various analysis techniques I use and some discussion of what code goes into making it happen (mostly mathematica at work, though).
 
-* All the other folders are various projects that I'm working/have worked on.
+* All the other folders are various projects that I'm working/have worked on. Each of these folders has a [folder-name].json file that contains the metadata about that project, an images/ folder that contains the images I took of various graphs/charts, and a posts/ folder that contains the markdown files with the posts. The other files are all for the data analysis. There are various scripts that take the images/metadata/posts respectively and "deploy" them by putting them in the appropriate spot in the web folder.
+
+Markdown is rendered using pandoc (which supports a nice extension allowing for a yaml metatdata block on top of each file).
