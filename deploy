@@ -1,4 +1,5 @@
 #!/bin/bash
 
+rm -r web/static/posts/*
 parse-metadata > web/metadata.json
 parse-posts
