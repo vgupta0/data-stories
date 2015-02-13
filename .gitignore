@@ -86,7 +86,8 @@ results
 npm-debug.log
 node_modules
 bower_components
-# name of the current frontend library directory
+
+# ignore all frontend deps minus the required minned js files.
 web/static/lib/*
 
 !web/static/lib/angular/
