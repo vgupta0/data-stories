@@ -1,9 +1,14 @@
 #!/bin/bash
 
+# title case conversion for the title
+title=$(echo "$1" | sed -e 's/-\([a-z]\)/\u\1/g' -e 's/^[a-z]/\u&/')
+
 echo "--- "
-echo "title: $1"
-echo "author: $(echo $USER)"
+echo "title: \"$title\""
+echo "author: \"$(echo $USER)\""
 echo "tags: []"
-echo "summary: "
-echo "created: $(date -j +"%Y-%m-%d %T")"
+echo "summary: \"\""
+echo "created: \"$(date -j +"%Y-%m-%d %T")\""
 echo "--- "
+echo ""
+echo "## $title {.post-title}"
