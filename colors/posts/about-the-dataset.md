@@ -1,12 +1,12 @@
 ---
-title: "About the Dataset"
+title: "About the Colors Dataset"
 author: "Vishesh Gupta"
 tags: ["colors"]
 summary: "Check out this data set of color values taken from an author's color thesarus. The main takeaways - how do you group colors? How do you determine if there are missing/superfluous colors in the data set?"
 created: "2015-February-12 00:48:22"
 ---
 
-## About the Dataset {.post-title}
+## About the Colors Dataset {.post-title}
 
 The story begins with Ingrid Sundberg, an author that came up with a color thesaurus.
 Color is an important thing to use in any kind of visual design, and a lot of interfaces need easy access to more colors than just red blue green etc.
@@ -39,4 +39,50 @@ So the two problems boil down to:
 
 My mission, should I accept it (and I did) is to make new groupings and fix the color imbalance - we need more greens and blues in this house.
 
+### Scraping
+
+This was a pretty easy scrape - one jquery call like
+
+```javascript
+// inject jquery onto the page
+var element1 = document.createElement("script");
+element1.src = "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js";
+element1.type="text/javascript";
+document.getElementsByTagName("head")[0].appendChild(element1);
+
+// now scrape the boxes
+JSON.stringify(
+  $.map($('figure.colors > div'),
+    function(d){ return d.innerText.split('\n').slice(0,2); }))
+```
+
+plus a little formatting (partitioned into groups of [name, hexcode] and grouped into their original groups) and the scraping part of this exercise is done.
+
 [githubcolors]: http://dudleystorey.github.io/thenewdefaults/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -36,6 +36,53 @@ h2.brand-tagline {
   color: rgb(97, 126, 148);
 }
 
+
+/* Code highlighting */
+
+div#ng-view pre {
+  background-color: #FDF6E3;
+}
+
+div#ng-view pre code.sourceCode {
+  font-family: Source Code Pro, Consolas, Monaco, monospace;
+  font-size: 90%;
+}
+
+div#ng-view pre.sourceCode code.sourceCode span {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* KeyWordTok */
+.sourceCode .kw { color: #268BD2; }
+/* DataTypeTok */
+.sourceCode .dt { color: #268BD2; }
+
+/* DecValTok (decimal value), BaseNTok, FloatTok */
+.sourceCode .dv, .sourceCode .bn, .sourceCode .fl { color: #D33682; }
+/* CharTok */
+.sourceCode .ch { color: #DC322F; }
+/* StringTok */
+.sourceCode .st { color: #2AA198; }
+/* CommentTok */
+.sourceCode .co { color: #93A1A1; }
+/* OtherTok */
+.sourceCode .ot { color: #A57800; }
+/* AlertTok */
+.sourceCode .al { color: #CB4B16; font-weight: bold; }
+/* FunctionTok */
+.sourceCode .fu { color: #268BD2; }
+/* RegionMarkerTok */
+.sourceCode .re { }
+/* ErrorTok */
+.sourceCode .er { color: #D30102; font-weight: bold; }
+
+
+
+
+
+
+
 div#ng-view * {
   font-family: Aaargh, sans-serif;
   line-height: 1.5em;
@@ -108,8 +155,6 @@ div#ng-view h3 {
   display: inline-block;
   margin-right: 0.5em;
 }
-
-
 
 
 

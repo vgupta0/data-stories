@@ -10,3 +10,15 @@
 <li>Imbalanced coverage of the color spectrum (few cold colors, lots of hot colors).</li>
 </ul>
 <p>My mission, should I accept it (and I did) is to make new groupings and fix the color imbalance - we need more greens and blues in this house.</p>
+<h3 id="scraping">Scraping</h3>
+<p>This was a pretty easy scrape - one jquery call like</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="co">// inject jquery onto the page</span>
+<span class="kw">var</span> element1 = <span class="ot">document</span>.<span class="fu">createElement</span>(<span class="st">&quot;script&quot;</span>);
+<span class="ot">element1</span>.<span class="fu">src</span> = <span class="st">&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;</span>;
+<span class="ot">element1</span>.<span class="fu">type</span>=<span class="st">&quot;text/javascript&quot;</span>;
+<span class="ot">document</span>.<span class="fu">getElementsByTagName</span>(<span class="st">&quot;head&quot;</span>)[<span class="dv">0</span>].<span class="fu">appendChild</span>(element1);
+
+<span class="co">// now scrape the boxes</span>
+<span class="ot">JSON</span>.<span class="fu">stringify</span>(
+  <span class="ot">$</span>.<span class="fu">map</span>(<span class="fu">$</span>(<span class="st">&#39;figure.colors &gt; div&#39;</span>),
+    <span class="kw">function</span>(d){ <span class="kw">return</span> <span class="ot">d</span>.<span class="ot">innerText</span>.<span class="fu">split</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>).<span class="fu">slice</span>(<span class="dv">0</span>,<span class="dv">2</span>); }))</code></pre>
