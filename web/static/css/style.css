@@ -45,6 +45,10 @@ div#ng-view h2, div#ng-view h1 {
   font-family: Pier;
 }
 
+div#ng-view h3 {
+  font-weight: bold;
+}
+
 /* about page */
 
 .about-photo-g * {
