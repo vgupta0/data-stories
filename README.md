@@ -34,6 +34,13 @@ $ git push -u origin master
 $ git subtree push --prefix web heroku master
 ```
 
+or the easy way
+
+```bash
+$ deploy
+$ push '[INSERT COMMIT MESSAGE]'
+```
+
 After heroku finishes redeploying everything the site should update with the posts/metadata of the recently written posts.
 
 
