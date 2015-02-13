@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# take the dirs in the main directory and
+# create the same named dirs under web/static/posts
+for f in $(ls -l | grep ^d | grep -v web | awk '{printf "web/static/posts/"$9"\n"}')
+do
+  mkdir -p $f
+done
+
+
+# process all *.md files under posts.
+for file in $(find ./*/posts/*.md)
+do
+  f=${file/posts\/};
+  pandoc -f markdown+yaml_metadata_block $file -o web/static/posts/$(dirname $f)/$(basename -s .md $f).html
+  echo web/static/posts/$(dirname $f)/$(basename -s .md $f).html
+done

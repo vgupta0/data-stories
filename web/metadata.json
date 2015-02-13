@@ -1,0 +1,34 @@
+{"projects": [
+  {
+    "title": "Colors!",
+    "path" : "colors",
+    "author": "Vishesh Gupta",
+    "tags": ["grouping"],
+    "started": "31 January 2015 14:32:00",
+    "description" : "A project exploring some colors found in a color thesaurus.",
+    "posts": [
+      {"title": "About the Dataset",
+       "author": "Vishesh Gupta",
+       "tags": ["colors"],
+       "summary": "Check out this data set of color values taken from an author's color thesarus. The main takeaways - how do you group colors? How do you determine if there are missing/superfluous colors in the data set?",
+       "created": "2015 February 12 00:48:22",
+       "url": "/posts/colors/about-the-dataset"}
+    ]
+  },
+  {
+    "title": "Stanford Majors",
+    "path" : "majors",
+    "author": "Vishesh Gupta",
+    "tags": ["trends"],
+    "started": "21 January 2015 14:38:00",
+    "description" : "Which majors are popular at Stanford by gender?",
+    "posts": [
+      {"title": "About the Dataset",
+       "author": "Vishesh Gupta",
+       "tags": ["colors"],
+       "summary": "From Stanford's registrar's office - my first mini data project. The main interesting things here would be to look at the changes in major selection over time, and the differences in majors by gender. I'm mostly interested in the undergrad majors.",
+       "created": "2015 February 12 16:35:29",
+       "url": "/posts/majors/about-the-dataset"}
+    ]
+  }
+]}
