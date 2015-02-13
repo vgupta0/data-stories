@@ -66,7 +66,7 @@ def staticcss(resource):
 def statictemplates(resource):
   return static_file(resource, root='static/templates/')
 
-run(host='localhost', port=int(os.environ.get("PORT", 5000)), debug=True)
+run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=True)
 
 
 
