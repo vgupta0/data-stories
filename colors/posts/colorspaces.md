@@ -3,7 +3,7 @@ title: "Color Spaces"
 author: "Vishesh Gupta"
 tags: ["colors", "metrics"]
 summary: "Colors can be understood in many different forms and various spaces have been invented over the years to show the 'natural perception' of colors by the human eye. Here is a discussion of various color spaces and why I chose CIELAB as the main space to work in (and CIELUV for aggregation, but we'll get to that later)."
-created: "2015 February 12 07:24:00"
+created: "2015-February-12 07:24:00"
 ---
 
 ## Color Spaces {.post-title}
