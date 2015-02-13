@@ -12,5 +12,6 @@
       src="http://upload.wikimedia.org/wikipedia/commons/8/83/CIE_1976_UCS.png"/>
 </div>
 </div>
-<p>The picture on the right shows off a second color space, which is CIELUV. This space was invented to actually correct the perceptual problems in the CIELAB space (you can see that the blue region is expanded to accomodate more colors).</p>
-<p>The eye's real response function is quite uneven and therefore hard to model with these sorts of diagrams. There's yet another set of spaces called CIELCh (for CIELAB) and CIELCHuv for CIELUV that represent the same spaces mapped to cylindrical coordinates (which some corrections, of course).</p>
+<p>The picture on the right shows off a second color space, which is CIELUV. This space was invented to actually correct the perceptual problems in the CIELAB space (you can see that the blue region is expanded to make the chromaticity perception even across the space - indeed CIELUV is called the 'uniform chromaticity' space).</p>
+<p>The eye's real response function is quite uneven and therefore hard to model with these sorts of diagrams. There's yet another set of spaces called CIELCh (for CIELAB) and CIELCHuv for CIELUV that represent the same spaces mapped to cylindrical coordinates (which some corrections, of course), which will become relevant in my discussions on color distance (how to tell how far apart two colors are).</p>
+<p>The space itself is pretty good measure of color distance - you can take the [l a b] or [l u v] vector and do a regular euclidean norm and that's supposed to have even perception.</p>

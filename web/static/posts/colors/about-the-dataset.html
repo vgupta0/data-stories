@@ -1,4 +1,4 @@
-<h2 id="about-the-dataset" class="post-title">About the Dataset</h2>
+<h2 id="about-the-colors-dataset" class="post-title">About the Colors Dataset</h2>
 <p>The story begins with Ingrid Sundberg, an author that came up with a color thesaurus. Color is an important thing to use in any kind of visual design, and a lot of interfaces need easy access to more colors than just red blue green etc.</p>
 <p>So someone made a <a href="http://dudleystorey.github.io/thenewdefaults/">github project</a> and gave all these colors hex values and provided them free to use for everyone.</p>
 <p>However, the grouping really bothered me. Let's consider the categories; we have (in order):</p>
@@ -22,3 +22,4 @@
 <span class="ot">JSON</span>.<span class="fu">stringify</span>(
   <span class="ot">$</span>.<span class="fu">map</span>(<span class="fu">$</span>(<span class="st">&#39;figure.colors &gt; div&#39;</span>),
     <span class="kw">function</span>(d){ <span class="kw">return</span> <span class="ot">d</span>.<span class="ot">innerText</span>.<span class="fu">split</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>).<span class="fu">slice</span>(<span class="dv">0</span>,<span class="dv">2</span>); }))</code></pre>
+<p>plus a little formatting (partitioned into groups of [name, hexcode] and grouped into their original groups) and the scraping part of this exercise is done.</p>

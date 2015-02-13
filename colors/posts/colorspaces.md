@@ -3,7 +3,7 @@ title: "Color Spaces"
 author: "Vishesh Gupta"
 tags: ["colors", "metrics"]
 summary: "Colors can be understood in many different forms and various spaces have been invented over the years to show the 'natural perception' of colors by the human eye. Here is a discussion of various color spaces and why I chose CIELAB as the main space to work in (and CIELUV for aggregation, but we'll get to that later)."
-created: "2015-February-12 07:24:00"
+created: "2015-02-12 07:24:00"
 ---
 
 ## Color Spaces {.post-title}
@@ -21,12 +21,11 @@ The left picture here has the space of CIELAB shown. Of course, we can't actuall
       src="http://upload.wikimedia.org/wikipedia/commons/8/83/CIE_1976_UCS.png"/></div>
 </div>
 
-The picture on the right shows off a second color space, which is CIELUV. This space was invented to actually correct the perceptual problems in the CIELAB space (you can see that the blue region is expanded to accomodate more colors).
+The picture on the right shows off a second color space, which is CIELUV. This space was invented to actually correct the perceptual problems in the CIELAB space (you can see that the blue region is expanded to make the chromaticity perception even across the space - indeed CIELUV is called the 'uniform chromaticity' space).
 
-The eye's real response function is quite uneven and therefore hard to model with these sorts of diagrams. There's yet another set of spaces called CIELCh (for CIELAB) and CIELCHuv for CIELUV that represent the same spaces mapped to cylindrical coordinates (which some corrections, of course).
+The eye's real response function is quite uneven and therefore hard to model with these sorts of diagrams. There's yet another set of spaces called CIELCh (for CIELAB) and CIELCHuv for CIELUV that represent the same spaces mapped to cylindrical coordinates (which some corrections, of course), which will become relevant in my discussions on color distance (how to tell how far apart two colors are).
 
-
-
+The space itself is pretty good measure of color distance - you can take the [l a b] or [l u v] vector and do a regular euclidean norm and that's supposed to have even perception.
 
 
 
