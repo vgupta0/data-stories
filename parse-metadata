@@ -18,7 +18,10 @@ function posts_data {
 echo '{"projects": ['
 { for f in $(find . -type d -maxdepth 1 -not -path "./web" -not -path "./\.*" | grep -v '\.$')
 do
-  echo -e "$(sed '/^$/d' $f/$f.json | sed '$d'),\n  \"posts\": [\n$(posts_data $f)\n  ]\n},"
+  if [ -s "$f/$f.json" ]
+  then
+    echo -e "$(sed '/^$/d' $f/$f.json | sed '$d'),\n  \"posts\": [\n$(posts_data $f)\n  ]\n},"
+  fi
 done } | sed '$s/,//g'
 echo ']}'
 
