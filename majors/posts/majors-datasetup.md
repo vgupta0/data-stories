@@ -3,7 +3,7 @@ title: "Majors Datasetup"
 author: "Vishesh Gupta"
 tags: ["majors"]
 summary: "From Stanford's registrar's office - my first mini data project. The main interesting things here would be to look at the changes in major selection over time, and the differences in majors by gender. I'm mostly interested in the undergrad majors."
-created: "2015 February 12 16:35:29"
+created: "2015 January 21 16:35:29"
 ---
 
 ## Majors Datasetup {.post-title}
@@ -22,8 +22,7 @@ Not because I think there's an ideal way the majors should be distributed, but i
 
 Scraping is a pain in the butt on this one - the data is divided by school, so for each school I pasted the html source into a [html table to csv convertor](http://www.convertcsv.com/html-table-to-csv.htm) and then formatted it into a mathematica table, then spliced all the rows together. This process took me half an hour to get right the first time, so I have a lot of pain left to look forward to if I'm going to really scrape all the years' data here.
 
-
-
+As of this post, I did only the 2013-2014 year.
 
 
 

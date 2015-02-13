@@ -1,1 +1,9 @@
-<h2 id="datasetup">Datasetup</h2>
+<h2 id="majors-datasetup" class="post-title">Majors Datasetup</h2>
+<h3 id="where-to-find-the-data">Where to find the data</h3>
+<p>All the data I'm using can be publicly found at Stanford's registrar <a href="https://studentaffairs.stanford.edu/registrar/everyone/enrollment-stats_13_14">website</a>. When you click to previous years, don't be fooled because there isn't a link back - the registrar's office apparently doesn't update the older pages with the newer years links to data.... how strange.</p>
+<p>There's actually a (what is probably much better) data set <a href="http://ucomm.stanford.edu/cds/2014">here</a> (Stanford's common data set), but it doesn't have a split by gender. There are also other pages with other kinds of data, and you can see the trends, but only the registrar seems to have the gender based data available, which the portion of this project I had the most fun messing with.</p>
+<p>Politically Correct Disclaimer:</p>
+<p>Not because I think there's an ideal way the majors should be distributed, but it's fun to analyze how it has been distributed/changed since 2004 (which is the earliest data you can get on this page.)</p>
+<h3 id="scraping">Scraping</h3>
+<p>Scraping is a pain in the butt on this one - the data is divided by school, so for each school I pasted the html source into a <a href="http://www.convertcsv.com/html-table-to-csv.htm">html table to csv convertor</a> and then formatted it into a mathematica table, then spliced all the rows together. This process took me half an hour to get right the first time, so I have a lot of pain left to look forward to if I'm going to really scrape all the years' data here.</p>
+<p>As of this post, I did only the 2013-2014 year.</p>
