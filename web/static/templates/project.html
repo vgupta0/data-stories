@@ -1,0 +1,51 @@
+<div class="posts">
+  <div class="project-header">
+    <h1 class="project-title">{{project.title}}</h1>
+    <div class="project-header-details">
+      <p>{{project.description}}</p>
+      <p>
+        <span class="subdued">started</span>
+        <span am-time-ago="project.started"></span>
+        <span class="subdued">on</span>
+        {{project.started | amDateFormat:'MMMM Do YYYY'}}
+        <span class="subdued">by</span>
+        <a href="#/about">{{project.author}}</a>
+      </p>
+    </div>
+  </div>
+
+  <section class="post" ng-repeat="post in project.posts">
+    <header class="post-header">
+      <!-- <img class="post-avatar" alt="Eric Ferraiuolo&#x27;s avatar" height="48" width="48" src="img/common/ericf-avatar.png"> -->
+      <h2 class="post-title"> {{::post.title}} </h2>
+
+      <p class="post-meta">
+        <span am-time-ago="post.created"></span>
+        by
+        <a class="post-author" href="#/about">{{::post.author}}</a>
+        under
+        <a class="post-category" href="#" ng-repeat="tag in post.tags track by $index"> {{::tag}} </a>
+      </p>
+    </header>
+
+    <div class="post-description">
+      <p>
+        {{post.summary}}
+      </p>
+      <div class="post-images pure-g" ng-repeat="image in post.images">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <a href="{{image.desturl}}">
+            <img alt="{{image.description}}"
+                 class="pure-img-responsive"
+                 ng-src="{{image.url}}">
+          </a>
+
+          <div class="post-image-meta">
+            <h3>{{image.caption}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

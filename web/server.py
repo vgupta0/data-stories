@@ -1,4 +1,22 @@
 from bottle import route, run, static_file, template
+import json
+from cytoolz import *
+
+metadata = json.load(open('metadata.json'))
+
+@route('/projects')
+def projectslist():
+  return {'projects': list(map(lambda p: dissoc(p, "posts"), metadata["projects"]))}
+
+@route('/projects/<name>')
+def project(name):
+  return list(filter(lambda x: x["path"] == name, metadata["projects"]))[0]
+
+@route('/posts/<resource:path>')
+def staticposts(resource):
+  return static_file(
+    resource if resource.endswith('.html') else resource + '.html',
+    root='static/posts/')
 
 
 @route('/')
@@ -28,12 +46,6 @@ def staticcss(resource):
 @route('/templates/<resource:path>')
 def statictemplates(resource):
   return static_file(resource, root='static/templates/')
-
-@route('/posts/<resource:path>')
-def staticposts(resource):
-  return static_file(
-    resource if resource.endswith('.html') else resource + '.html',
-    root='static/posts/')
 
 run(host='localhost', port=8080, debug=True)
 

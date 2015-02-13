@@ -1,15 +1,16 @@
 <div class="posts">
   <h1 class="content-subhead">Projects</h1>
 
-  <section class="project post" ng-repeat="post in projects">
+  <section class="project post"
+           ng-repeat="post in projects track by $index">
     <header class="post-header">
       <!-- <img class="post-avatar" alt="Eric Ferraiuolo&#x27;s avatar" height="48" width="48" src="img/common/ericf-avatar.png"> -->
-      <h2 class="post-title" go-click="#/projects/{{::post.path}}"> {{post.title}} </h2>
+      <h2 class="post-title" go-click="/projects/{{::post.path}}"> {{::post.title}} </h2>
 
       <p class="post-meta">
-        Started by <a class="post-author" href="#/about">{{post.author}}</a>
+        Started by <a class="post-author" href="#/about">{{::post.author}}</a>
         <span am-time-ago="post.started"></span>. themes:
-        <a class="post-category" href="#" ng-repeat="tag in post.tags"> {{tag}} </a>
+        <a class="post-category" href="#" ng-repeat="tag in post.tags"> {{::tag}} </a>
       </p>
     </header>
 

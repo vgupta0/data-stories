@@ -1,9 +1,9 @@
 ---
-title: About the Dataset
-author: Vishesh Gupta
-tags: colors
-summary: Check out this data set of color values taken from an author's color thesarus. The main takeaways - how do you group colors? How do you determine if there are missing/superfluous colors in the data set?
-created: 2015 February 12 00:48:22
+title: "About the Dataset"
+author: "Vishesh Gupta"
+tags: ["colors"]
+summary: "Check out this data set of color values taken from an author's color thesarus. The main takeaways - how do you group colors? How do you determine if there are missing/superfluous colors in the data set?"
+created: "2015 February 12 00:48:22"
 ---
 
 ## About the Dataset

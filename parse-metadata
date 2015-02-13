@@ -3,22 +3,27 @@
 
 function posts_data {
 
-  { for f in $(find $1 -type f -name *.md)
+  { for f in $(find $1 -type f -name '*.md')
   do
     fp=${f#\.\/}
     p=${fp/posts\/}
     echo -e "{""$(sed -n -e '/---/,/---/ p' $f | sed '1d; $d' | \
-            sed -e 's/\(.*\): \(.*\)/"\1":"\2",/g')" \
+            sed -e 's/\(.*\): \(.*\)/"\1": \2,/g')" \
             "\n\"url\": \"/posts/${p%\.*}\"},"
   done } | sed '$s/,//g'
 
 }
 
+
 echo '{"projects": ['
-{ for f in $(find . -type d -maxdepth 1 -not -path "./web" | grep -v '\.$')
+{ for f in $(find . -type d -maxdepth 1 -not -path "./web" -not -path "./\.*" | grep -v '\.$')
 do
   echo -e "$(sed '/^$/d' $f/$f.json | sed '$d'),\n  \"posts\": [\n$(posts_data $f)\n  ]\n},"
 done } | sed '$s/,//g'
 echo ']}'
+
+
+
+
 
 

@@ -41,27 +41,29 @@ angular.module('datastories', ['ngRoute', 'angularMoment'])
 .controller('PostCtrl', ['$scope', function($scope) {
 
 }])
-.controller('ProjectsCtrl', ['$scope', function($scope) {
-  $scope.projects = [{'description': 'A project exploring some colors found in a color thesaurus.', 'author': 'Vishesh Gupta', 'started': '31 January 2015 14:32:00', 'path': 'colors', 'title': 'Colors!', 'tags': ['grouping']}, {'description': 'Which majors are popular at Stanford by gender?', 'author': 'Vishesh Gupta', 'started': '21 January 2015 14:38:00', 'path': 'majors', 'title': 'Stanford Majors', 'tags': ['trends']}]
+.controller('ProjectsCtrl', ['$scope', '$http', function($scope, $http) {
+  $scope.projects = [];
+  $scope.$on('$routeChangeSuccess', function(event, next, current) {
+    $http.get('/projects')
+    .success(function(data) {
+      $scope.projects = data["projects"];
+    })
+    .error(function(data, status) {
+      console.log(data);
+    });
+  });
 }])
-.conroller('ProjectCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
-  $scope.project = {
-    "title": "Colors!",
-    "path" : "colors",
-    "author": "Vishesh Gupta",
-    "tags": ["grouping"],
-    "started": "31 January 2015 14:32:00",
-    "description" : "A project exploring some colors found in a color thesaurus.",
-    "posts": [
-      {"title":"About the Dataset",
-       "author":"Vishesh Gupta",
-       "tags":["colors"],
-       "summary":"Check out this data set of color values taken from an author's color thesarus. The main takeaways - how do you group colors? How do you determine if there are missing/superfluous colors in the data set?",
-       "created":"2015 February 12 00:48:22",
-       "url": "/posts/colors/about-the-dataset"},
-      {"url": "/posts/colors/colors"}
-    ]
-  }
+.controller('ProjectCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
+  $scope.project = undefined;
+  $scope.$on('$routeChangeSuccess', function(event, next, current) {
+    $http.get('/projects/' + $routeParams["name"])
+    .success(function(data) {
+      $scope.project = data;
+    })
+    .error(function(data, status) {
+      console.log(data);
+    });
+  });
 }])
 
 .directive('goClick', function ( $location ) {
