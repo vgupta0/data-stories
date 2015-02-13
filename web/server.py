@@ -1,3 +1,4 @@
+import os
 from bottle import route, run, static_file, template
 import json
 from cytoolz import *
@@ -65,7 +66,7 @@ def staticcss(resource):
 def statictemplates(resource):
   return static_file(resource, root='static/templates/')
 
-run(host='localhost', port=8080, debug=True)
+run(host='localhost', port=int(os.environ.get("PORT", 5000)), debug=True)
 
 
 
