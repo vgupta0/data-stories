@@ -4,7 +4,7 @@
   <section class="post" ng-repeat="post in posts">
     <header class="post-header">
       <!-- <img class="post-avatar" alt="Eric Ferraiuolo&#x27;s avatar" height="48" width="48" src="img/common/ericf-avatar.png"> -->
-      <h2 class="post-title"> {{post.title}} </h2>
+      <h2 class="post-title" go-click="{{post.url}}"> {{post.title}} </h2>
 
       <p class="post-meta">
         By <a class="post-author" href="#/about">{{post.author}}</a> under

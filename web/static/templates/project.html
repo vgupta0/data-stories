@@ -1,4 +1,5 @@
 <div class="posts">
+
   <div class="project-header">
     <h1 class="project-title">{{project.title}}</h1>
     <div class="project-header-details">
@@ -17,7 +18,7 @@
   <section class="post" ng-repeat="post in project.posts">
     <header class="post-header">
       <!-- <img class="post-avatar" alt="Eric Ferraiuolo&#x27;s avatar" height="48" width="48" src="img/common/ericf-avatar.png"> -->
-      <h2 class="post-title"> {{::post.title}} </h2>
+      <h2 class="post-title" go-click="{{post.url}}"> {{::post.title}} </h2>
 
       <p class="post-meta">
         <span am-time-ago="post.created"></span>

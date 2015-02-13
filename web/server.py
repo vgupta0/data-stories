@@ -4,6 +4,12 @@ from cytoolz import *
 
 metadata = json.load(open('metadata.json'))
 
+# DEBUG PURPOSES ONLY!
+@route('/reloadmetadata')
+def reloadmetadata():
+  metadata = json.load(open('metadata.json'))
+  return 'OK'
+
 @route('/projects')
 def projectslist():
   return {'projects': list(map(lambda p: dissoc(p, "posts"), metadata["projects"]))}
@@ -12,12 +18,24 @@ def projectslist():
 def project(name):
   return list(filter(lambda x: x["path"] == name, metadata["projects"]))[0]
 
-@route('/posts/<resource:path>')
+@route('/post/<resource:path>')
 def staticposts(resource):
+  print resource if resource.endswith('.html') else resource + '.html'
   return static_file(
     resource if resource.endswith('.html') else resource + '.html',
     root='static/posts/')
 
+@route('/recentposts')
+def recentposts():
+  return {'posts': pipe(metadata['projects'],
+                        partial(map, lambda x: get('posts', x)),
+                        concat,
+                        lambda ps: sorted(ps, key=lambda x: x['created'],
+                                          reverse=True),
+                        partial(take, 10),
+                        list)}
+
+# ------------------------- STATIC ROUTES ---------------------------------
 
 @route('/')
 def index():
@@ -48,6 +66,8 @@ def statictemplates(resource):
   return static_file(resource, root='static/templates/')
 
 run(host='localhost', port=8080, debug=True)
+
+
 
 
 

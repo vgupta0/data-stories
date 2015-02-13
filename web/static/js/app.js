@@ -17,23 +17,27 @@ angular.module('datastories', ['ngRoute', 'angularMoment'])
     templateUrl: 'templates/about.html',
     controller: 'AboutCtrl'
   })
-  .when('/post/:name', {
-    templateUrl: function(urlparams) { return 'posts/'+urlparams["name"]+'.html';},
+  .when('/post/:project/:post', {
+    templateUrl: function(urlparams) {
+      return 'post/' + urlparams["project"] + "/" + urlparams["post"] + '.html';
+    },
     controller: 'PostCtrl'
   })
   .otherwise( {
     redirectTo: '/'
   })
 }])
-.controller('MainCtrl', ['$scope', function($scope) {
-  $scope.posts = [
-    {title: "Sample Post Title",
-     author: "Vishesh Gupta",
-     tags: ["test-category", "test-category2"],
-     summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu metus ac lectus lobortis placerat eu sed urna. Aenean blandit arcu non est aliquet, quis molestie erat pellentesque. Aenean dapibus vel neque sodales tristique. Praesent in placerat quam, ac placerat nibh. Nunc sit amet hendrerit lacus, eu efficitur sem. Fusce sed condimentum sem. Nulla facilisi. Vivamus luctus nec erat ut consectetur. ",
-     images: undefined
-    }
-  ]
+.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
+  $scope.posts = [];
+  $scope.$on('$routeChangeSuccess', function(event, next, current) {
+    $http.get('/recentposts')
+    .success(function(data) {
+      $scope.posts = data["posts"];
+    })
+    .error(function(data, status) {
+      console.log(data);
+    });
+  });
 }])
 .controller('AboutCtrl', ['$scope', function($scope) {
 
