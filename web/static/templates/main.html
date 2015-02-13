@@ -7,9 +7,9 @@
       <h2 class="post-title" go-click="{{post.url}}"> {{post.title}} </h2>
 
       <p class="post-meta">
-        By <a class="post-author" href="#/about">{{post.author}}</a> under
+        <span am-time-ago="post.created"></span>
+        by <a class="post-author" href="#/about">{{post.author}}</a> under
         <a class="post-category" href="#" ng-repeat="tag in post.tags"> {{tag}} </a>
-        on <span am-time-ago="post.creation-timestamp"></span>
       </p>
     </header>
 

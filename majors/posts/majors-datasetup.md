@@ -28,4 +28,4 @@ As of this post, I did only the 2013-2014 year.
 
 
 [cds]: http://ucomm.stanford.edu/cds/2014
-[registrar]: https://studentaffairs.stanford.edu/registrar/everyone/enrollment-stats_13_14
+[registrar]: https://studentaffairs.stanford.edu/registrar/everyone/enrollment-stats_13-14
