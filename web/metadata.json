@@ -22,7 +22,7 @@
 {"title": "Exploring Colors",
 "author": "Vishesh",
 "tags": ["colors"],
-"summary": "",
+"summary": "Talking about some of the steps in analyzing and grouping the colors - what are the natural groups here? How do we best discover them? Ends with a discussion of next steps - better color distance metrics!",
 "created": "2015-02-13 10:08:08", 
 "url": "/post/colors/exploring-colors"}
   ]
