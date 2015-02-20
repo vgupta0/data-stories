@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    357221,       8792]
-NotebookOptionsPosition[    355204,       8719]
-NotebookOutlinePosition[    355579,       8736]
-CellTagsIndexPosition[    355536,       8733]
+NotebookDataLength[    383526,       9238]
+NotebookOptionsPosition[    381469,       9164]
+NotebookOutlinePosition[    381845,       9181]
+CellTagsIndexPosition[    381802,       9178]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1959,7 +1959,414 @@ Cell[BoxData[
    2.7521531632019736`, -0.19880854970916959`, -1.9586036165697018`},
   ViewVertical->{1.8300292812170338`, -0.05574557059025565, 
    0.4043253239956908}]], "Output",
- CellChangeTimes->{3.632244554025036*^9, 3.632368416522175*^9}]
+ CellChangeTimes->{3.632244554025036*^9, 
+  3.632368416522175*^9},ImageCache->GraphicsData["CompressedBitmap", "\<\
+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\
+\>"]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2449,7 +2856,9 @@ Cell[BoxData[
    3.632427309980876*^9}, {3.632427420486362*^9, 3.632427494658167*^9}, {
    3.6324275280020657`*^9, 3.632427529263062*^9}, {3.632427673655046*^9, 
    3.6324277574015303`*^9}, 3.63242784933934*^9, {3.6325402060267982`*^9, 
-   3.6325402143420486`*^9}}],
+   3.6325402143420486`*^9}, {3.633217204866818*^9, 3.633217205273086*^9}, {
+   3.6332172884238577`*^9, 3.633217294708549*^9}, {3.633217354125804*^9, 
+   3.633217354323666*^9}}],
 
 Cell[BoxData[
  GraphicsBox[
@@ -5114,8 +5523,8 @@ fzyrwpPPBTvkBdVQlG8hZR2ugcPwtxNB6zVQtflG631ZB0HM8d5K6gNcpTV4
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{33.70359375000001, 
-       1221.4760937500002`}, {-203.28455000000002`, 199.0218245341618}}],
+      ImageSizeCache->{{34.280390624999995`, 
+       1249.739140625}, {-207.7308249999999, 203.92218420645057`}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -5123,14 +5532,9 @@ fzyrwpPPBTvkBdVQlG8hZR2ugcPwtxNB6zVQtflG631ZB0HM8d5K6gNcpTV4
    "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
   FrameTicks->None,
   ImagePadding->10,
-  ImageSize->{1255.1796875, Automatic}]], "Output",
- CellChangeTimes->{
-  3.632426431628315*^9, 3.632426658047803*^9, {3.632426698375766*^9, 
-   3.632426741318973*^9}, {3.632426810853425*^9, 3.63242682649684*^9}, 
-   3.632427170950342*^9, 3.632427205785428*^9, 3.6324272643614197`*^9, {
-   3.632427421590103*^9, 3.632427495010257*^9}, {3.6324276921073112`*^9, 
-   3.6324277084691772`*^9}, {3.632427744734642*^9, 3.632427758029613*^9}, 
-   3.6324278502355556`*^9, 3.632540215383821*^9}]
+  ImageSize->{1284.01953125, Automatic}]], "Output",
+ CellChangeTimes->{{3.633217197401998*^9, 3.633217206232586*^9}, {
+   3.633217290706402*^9, 3.633217295362344*^9}, 3.6332173551925087`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -5188,7 +5592,10 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"SizeSplit", "[", "10", "]"}], "@", 
        RowBox[{
-        RowBox[{"SizeSplit", "[", "15", "]"}], "@", "#"}]}]}], "&"}], "@", 
+        RowBox[{"SizeSplit", "[", "10", "]"}], "@", 
+        RowBox[{
+         RowBox[{"SizeSplit", "[", "15", "]"}], "@", "#"}]}]}]}], "&"}], "@", 
+    
     RowBox[{"(", 
      RowBox[{
       RowBox[{
@@ -5211,7 +5618,7 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{
                     RowBox[{"ColorConvert", "[", 
-                    RowBox[{"#", ",", "\"\<LAB\>\""}], "]"}], "&"}], "@", 
+                    RowBox[{"#", ",", "\"\<LUV\>\""}], "]"}], "&"}], "@", 
                     RowBox[{"Hex2RGB", "[", "#", "]"}]}], "&"}], ",", "#", 
                    ",", "2"}], "]"}], "&"}], "/@", "#"}], "&"}], "/@", 
               "colors"}], ")"}], ",", "1"}], "]"}], "[", 
@@ -5238,7 +5645,7 @@ Cell[BoxData[{
              RowBox[{"#1", "[", 
               RowBox[{"[", "2", "]"}], "]"}]}], ",", 
             RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
-          RowBox[{"ImageSize", "\[Rule]", "25"}]}], "]"}]}], "&"}], ",", 
+          RowBox[{"ImageSize", "\[Rule]", "22"}]}], "]"}]}], "&"}], ",", 
       RowBox[{"Flatten", "[", 
        RowBox[{"colors", ",", "1"}], "]"}]}], "]"}]}]}], "//", 
   RowBox[{
@@ -5255,7 +5662,10 @@ Cell[BoxData[{
    3.632366926969882*^9, 3.6323670883101463`*^9}, {3.632368122394753*^9, 
    3.6323681852394753`*^9}, {3.632368477279172*^9, 3.632368684401552*^9}, {
    3.632518036939308*^9, 3.632518038629292*^9}, {3.632540170434815*^9, 
-   3.6325401925919657`*^9}}],
+   3.6325401925919657`*^9}, {3.6334062515711718`*^9, 3.633406280298831*^9}, {
+   3.633406847264627*^9, 3.6334068854836683`*^9}, {3.6334069495376368`*^9, 
+   3.6334069992330303`*^9}, {3.633407055274392*^9, 3.6334070556075277`*^9}, {
+   3.633407138300652*^9, 3.63340714164095*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -5265,15 +5675,14 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.9490196078431372, 0.32156862745098036`, 0.47058823529411764`], 
+          0.44705882352941173`, 0.5490196078431373, 0.4117647058823529], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
-         {RGBColor[
-          0.9921568627450981, 0.3607843137254902, 0.6588235294117647], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         {RGBColor[0.596078431372549, 0.9254901960784314, 0.7647058823529411],
+           DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5293,21 +5702,21 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.03137254901960784, 0.01568627450980392, 0.00392156862745098], 
+          0.37254901960784315`, 0.09803921568627451, 0.0784313725490196], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.06666666666666667, 0.06666666666666667, 0.06666666666666667], 
+          0.2588235294117647, 0.050980392156862744`, 0.03529411764705882], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.13333333333333333`, 0.12549019607843137`, 0.13725490196078433`], 
+          0.32941176470588235`, 0.12156862745098039`, 0.10588235294117647`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5327,24 +5736,268 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.2392156862745098, 0.22352941176470587`, 0.20392156862745098`], 
+          0.4549019607843137, 0.7137254901960784, 0.1764705882352941], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.2, 0.2, 0.2], DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.21568627450980393`, 0.21568627450980393`, 0.21568627450980393`], 
+          0.6901960784313725, 0.9882352941176471, 0.21568627450980393`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
-         {RGBColor[0.2, 0.1764705882352941, 0.19215686274509802`], 
+         {RGBColor[
+          0.9372549019607843, 0.9921568627450981, 0.37254901960784315`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.8901960784313725, 0.7137254901960784, 0.47058823529411764`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9137254901960784, 0.7568627450980392, 0.4823529411764706], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.7411764705882353, 0.6470588235294118, 0.36470588235294116`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6980392156862745, 0.8274509803921568, 0.7568627450980392], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.7725490196078432, 0.7725490196078432, 0.8156862745098039], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.8666666666666667, 0.8666666666666667, 0.8666666666666667], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9411764705882353, 0.07058823529411765, 0.7450980392156863], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[1., 0.08627450980392157, 0.5882352941176471], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.44313725490196076`, 0.00392156862745098, 0.5764705882352941], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6941176470588235, 0.050980392156862744`, 0.788235294117647], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[0., 0.12156862745098039`, 0.24705882352941178`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.0784313725490196, 0.11764705882352941`, 0.23529411764705882`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.11764705882352941`, 0.27058823529411763`, 0.43137254901960786`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.00784313725490196, 0.3764705882352941, 0.38823529411764707`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0., 0.1764705882352941, 0.21568627450980393`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.00784313725490196, 0.7529411764705882, 0.2901960784313725], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.00392156862745098, 1., 0.4392156862745098], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.011764705882352941`, 0.6745098039215687, 0.07450980392156863], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.011764705882352941`, 0.5372549019607843, 0.06666666666666667], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.1803921568627451, 0.8, 0.25098039215686274`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.17254901960784313`, 0.08627450980392157, 0.011764705882352941`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.22352941176470587`, 0.11764705882352941`, 0.027450980392156862`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.2901960784313725, 0.14509803921568626`, 0.07058823529411765], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.32156862745098036`, 0.16078431372549018`, 0.08235294117647059], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.2627450980392157, 0.15294117647058825`, 0.06666666666666667], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5366,107 +6019,30 @@ Cell[BoxData[
          {RGBColor[
           0.8980392156862745, 0.8588235294117647, 0.6745098039215687], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9215686274509803, 0.9058823529411765, 0.7254901960784313], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.8627450980392157, 0.8392156862745098, 0.6235294117647059], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9921568627450981, 0.9372549019607843, 0.6980392156862745], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.788235294117647, 0.7372549019607844, 0.5568627450980392],
            DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[1., 0.08627450980392157, 0.5882352941176471], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9411764705882353, 0.07058823529411765, 0.7450980392156863], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6941176470588235, 0.050980392156862744`, 0.788235294117647], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.44313725490196076`, 0.00392156862745098, 0.5764705882352941], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[0., 0.12156862745098039`, 0.24705882352941178`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.0784313725490196, 0.11764705882352941`, 0.23529411764705882`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.11764705882352941`, 0.27058823529411763`, 0.43137254901960786`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.00784313725490196, 0.3764705882352941, 0.38823529411764707`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0., 0.1764705882352941, 0.21568627450980393`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5486,32 +6062,39 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.7137254901960784, 0.37254901960784315`, 0.803921568627451], 
+          0.20784313725490194`, 0.1411764705882353, 0.08235294117647059], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.6431372549019607, 0.36470588235294116`, 0.8941176470588235], 
+          0.1411764705882353, 0.09019607843137255, 0.03529411764705882], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.6862745098039216, 0.4117647058823529, 0.9333333333333333], 
+          0.21568627450980393`, 0.11372549019607843`, 0.06274509803921569], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.596078431372549, 0.4, 0.7725490196078432], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.4784313725490196, 0.2901960784313725, 0.5372549019607843], 
+          0.20784313725490194`, 0.14901960784313725`, 0.058823529411764705`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.23529411764705882`, 0.16078431372549018`, 0.050980392156862744`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.29411764705882354`, 0.21568627450980393`, 0.10980392156862745`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5528,144 +6111,42 @@ Cell[BoxData[
      TableForm[BoxForm`e$]]], ",", 
    TagBox[
     TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.011764705882352941`, 0.6745098039215687, 0.07450980392156863], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.011764705882352941`, 0.5372549019607843, 0.06666666666666667], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.1803921568627451, 0.8, 0.25098039215686274`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.00784313725490196, 0.7529411764705882, 0.2901960784313725], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.00392156862745098, 1., 0.4392156862745098], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.23529411764705882`, 0.9254901960784314, 0.5882352941176471], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.2588235294117647, 0.050980392156862744`, 0.03529411764705882], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.2980392156862745, 0.03137254901960784, 0.0196078431372549], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.3764705882352941, 0.058823529411764705`, 0.043137254901960784`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.44313725490196076`, 0.047058823529411764`, 0.01568627450980392], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.403921568627451, 0.047058823529411764`, 0.027450980392156862`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.37254901960784315`, 0.0392156862745098, 0.01568627450980392], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.3764705882352941, 0.10196078431372549`, 0.21176470588235294`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.19215686274509802`, 0.0784313725490196, 0.19215686274509802`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.16078431372549018`, 0.03529411764705882, 0.08627450980392157], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
        {
         GraphicsBox[
          {RGBColor[
           0.30196078431372547`, 0.00784313725490196, 0.12549019607843137`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.38823529411764707`, 0.0196078431372549, 0.21176470588235294`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.5215686274509804, 0.0784313725490196, 0.29411764705882354`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.3764705882352941, 0.10196078431372549`, 0.21176470588235294`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.16078431372549018`, 0.03529411764705882, 0.08627450980392157], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.19215686274509802`, 0.0784313725490196, 0.19215686274509802`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5685,90 +6166,39 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.4156862745098039, 0.40784313725490196`, 0.5019607843137255], 
+          0.6039215686274509, 0.058823529411764705`, 0.00784313725490196], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.48627450980392156`, 0.43137254901960786`, 0.4980392156862745], 
+          0.6078431372549019, 0.058823529411764705`, 0.00784313725490196], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.49019607843137253`, 0.48627450980392156`, 0.611764705882353], 
+          0.5686274509803921, 0.050980392156862744`, 0.03137254901960784], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.47058823529411764`, 0.44705882352941173`, 0.4627450980392157], 
+          0.7215686274509804, 0.06274509803921569, 0.0392156862745098], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.4588235294117647, 0.4823529411764706, 0.5294117647058824], 
+          0.5647058823529412, 0.0196078431372549, 0.011764705882352941`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.34901960784313724`, 0.47058823529411764`, 0.5529411764705883], 
+          0.8274509803921568, 0.08627450980392157, 0.011764705882352941`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9882352941176471, 0.6313725490196078, 0.44705882352941173`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9921568627450981, 0.6705882352941176, 0.6235294117647059], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.984313725490196, 0.580392156862745, 0.5137254901960784], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.996078431372549, 0.49019607843137253`, 0.403921568627451], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.4745098039215686, 0.3607843137254902, 0.20392156862745098`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6039215686274509, 0.4823529411764706, 0.30980392156862746`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5789,34 +6219,34 @@ Cell[BoxData[
         GraphicsBox[
          {RGBColor[0.996078431372549, 0.9686274509803922, 0.8980392156862745],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.996078431372549, 0.9764705882352941, 0.8901960784313725],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9882352941176471, 0.9647058823529412, 0.8745098039215686], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[1., 0.984313725490196, 0.8549019607843137], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9490196078431372, 0.9215686274509803, 0.8274509803921568], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.9058823529411765, 0.8745098039215686, 0.8], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[1., 0.984313725490196, 0.8549019607843137], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5837,37 +6267,37 @@ Cell[BoxData[
         GraphicsBox[
          {RGBColor[0., 0.4549019607843137, 0.8509803921568627], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0., 0.6980392156862745, 1.], DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.0196078431372549, 0.5725490196078431, 0.7607843137254902], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.4980392156862745, 0.8588235294117647, 1.], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.5098039215686274, 0.9294117647058824, 0.996078431372549],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.22352941176470587`, 0.8, 0.8], DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.32156862745098036`, 0.6980392156862745, 0.7529411764705882], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.22352941176470587`, 0.8, 0.8], DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5887,45 +6317,100 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.1411764705882353, 0.0784313725490196, 0.43529411764705883`], 
+          0.023529411764705882`, 0.058823529411764705`, 0.580392156862745], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.0784313725490196, 0.2196078431372549, 0.7411764705882353], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.08627450980392157, 0.12941176470588234`, 0.6509803921568628], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.14901960784313725`, 0.19607843137254902`, 0.7607843137254902], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.1568627450980392, 0.11764705882352941`, 0.36470588235294116`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.3176470588235294, 0.26666666666666666`, 0.7450980392156863], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.023529411764705882`, 0.058823529411764705`, 0.580392156862745], 
+          0.1568627450980392, 0.11764705882352941`, 0.36470588235294116`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.1411764705882353, 0.0784313725490196, 0.43529411764705883`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.03137254901960784, 0.01568627450980392, 0.00392156862745098], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.2392156862745098, 0.22352941176470587`, 0.20392156862745098`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.2, 0.2, 0.2], DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.21568627450980393`, 0.21568627450980393`, 0.21568627450980393`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.2, 0.1764705882352941, 0.19215686274509802`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.13333333333333333`, 0.12549019607843137`, 0.13725490196078433`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.06666666666666667, 0.06666666666666667, 0.06666666666666667], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -5946,360 +6431,43 @@ Cell[BoxData[
         GraphicsBox[
          {RGBColor[0.596078431372549, 0.592156862745098, 0.6627450980392157], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.6666666666666666, 0.6666666666666666, 0.6666666666666666], 
+          0.4588235294117647, 0.4823529411764706, 0.5294117647058824], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.7725490196078432, 0.7725490196078432, 0.8156862745098039], 
+          0.47058823529411764`, 0.44705882352941173`, 0.4627450980392157], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.8666666666666667, 0.8666666666666667, 0.8666666666666667], 
+          0.48627450980392156`, 0.43137254901960786`, 0.4980392156862745], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.6980392156862745, 0.8274509803921568, 0.7568627450980392], 
+          0.4156862745098039, 0.40784313725490196`, 0.5019607843137255], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.596078431372549, 0.9254901960784314, 0.7647058823529411],
-           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.44705882352941173`, 0.5490196078431373, 0.4117647058823529], 
+          0.49019607843137253`, 0.48627450980392156`, 0.611764705882353], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.8274509803921568, 0.08627450980392157, 0.011764705882352941`], 
+          0.34901960784313724`, 0.47058823529411764`, 0.5529411764705883], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6039215686274509, 0.058823529411764705`, 0.00784313725490196], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6078431372549019, 0.058823529411764705`, 0.00784313725490196], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.5647058823529412, 0.0196078431372549, 0.011764705882352941`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.5686274509803921, 0.050980392156862744`, 0.03137254901960784], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.7215686274509804, 0.06274509803921569, 0.0392156862745098], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6627450980392157, 0.10588235294117647`, 0.050980392156862744`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[1., 0.2549019607843137, 0.21176470588235294`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9882352941176471, 0.2980392156862745, 0.3058823529411765], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.8862745098039215, 0.14509803921568626`, 0.16470588235294117`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.32941176470588235`, 0.12156862745098039`, 0.10588235294117647`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.37254901960784315`, 0.09803921568627451, 0.0784313725490196], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.7333333333333333, 0.32941176470588235`, 0.2901960784313725], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6274509803921569, 0.2588235294117647, 0.2588235294117647], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.30196078431372547`, 0.2980392156862745, 0.36470588235294116`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.34901960784313724`, 0.3176470588235294, 0.37254901960784315`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.34509803921568627`, 0.30196078431372547`, 0.3568627450980392], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.396078431372549, 0.34901960784313724`, 0.396078431372549], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.3333333333333333, 0.2980392156862745, 0.30196078431372547`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.25098039215686274`, 0.24705882352941178`, 0.3058823529411765], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.2588235294117647, 0.2588235294117647, 0.2980392156862745], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.17254901960784313`, 0.24313725490196078`, 0.29411764705882354`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.20784313725490194`, 0.29411764705882354`, 0.12941176470588234`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.1411764705882353, 0.3137254901960784, 0.11764705882352941`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.19607843137254902`, 0.38431372549019605`, 0.1764705882352941], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.22352941176470587`, 0.3254901960784314, 0.06666666666666667], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.2784313725490196, 0.42745098039215684`, 0.11764705882352941`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.37254901960784315`, 0.48627450980392156`, 0.22745098039215686`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.3529411764705882, 0.49019607843137253`, 0.21176470588235294`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.36470588235294116`, 0.7372549019607844, 0.39215686274509803`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.596078431372549, 0.7490196078431373, 0.39215686274509803`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
-      },
-      GridBoxAlignment->{
-       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-        "RowsIndexed" -> {}},
-      GridBoxSpacings->{"Columns" -> {
-          Offset[0.27999999999999997`], {
-           Offset[0.5599999999999999]}, 
-          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-          Offset[0.2], {
-           Offset[0.4]}, 
-          Offset[0.2]}, "RowsIndexed" -> {}}],
-     Column],
-    Function[BoxForm`e$, 
-     TableForm[BoxForm`e$]]], ",", 
-   TagBox[
-    TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.49411764705882355`, 0.28627450980392155`, 0.11372549019607843`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.4, 0.21176470588235294`, 0.058823529411764705`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.39215686274509803`, 0.16862745098039217`, 0.050980392156862744`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.7137254901960784, 0.40784313725490196`, 0.15294117647058825`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.8352941176470589, 0.44313725490196076`, 0.1568627450980392], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.36470588235294116`, 0.17254901960784313`, 0.01568627450980392], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.5490196078431373, 0.25098039215686274`, 0.0196078431372549], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.4784313725490196, 0.22745098039215686`, 0.011764705882352941`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.5372549019607843, 0.19607843137254902`, 0.00392156862745098], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6321,52 +6489,40 @@ Cell[BoxData[
          {RGBColor[
           0.8941176470588235, 0.803921568627451, 0.01568627450980392], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[1., 0.8627450980392157, 0.], DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9882352941176471, 0.8862745098039215, 0.023529411764705882`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[1., 0.8627450980392157, 0.], DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9803921568627451, 0.7843137254901961, 0.00392156862745098], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9764705882352941, 0.6509803921568628, 0.00784313725490196], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.8941176470588235, 0.6941176470588235, 0.011764705882352941`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9803921568627451, 0.7411764705882353, 0.01568627450980392], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.8941176470588235, 0.6941176470588235, 0.011764705882352941`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9803921568627451, 0.7843137254901961, 0.00392156862745098], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.7607843137254902, 0.5725490196078431, 0.], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9254901960784314, 0.592156862745098, 0.027450980392156862`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6388,53 +6544,42 @@ Cell[BoxData[
          {RGBColor[
           0.9686274509803922, 0.8745098039215686, 0.4588235294117647], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9921568627450981, 0.9215686274509803, 0.4588235294117647], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.996078431372549, 0.9333333333333333, 0.5333333333333333],
-           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.8392156862745098, 0.7176470588235294, 0.3529411764705882], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.8352941176470589, 0.7137254901960784, 0.3529411764705882], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.7803921568627451, 0.6627450980392157, 0.3176470588235294], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.8431372549019608, 0.7254901960784313, 0.38823529411764707`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.8901960784313725, 0.7725490196078432, 0.396078431372549],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.7411764705882353, 0.6470588235294118, 0.36470588235294116`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6454,56 +6599,240 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.996078431372549, 0.8862745098039215, 0.14901960784313725`], 
+          0.2588235294117647, 0.2588235294117647, 0.2980392156862745], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[1., 0.8901960784313725, 0.15294117647058825`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.9137254901960784, 0.7215686274509804, 0.16078431372549018`], 
+          0.25098039215686274`, 0.24705882352941178`, 0.3058823529411765], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.9921568627450981, 0.807843137254902, 0.16470588235294117`], 
+          0.30196078431372547`, 0.2980392156862745, 0.36470588235294116`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.9882352941176471, 0.8196078431372549, 0.16470588235294117`], 
+          0.17254901960784313`, 0.24313725490196078`, 0.29411764705882354`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.396078431372549, 0.34901960784313724`, 0.396078431372549], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.34901960784313724`, 0.3176470588235294, 0.37254901960784315`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.34509803921568627`, 0.30196078431372547`, 0.3568627450980392], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.3333333333333333, 0.2980392156862745, 0.30196078431372547`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6039215686274509, 0.4823529411764706, 0.30980392156862746`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.4745098039215686, 0.3607843137254902, 0.20392156862745098`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9882352941176471, 0.6313725490196078, 0.44705882352941173`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9921568627450981, 0.6705882352941176, 0.6235294117647059], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.984313725490196, 0.580392156862745, 0.5137254901960784], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.996078431372549, 0.49019607843137253`, 0.403921568627451], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6274509803921569, 0.2588235294117647, 0.2588235294117647], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.7333333333333333, 0.32941176470588235`, 0.2901960784313725], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.7137254901960784, 0.37254901960784315`, 0.803921568627451], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.596078431372549, 0.4, 0.7725490196078432], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.4784313725490196, 0.2901960784313725, 0.5372549019607843], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6862745098039216, 0.4117647058823529, 0.9333333333333333], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6431372549019607, 0.36470588235294116`, 0.8941176470588235], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.7450980392156863, 0.5764705882352941, 0.8313725490196078], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6078431372549019, 0.48627450980392156`, 0.7254901960784313], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.8901960784313725, 0.6274509803921569, 0.9647058823529412], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9254901960784314, 0.592156862745098, 0.027450980392156862`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9764705882352941, 0.6509803921568628, 0.00784313725490196], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9921568627450981, 0.6823529411764706, 0.11372549019607843`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.4549019607843137, 0.7137254901960784, 0.1764705882352941], 
+          0.996078431372549, 0.8862745098039215, 0.14901960784313725`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[1., 0.8901960784313725, 0.15294117647058825`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.6901960784313725, 0.9882352941176471, 0.21568627450980393`], 
+          0.9137254901960784, 0.7215686274509804, 0.16078431372549018`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.9372549019607843, 0.9921568627450981, 0.37254901960784315`], 
+          0.9921568627450981, 0.807843137254902, 0.16470588235294117`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9882352941176471, 0.8196078431372549, 0.16470588235294117`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6524,58 +6853,45 @@ Cell[BoxData[
         GraphicsBox[
          {RGBColor[0.9254901960784314, 0.8627450980392157, 0.6], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.984313725490196, 0.8862745098039215, 0.615686274509804], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9921568627450981, 0.9372549019607843, 0.6980392156862745], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.996078431372549, 0.9137254901960784, 0.5764705882352941],
-           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9882352941176471, 0.9058823529411765, 0.5686274509803921], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9882352941176471, 0.9568627450980391, 0.6392156862745098], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.8705882352941177, 0.788235294117647, 0.5411764705882353],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.8588235294117647, 0.7607843137254902, 0.49019607843137253`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.996078431372549, 0.9137254901960784, 0.5764705882352941],
+           DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.8901960784313725, 0.7137254901960784, 0.47058823529411764`], 
+          0.9882352941176471, 0.9058823529411765, 0.5686274509803921], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
-         {RGBColor[
-          0.9137254901960784, 0.7568627450980392, 0.4823529411764706], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         {RGBColor[0.996078431372549, 0.9333333333333333, 0.5333333333333333],
+           DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6592,64 +6908,127 @@ Cell[BoxData[
      TableForm[BoxForm`e$]]], ",", 
    TagBox[
     TagBox[GridBox[{
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.984313725490196, 0.4196078431372549, 0.00784313725490196], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.7372549019607844, 0.3411764705882353, 0.011764705882352941`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.8196078431372549, 0.3803921568627451, 0.00784313725490196], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[0.8, 0.34509803921568627`, 0.00392156862745098], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[1., 0.5215686274509804, 0.10588235294117647`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9294117647058824, 0.44313725490196076`, 0.08627450980392157], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.9764705882352941, 0.5098039215686274, 0.1568627450980392], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6980392156862745, 0.33725490196078434`, 0.047058823529411764`], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.788235294117647, 0.3607843137254902, 0.03529411764705882], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
        {
         GraphicsBox[
          {RGBColor[
           0.9294117647058824, 0.5058823529411764, 0.058823529411764705`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9764705882352941, 0.5098039215686274, 0.1568627450980392], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9294117647058824, 0.44313725490196076`, 0.08627450980392157], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[1., 0.5215686274509804, 0.10588235294117647`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.8, 0.34509803921568627`, 0.00392156862745098], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.8196078431372549, 0.3803921568627451, 0.00784313725490196], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.7372549019607844, 0.3411764705882353, 0.011764705882352941`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.788235294117647, 0.3607843137254902, 0.03529411764705882], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.984313725490196, 0.4196078431372549, 0.00784313725490196], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[1., 0.2549019607843137, 0.21176470588235294`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9882352941176471, 0.2980392156862745, 0.3058823529411765], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6627450980392157, 0.10588235294117647`, 0.050980392156862744`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.8862745098039215, 0.14509803921568626`, 0.16470588235294117`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.44313725490196076`, 0.047058823529411764`, 0.01568627450980392], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.37254901960784315`, 0.0392156862745098, 0.01568627450980392], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.403921568627451, 0.047058823529411764`, 0.027450980392156862`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.2980392156862745, 0.03137254901960784, 0.0196078431372549], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.3764705882352941, 0.058823529411764705`, 0.043137254901960784`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6669,69 +7048,63 @@ Cell[BoxData[
        {
         GraphicsBox[
          {RGBColor[
-          0.22352941176470587`, 0.11764705882352941`, 0.027450980392156862`], 
+          0.20784313725490194`, 0.29411764705882354`, 0.12941176470588234`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.17254901960784313`, 0.08627450980392157, 0.011764705882352941`], 
+          0.19607843137254902`, 0.38431372549019605`, 0.1764705882352941], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.32156862745098036`, 0.16078431372549018`, 0.08235294117647059], 
+          0.1411764705882353, 0.3137254901960784, 0.11764705882352941`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.2901960784313725, 0.14509803921568626`, 0.07058823529411765], 
+          0.22352941176470587`, 0.3254901960784314, 0.06666666666666667], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.2627450980392157, 0.15294117647058825`, 0.06666666666666667], 
+          0.2784313725490196, 0.42745098039215684`, 0.11764705882352941`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.20784313725490194`, 0.14901960784313725`, 0.058823529411764705`], 
+          0.596078431372549, 0.7490196078431373, 0.39215686274509803`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.23529411764705882`, 0.16078431372549018`, 0.050980392156862744`], 
+          0.3529411764705882, 0.49019607843137253`, 0.21176470588235294`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.29411764705882354`, 0.21568627450980393`, 0.10980392156862745`], 
+          0.37254901960784315`, 0.48627450980392156`, 0.22745098039215686`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.20784313725490194`, 0.1411764705882353, 0.08235294117647059], 
+          0.36470588235294116`, 0.7372549019607844, 0.39215686274509803`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.21568627450980393`, 0.11372549019607843`, 0.06274509803921569], 
+          0.23529411764705882`, 0.9254901960784314, 0.5882352941176471], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.1411764705882353, 0.09019607843137255, 0.03529411764705882], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6750,67 +7123,136 @@ Cell[BoxData[
     TagBox[GridBox[{
        {
         GraphicsBox[
-         {RGBColor[0.9647058823529412, 0.6039215686274509, 0.803921568627451],
-           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         {RGBColor[
+          0.5372549019607843, 0.19607843137254902`, 0.00392156862745098], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.9647058823529412, 0.6039215686274509, 0.7490196078431373], 
+          0.5490196078431373, 0.25098039215686274`, 0.0196078431372549], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
-          0.9803921568627451, 0.5215686274509804, 0.7686274509803921], 
+          0.4784313725490196, 0.22745098039215686`, 0.011764705882352941`], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.6980392156862745, 0.33725490196078434`, 0.047058823529411764`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.7137254901960784, 0.40784313725490196`, 0.15294117647058825`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.8352941176470589, 0.44313725490196076`, 0.1568627450980392], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.36470588235294116`, 0.17254901960784313`, 0.01568627450980392], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.39215686274509803`, 0.16862745098039217`, 0.050980392156862744`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.4, 0.21176470588235294`, 0.058823529411764705`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.49411764705882355`, 0.28627450980392155`, 0.11372549019607843`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column],
+    Function[BoxForm`e$, 
+     TableForm[BoxForm`e$]]], ",", 
+   TagBox[
+    TagBox[GridBox[{
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9921568627450981, 0.3607843137254902, 0.6588235294117647], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9490196078431372, 0.32156862745098036`, 0.47058823529411764`], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.996078431372549, 0.5019607843137255, 0.611764705882353], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9490196078431372, 0.4235294117647059, 0.5490196078431373], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[0.9647058823529412, 0.6039215686274509, 0.803921568627451],
+           DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9647058823529412, 0.6039215686274509, 0.7490196078431373], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
+       {
+        GraphicsBox[
+         {RGBColor[
+          0.9803921568627451, 0.5215686274509804, 0.7686274509803921], 
+          DiskBox[{0, 0}]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9921568627450981, 0.6431372549019607, 0.7215686274509804], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.9803921568627451, 0.7294117647058823, 0.796078431372549],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9450980392156862, 0.7176470588235294, 0.7764705882352941], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.8901960784313725, 0.6274509803921569, 0.9647058823529412], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.6078431372549019, 0.48627450980392156`, 0.7254901960784313], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]},
-       {
-        GraphicsBox[
-         {RGBColor[
-          0.7450980392156863, 0.5764705882352941, 0.8313725490196078], 
-          DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6831,59 +7273,59 @@ Cell[BoxData[
         GraphicsBox[
          {RGBColor[1., 0.996078431372549, 0.9882352941176471], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[1., 1., 0.9882352941176471], DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.984313725490196, 0.9882352941176471, 0.9686274509803922],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.984313725490196, 0.9882352941176471, 0.9686274509803922],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.9568627450980391, 0.996078431372549, 0.9921568627450981],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.996078431372549, 0.9803921568627451, 0.9411764705882353],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9803921568627451, 0.9803921568627451, 0.9450980392156862], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9803921568627451, 0.9529411764705882, 0.9176470588235294], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[0.984313725490196, 0.9647058823529412, 0.9372549019607843],
            DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[
           0.9725490196078431, 0.9372549019607843, 0.9254901960784314], 
           DiskBox[{0, 0}]},
-         ImageSize->25]},
+         ImageSize->22]},
        {
         GraphicsBox[
          {RGBColor[1., 0.9450980392156862, 0.9019607843137255], 
           DiskBox[{0, 0}]},
-         ImageSize->25]}
+         ImageSize->22]}
       },
       GridBoxAlignment->{
        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -6906,7 +7348,10 @@ Cell[BoxData[
    3.6323669308875723`*^9, 3.632367089168187*^9}, {3.63236812314435*^9, 
    3.632368155819929*^9}, 3.63236818595476*^9, {3.6323684778594646`*^9, 
    3.632368684851589*^9}, {3.6325180323229647`*^9, 3.6325180396622458`*^9}, {
-   3.632540176936256*^9, 3.632540194642865*^9}}]
+   3.632540176936256*^9, 3.632540194642865*^9}, 3.6333834846998653`*^9, {
+   3.6334062567387857`*^9, 3.6334062810146027`*^9}, {3.633406848114287*^9, 
+   3.633406886254322*^9}, {3.6334069548576593`*^9, 3.633407000620399*^9}, 
+   3.6334070564834833`*^9, 3.6334071420545263`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8717,8 +9162,8 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{720, 852},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowSize->{1440, 852},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 ShowSelection->True,
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
 2013)",
@@ -8735,56 +9180,57 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[400, 13, 20910, 468, 1338, "Input"],
+Cell[400, 13, 20910, 468, 692, "Input"],
 Cell[CellGroupData[{
 Cell[21335, 485, 111, 1, 80, "Section"],
 Cell[CellGroupData[{
-Cell[21471, 490, 2311, 50, 80, "Input"],
+Cell[21471, 490, 2311, 50, 28, "Input"],
 Cell[23785, 542, 29991, 443, 660, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[53813, 990, 735, 22, 63, "Input"],
+Cell[53813, 990, 735, 22, 28, "Input"],
 Cell[54551, 1014, 74, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54662, 1020, 1553, 41, 114, "Input"],
-Cell[56218, 1063, 40577, 898, 817, "Output"]
+Cell[54662, 1020, 1553, 41, 46, "Input"],
+Cell[56218, 1063, 65337, 1305, 817, 40513, 897, "CachedBoxData", "BoxData", \
+"Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[96832, 1966, 1679, 45, 80, "Input"],
-Cell[98514, 2013, 8224, 125, 378, "Output"]
+Cell[121592, 2373, 1679, 45, 46, "Input"],
+Cell[123274, 2420, 8224, 125, 378, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[106787, 2144, 99, 1, 80, "Section"],
-Cell[106889, 2147, 3965, 97, 369, "Input"]
+Cell[131547, 2551, 99, 1, 80, "Section"],
+Cell[131649, 2554, 3965, 97, 335, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[110891, 2249, 108, 1, 80, "Section"],
-Cell[111002, 2252, 3945, 103, 216, "Input"],
+Cell[135651, 2656, 108, 1, 80, "Section"],
+Cell[135762, 2659, 3945, 103, 165, "Input"],
 Cell[CellGroupData[{
-Cell[114972, 2359, 3831, 92, 182, "Input"],
-Cell[118806, 2453, 119151, 2679, 483, "Output"]
+Cell[139732, 2766, 3979, 94, 131, "Input"],
+Cell[143714, 2862, 118855, 2674, 493, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[237994, 5137, 4388, 120, 250, "Input"],
-Cell[242385, 5259, 51835, 1649, 805, "Output"]
+Cell[262606, 5541, 4717, 126, 131, "Input"],
+Cell[267326, 5669, 53159, 1684, 309, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[294257, 6913, 3094, 77, 165, "Input"],
-Cell[297354, 6992, 36407, 1148, 649, "Output"]
+Cell[320522, 7358, 3094, 77, 131, "Input"],
+Cell[323619, 7437, 36407, 1148, 293, "Output"]
 }, Open  ]],
-Cell[333776, 8143, 1446, 38, 97, "Input"],
-Cell[335225, 8183, 6226, 145, 318, "Input"],
-Cell[341454, 8330, 3197, 71, 131, "Input"],
+Cell[360041, 8588, 1446, 38, 63, "Input"],
+Cell[361490, 8628, 6226, 145, 182, "Input"],
+Cell[367719, 8775, 3197, 71, 97, "Input"],
 Cell[CellGroupData[{
-Cell[344676, 8405, 732, 18, 46, "Input"],
-Cell[345411, 8425, 1929, 55, 175, "Output"]
+Cell[370941, 8850, 732, 18, 28, "Input"],
+Cell[371676, 8870, 1929, 55, 87, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[347377, 8485, 1626, 53, 80, "Input"],
-Cell[349006, 8540, 3103, 88, 107, "Output"],
-Cell[352112, 8630, 3064, 85, 107, "Output"]
+Cell[373642, 8930, 1626, 53, 46, "Input"],
+Cell[375271, 8985, 3103, 88, 57, "Output"],
+Cell[378377, 9075, 3064, 85, 57, "Output"]
 }, Open  ]]
 }, Open  ]]
 }

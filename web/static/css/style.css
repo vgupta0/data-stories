@@ -78,10 +78,7 @@ div#ng-view pre.sourceCode code.sourceCode span {
 .sourceCode .er { color: #D30102; font-weight: bold; }
 
 
-
-
-
-
+/* Content Formatting */
 
 div#ng-view * {
   font-family: Aaargh, sans-serif;
@@ -95,6 +92,40 @@ div#ng-view h2, div#ng-view h1 {
 div#ng-view h3 {
   font-weight: bold;
 }
+
+div#ng-view img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* pandoc image display corrections */
+div#ng-view .figure {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+div#ng-view .figure > p {
+  font-family: Pier, sans-serif;
+  font-size: 80%;
+  text-align: center;
+}
+
+div#ng-view .figure > p:before {
+  content: "Figure: ";
+}
+
+div#ng-view a ~ h5 {
+  font-family: Pier;
+  font-size: 50%;
+  line-height: 1em;
+  margin-top: 0;
+}
+
+div#ng-view .pure-g div {
+  text-align:center;
+}
+
 
 /* about page */
 
