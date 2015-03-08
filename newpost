@@ -16,10 +16,9 @@ echo "## $title {.post-title}"
 }
 
 if [ $# -ge 2 ]
-then 
+then
   # we want to put the metadata into a file
-  postmetadata $1 > $2/posts/$1.md
-  subl $2/posts/$1.md
+  postmetadata $1 | tee $2/posts/$1.md
 else
   # otherwise just output to stdout
   postmetadata $1
