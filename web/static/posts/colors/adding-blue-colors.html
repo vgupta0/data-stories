@@ -1,0 +1,39 @@
+<h2 id="adding-blue-colors" class="post-title">Adding Blue Colors</h2>
+<p>Another interesting aspect of this data set is that there are far less cool colors (below the <span class="math"><em>y</em> =  − <em>x</em></span> line) than there are warm colors. Looking at a picture of the MST makes this very clear (see post on &quot;<a href="#/post/colors/exploring-colors">Exploring the Color Space</a>&quot;). This is compounded by the fact that the human eye is 2x as sensitive to medium wavelengths as compared to long/short wavelengths. You would think that merits having a few more greens.</p>
+<p>Of course, me picking random blues and greens to add because I think they look nice would be a disaster. So where should these colors come from? I figured that the best solution would be to take all the warm colors and flip them to their cool counterparts. Another option would be to take all the warm colors and compute the LCH definitions, but flip the hue and not the chroma/lightness. For now, I stuck with the simpler defintion of just completely flipping the colors around.</p>
+<p>I did the same grouping scheme as on the other colors with the new blue/greens, and here are the colors grouped:</p>
+<div class="figure">
+<img src="/img/colorgroups_blue.png" alt="blue groups" />
+<p class="caption">blue groups</p>
+</div>
+<p>Seems like a great selection. Of course, we don't just want to add all of thse - some are very similar and it would be a waste to have both colors. So how do we resolve this issue? Well, the best way to do it would be to simply pick the &quot;most different&quot; color in this new set and add it to the original set of colors, then do that process on repeat, recalculating what the farthest is each time we add a new color.</p>
+<p>So initially, we compute the distance between all the new colors and all the old colors, then take the min each step, giving us a list (sorted) like this (this is only a portion of the list):</p>
+<div class="figure">
+<img src="/img/nextcolorlist.png" alt="next colors" />
+<p class="caption">next colors</p>
+</div>
+<p>Then add the head of that list to the new set, and compute the distance (<span class="math"><em>O</em>(<em>N</em>)</span> time) on all the rest of the elements and replace the values if necessary, then resort the list (<span class="math"><em>O</em>(<em>N</em><em>l</em><em>g</em><em>N</em>)</span> time). If you want to add k new colors this is an <span class="math"><em>O</em>(<em>k</em><em>N</em>log<em>N</em>)</span> time operation. Probably not the most efficient thing in the world, but hey, it's only 200 elements so who cares (I guess you can compute the max while you update everything, so really it's <span class="math"><em>O</em>(<em>k</em><em>N</em>)</span>).</p>
+<p>If you do that and take the first 30 colors that get added to the set, they are:</p>
+<div class="figure">
+<img src="/img/newcolors.png" alt="new colors" />
+<p class="caption">new colors</p>
+</div>
+<p>Of course, to really be part of the color set they need names. Any ideas?</p>
+<p>Here's the mathematica code for computing the initial set (<code>MinDistElem</code>) and computing the next colors to add (<code>NMostDifferent</code>):</p>
+<pre class="sourceCode mathematica"><code class="sourceCode mathematica">MinDistElems[<span class="dt">d_</span>, <span class="dt">l1_</span>, <span class="dt">l2_</span>] :=
+ <span class="fu">Transpose</span>[{<span class="fu">d</span> /@ l1}~<span class="fu">Join</span>~
+    <span class="fu">Transpose</span>[{d@Part[l2, <span class="fu">Ordering</span>[#<span class="dv">1</span>, <span class="dv">1</span>][[<span class="dv">1</span>]] ], Min@#<span class="dv">1</span>} &amp; /@
+      <span class="fu">Outer</span>[, l1, l2, <span class="dv">1</span>]]] // <span class="fu">SortBy</span>[#, -#[[<span class="dv">3</span>]] &amp;] &amp;
+
+NMostDifferent[<span class="dt">d_</span>, <span class="dt">initial_</span>, <span class="dt">n_</span>] :=
+ <span class="fu">Module</span>[{<span class="fu">i</span>, next = {}, closest = initial},
+  <span class="fu">For</span>[<span class="fu">i</span> = <span class="dv">1</span>, <span class="fu">i</span> &lt;= <span class="fu">n</span>, <span class="fu">i</span>++,
+   <span class="fu">AppendTo</span>[ next, {&quot;&quot;,  &quot;#&quot; &lt;&gt; <span class="fu">StringJoin</span>[<span class="fu">IntegerString</span>[#, <span class="dv">16</span>, <span class="dv">2</span>] &amp;@Round@# &amp; /@
+                     (<span class="dv">255</span>*<span class="fu">ColorConvert</span>[#[[<span class="dv">1</span>, <span class="dv">1</span>]], &quot;LAB&quot; -&gt; &quot;RGB&quot;])]} &amp;@closest];
+   closest =
+    <span class="fu">Map</span>[<span class="fu">With</span>[{distance = <span class="fu">d</span> @@ {#[[<span class="dv">1</span>]], closest[[<span class="dv">1</span>, <span class="dv">1</span>]]}},
+        <span class="fu">If</span>[distance &lt; #[[<span class="dv">3</span>]], {#[[<span class="dv">1</span>]], closest[[<span class="dv">1</span>, <span class="dv">1</span>]], distance}, #]] &amp;,
+        closest[[<span class="dv">2</span> ;;]]] // <span class="fu">SortBy</span>[#, -#[[<span class="dv">3</span>]] &amp;] &amp;;
+   ];
+  <span class="fu">Return</span>[{next, closest}];
+ ]</code></pre>

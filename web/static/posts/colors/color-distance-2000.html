@@ -1,0 +1,26 @@
+<h2 id="color-distance-2000" class="post-title">Color Distance 2000</h2>
+<p>The newest and best color distance metric is called CIEDE2000 and it's supposed to resolve a lot of perceptual uniformity issues, especially around the blue region. This is very helpful for trying to add new blue colors, for example, if we want to add the N most different colors to the set of colors we already have, we should use this new distance metric.</p>
+<p>The actual definitions of the distance function are given in this <a href="http://www.ece.rochester.edu/~gsharma/ciede2000/ciede2000noteCRNA.pdf">paper</a> by the CIE.</p>
+<p>Let's look at the differences between the 2000 and 1994 definitions of color distance. First, the MST:</p>
+<div class="figure">
+<img src="/img/mstcolors.svg" alt="ciede94 mst" />
+<p class="caption">ciede94 mst</p>
+</div>
+<div class="figure">
+<img src="/img/mstcolors00.svg" alt="ciede2000 mst" />
+<p class="caption">ciede2000 mst</p>
+</div>
+<p>I haven't annotated the new mst, mostly because the color groups are largely the same, just in different places. Some differences - the red group is now attatched to pink/peach, all of which are closer to the yellow/orange region of the chart than they are the blue region of the chart. Violet is now next to pink and blue/cyan groups are combined. The deep blue group is now attatched between black group and purple/magenta groups. The black group seems to have been split into a warm black (next to the red sections) and a cool grey/black region near the blues. The mistakes with the grey-greens are corrected now and the greens are properly split and progress from yellow downwards rather than being two arms off of the one tan node.</p>
+<p>Overall everything looks much smoother perceptually - the old one was nice in the sense that you could define the groups very precisely but this is a much better MST in that you can see the actual progression of the colors.</p>
+<p>There are also differences in the groups that were made in the <a href="#/post/colors/exploring-colors">Exploring Colors</a> post. Here is a direct comparison</p>
+<div class="figure">
+<img src="/img/colorgroups_luv94.png" alt="luv ciede94 space clustring" />
+<p class="caption">luv ciede94 space clustring</p>
+</div>
+<div class="figure">
+<img src="/img/colorgroups_2000.png" alt="ciede2000 space clustering" />
+<p class="caption">ciede2000 space clustering</p>
+</div>
+<p>These groups are computed slightly differently. I have 4 size based splits instead of 3 to better deal with the tighter grouping in ciede2000 space. Again, I'd say that the new color space is an improvement. The LUV space 94 distance clustering has issues with the color green and groups the blues together very wierdly (aqua/sapphire same as ocean green? I don't think so) The 2000 colorspace accurately resolves a lot of those discrepancies. I guess there's a reason they made this new distance function after all!</p>
+<p>A fun question to ask is whether or not cidede2000 (which is a complex space involving all sorts of trig functions and rotation operations) is defineable in any kind of reduced space. Using the method described in this <a href="http://math.stackexchange.com/questions/156161/finding-the-coordinates-of-points-from-distance-matrix/423898#423898">post</a> I computed the matrix M and took the rank, which turned out to be 37. Sad face - all those trig functions induce nonlinearity, I guess. Moreover, the matrix is not positive semidefinite, so there's no way to embed these points. Oh well.</p>
+<p>Still, we can see that the 2000 definition of color distance is an improvement over the 1994 definition, and let's see how it applies when we add more blues!</p>
