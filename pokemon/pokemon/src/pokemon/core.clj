@@ -125,7 +125,8 @@
 
 (defn -main [& args]
   (println (:out (shell/sh "js" "../damage.js"
-            (simple-json (apply pkmnmap testpk)))))
+            (simple-json (apply pkmnmap testpk))
+            (simple-json (apply pkmnmap testpk)) )))
   (shutdown-agents))
 
 

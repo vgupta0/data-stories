@@ -238,7 +238,7 @@ function getDamageResult(attacker, defender, move, field) {
     
     if (typeEffectiveness === 0) {
         // return {"damage":[0], "description":buildDescription(description)};
-        return [move.name, 0, 0]
+        return [':'+move.name, 0, 0]
     }
     if ((defAbility === "Wonder Guard" && typeEffectiveness <= 1) ||
             (move.type === "Grass" && defAbility === "Sap Sipper") ||
@@ -250,12 +250,12 @@ function getDamageResult(attacker, defender, move, field) {
             (move.isSound && defAbility === "Soundproof")) {
         description.defenderAbility = defAbility;
         // return {"damage":[0], "description":buildDescription(description)};
-        return [move.name, 0, 0]
+        return [':'+move.name, 0, 0]
     }
     if (move.type === "Ground" && !field.isGravity && defender.item === "Air Balloon") {
         description.defenderItem = defender.item;
         // return {"damage":[0], "description":buildDescription(description)};
-        return [move.name, 0, 0]
+        return [':'+move.name, 0, 0]
     }
     
     description.HPEVs = defender.HPEVs + " HP";
@@ -266,7 +266,7 @@ function getDamageResult(attacker, defender, move, field) {
             lv *= 2;
         }
         // return {"damage":[lv], "description":buildDescription(description)};
-        return [move.name, lv];
+        return [':'+move.name, lv];
     }
     
     if (move.hits > 1) {
@@ -603,7 +603,8 @@ function getDamageResult(attacker, defender, move, field) {
         baseDamage = pokeRound(baseDamage * 0x800 / 0x1000);
         description.weather = field.weather;
     } else if ((field.weather === "Harsh Sunshine" && move.type === "Water") || (field.weather === "Heavy Rain" && move.type === "Fire")) {
-        return {"damage":[0], "description":buildDescription(description)};
+//        return {"damage":[0], "description":buildDescription(description)};
+        return [':'+move.name, 0, 0];
     }
     if (field.isGravity || (attacker.type1 !== "Flying" && attacker.type2 !== "Flying" &&
                 attacker.item !== "Air Balloon" && attacker.ability !== "Levitate")) {
