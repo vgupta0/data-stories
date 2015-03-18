@@ -185,7 +185,8 @@ function getDamageResult(attacker, defender, move, field) {
     };
     
     if (move.bp === 0) {
-        return {"damage":[0], "description":buildDescription(description)};
+        // return {"damage":[0], "description":buildDescription(description)};
+        return [':'+move.name, 0, 0];
     }
     
     var defAbility = defender.ability;
@@ -236,7 +237,8 @@ function getDamageResult(attacker, defender, move, field) {
     var typeEffectiveness = typeEffect1 * typeEffect2;
     
     if (typeEffectiveness === 0) {
-        return {"damage":[0], "description":buildDescription(description)};
+        // return {"damage":[0], "description":buildDescription(description)};
+        return [move.name, 0, 0]
     }
     if ((defAbility === "Wonder Guard" && typeEffectiveness <= 1) ||
             (move.type === "Grass" && defAbility === "Sap Sipper") ||
@@ -247,11 +249,13 @@ function getDamageResult(attacker, defender, move, field) {
             (move.isBullet && defAbility === "Bulletproof") ||
             (move.isSound && defAbility === "Soundproof")) {
         description.defenderAbility = defAbility;
-        return {"damage":[0], "description":buildDescription(description)};
+        // return {"damage":[0], "description":buildDescription(description)};
+        return [move.name, 0, 0]
     }
     if (move.type === "Ground" && !field.isGravity && defender.item === "Air Balloon") {
         description.defenderItem = defender.item;
-        return {"damage":[0], "description":buildDescription(description)};
+        // return {"damage":[0], "description":buildDescription(description)};
+        return [move.name, 0, 0]
     }
     
     description.HPEVs = defender.HPEVs + " HP";
@@ -261,7 +265,8 @@ function getDamageResult(attacker, defender, move, field) {
         if (attacker.ability === "Parental Bond") {
             lv *= 2;
         }
-        return {"damage":[lv], "description":buildDescription(description)};
+        // return {"damage":[lv], "description":buildDescription(description)};
+        return [move.name, lv];
     }
     
     if (move.hits > 1) {

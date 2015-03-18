@@ -1,6 +1,7 @@
 (ns pokemon.core
- (:require [pokemon.constants :as pkc])
- (:require [pokemon.damage :as pkd])
+  (:require [pokemon.constants :as pkc])
+  (:require [pokemon.damage :as pkd])
+  (:require [clojure.java.shell :as shell :only [sh]])
   (:gen-class))
 
 ;; ---------------------------- JSON Conversions ------------------------------
@@ -115,18 +116,17 @@
 ;;            [cur-hp status
 ;;             [volatile-status volatile-status?]
 ;;             [atkboost defboost spaboost spdboost speboost accboost evaboost]]]
-[:Latios ["Life Orb" :Levitate :Timid [0 0 0 252 4 252]] [:Psyshock :Draco-Meteor :Roost :Defog] [0.72 :Burned [:confused :leech-seed] [0 0 0 0 0 0 0]]]
+
+(def pksets
+  (with-open [rdr (clojure.java.io/reader "resources/ou_sets.clj")]
+    (doall (line-seq rdr))))
+
+(def testpk ((juxt second #(nth % 3) #(nth % 4)) (read-string (first pksets))))
 
 (defn -main [& args]
-  (println (str
-            "'"
-            (simple-json
-             (apply pkmnmap
-                    [:Latios
-                     ["Life Orb" :Levitate :Timid [0 0 0 252 4 252]]
-                     [:Psyshock :Draco-Meteor :Roost :Defog]
-                     [0.72 :Burned [:confused :leech-seed] [0 0 1 1 0 0 0]]]))
-            "'")))
+  (println (:out (shell/sh "js" "../damage.js"
+            (simple-json (apply pkmnmap testpk)))))
+  (shutdown-agents))
 
 
 
