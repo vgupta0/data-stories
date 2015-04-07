@@ -2,6 +2,58 @@ var typeChart = {"Normal":{"category":"Physical","Normal":1,"Grass":1,"Fire":1,"
 var AT= "at", DF = "df", SA = "sa", SD = "sd", SP = "sp";
 var gen = 6;
 var NATURES = {"Adamant":["at","sa"],"Bashful":["",""],"Bold":["df","at"],"Brave":["at","sp"],"Calm":["sd","at"],"Careful":["sd","sa"],"Docile":["",""],"Gentle":["sd","df"],"Hardy":["",""],"Hasty":["sp","df"],"Impish":["df","sa"],"Jolly":["sp","sa"],"Lax":["df","sd"],"Lonely":["at","df"],"Mild":["sa","df"],"Modest":["sa","at"],"Naive":["sp","sd"],"Naughty":["at","sd"],"Quiet":["sa","sp"],"Quirky":["",""],"Rash":["sa","sd"],"Relaxed":["df","sp"],"Sassy":["sd","sp"],"Serious":["",""],"Timid":["sp","at"]};
+function getNaturalGift(item) {
+    var gift = {
+        'Apicot Berry' : {'t':'Ground','p':100},
+        'Babiri Berry' : {'t':'Steel','p':80},
+        'Belue Berry' : {'t':'Electric','p':100},
+        'Charti Berry' : {'t':'Rock','p':80},
+        'Chesto Berry' : {'t':'Water','p':80},
+        'Chilan Berry' : {'t':'Normal','p':80},
+        'Chople Berry' : {'t':'Fighting','p':80},
+        'Coba Berry' : {'t':'Flying','p':80},
+        'Colbur Berry' : {'t':'Dark','p':80},
+        'Custap Berry' : {'t':'Ghost','p':100},
+        'Durin Berry' : {'t':'Water','p':100},
+        'Enigma Berry' : {'t':'Bug','p':100},
+        'Ganlon Berry' : {'t':'Ice','p':100},
+        'Haban Berry' : {'t':'Dragon','p':80},
+        'Jaboca Berry' : {'t':'Dragon','p':100},
+        'Kasib Berry' : {'t':'Ghost','p':80},
+        'Kebia Berry' : {'t':'Poison','p':80},
+        'Kee Berry' : {'t':'Fairy','p':100},
+        'Lansat Berry' : {'t':'Flying','p':100},
+        'Leppa Berry' : {'t':'Fighting','p':80},
+        'Liechi Berry' : {'t':'Grass','p':100},
+        'Lum Berry' : {'t':'Flying','p':80},
+        'Maranga Berry' : {'t':'Dark','p':100},
+        'Micle Berry' : {'t':'Rock','p':100},
+        'Occa Berry' : {'t':'Fire','p':80},
+        'Oran Berry' : {'t':'Poison','p':80},
+        'Passho Berry' : {'t':'Water','p':80},
+        'Payapa Berry' : {'t':'Psychic','p':80},
+        'Petaya Berry' : {'t':'Poison','p':100},
+        'Rawst Berry' : {'t':'Grass','p':80},
+        'Rindo Berry' : {'t':'Grass','p':80},
+        'Roseli Berry' : {'t':'Fairy','p':80},
+        'Rowap Berry' : {'t':'Dark','p':100},
+        'Salac Berry' : {'t':'Fighting','p':100},
+        'Shuca Berry' : {'t':'Ground','p':80},
+        'Sitrus Berry' : {'t':'Psychic','p':80},
+        'Starf Berry' : {'t':'Psychic','p':100},
+        'Tanga Berry' : {'t':'Bug','p':80},
+        'Wacan Berry' : {'t':'Electric','p':80},
+        'Watmel Berry' : {'t':'Fire','p':100},
+        'Yache Berry' : {'t':'Ice','p':80}
+    }[item];
+    if (gift) {
+        if (gen < 6) {
+            gift.p -= 20;
+        }
+        return gift;
+    }
+    return {'t':'Normal','p':1};
+}
 
 function getBerryResistType(berry) {
     switch (berry) {
@@ -115,19 +167,19 @@ function getItemBoostType(item) {
     }
 }
 
-function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
-    checkAirLock(p1, field);
-    checkAirLock(p2, field);
-    checkForecast(p1, field.weather);
-    checkForecast(p2, field.weather);
+function CALCULATE_ALL_MOVES_BW(p1, p2, field1, field2) {
+    checkAirLock(p1, field1);
+    checkAirLock(p2, field2);
+    checkForecast(p1, field1.weather);
+    checkForecast(p2, field2.weather);
     checkKlutz(p1);
     checkKlutz(p2);
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
-    p1.stats[SP] = getFinalSpeed(p1, field.weather);
+    p1.stats[SP] = getFinalSpeed(p1, field1.weather);
     p2.stats[DF] = getModifiedStat(p2.rawStats[DF], p2.boosts[DF]);
     p2.stats[SD] = getModifiedStat(p2.rawStats[SD], p2.boosts[SD]);
-    p2.stats[SP] = getFinalSpeed(p2, field.weather);
+    p2.stats[SP] = getFinalSpeed(p2, field2.weather);
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
     checkDownload(p1, p2);
@@ -136,14 +188,13 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     p1.stats[SA] = getModifiedStat(p1.rawStats[SA], p1.boosts[SA]);
     p2.stats[AT] = getModifiedStat(p2.rawStats[AT], p2.boosts[AT]);
     p2.stats[SA] = getModifiedStat(p2.rawStats[SA], p2.boosts[SA]);
-    var side1 = field;
-    var side2 = field;
+    var side1 = field1;
+    var side2 = field2;
     checkInfiltrator(p1, side1);
     checkInfiltrator(p2, side2);
     var results = [[],[]];
     for (var i = 0; i < p1.moves.length; i++) {
         results[0][i] = getDamageResult(p1, p2, p1.moves[i], side1);
-        results[1][i] = getDamageResult(p2, p1, p2.moves[i], side2);
     }
     for (var i = 0; i < p2.moves.length; i++) {
         results[1][i] = getDamageResult(p2, p1, p2.moves[i], side2);
@@ -186,7 +237,7 @@ function getDamageResult(attacker, defender, move, field) {
     
     if (move.bp === 0) {
         // return {"damage":[0], "description":buildDescription(description)};
-        return [':'+move.name, 0, 0];
+        return [move.name, 0, 0, attacker.stats[SP]];
     }
     
     var defAbility = defender.ability;
@@ -238,7 +289,7 @@ function getDamageResult(attacker, defender, move, field) {
     
     if (typeEffectiveness === 0) {
         // return {"damage":[0], "description":buildDescription(description)};
-        return [':'+move.name, 0, 0]
+        return [move.name, 0, 0, attacker.stats[SP]]
     }
     if ((defAbility === "Wonder Guard" && typeEffectiveness <= 1) ||
             (move.type === "Grass" && defAbility === "Sap Sipper") ||
@@ -250,12 +301,12 @@ function getDamageResult(attacker, defender, move, field) {
             (move.isSound && defAbility === "Soundproof")) {
         description.defenderAbility = defAbility;
         // return {"damage":[0], "description":buildDescription(description)};
-        return [':'+move.name, 0, 0]
+        return [move.name, 0, 0, attacker.stats[SP]]
     }
     if (move.type === "Ground" && !field.isGravity && defender.item === "Air Balloon") {
         description.defenderItem = defender.item;
         // return {"damage":[0], "description":buildDescription(description)};
-        return [':'+move.name, 0, 0]
+        return [move.name, 0, 0, attacker.stats[SP]]
     }
     
     description.HPEVs = defender.HPEVs + " HP";
@@ -266,7 +317,7 @@ function getDamageResult(attacker, defender, move, field) {
             lv *= 2;
         }
         // return {"damage":[lv], "description":buildDescription(description)};
-        return [':'+move.name, lv];
+        return [move.name, lv, lv/defender.curHP, attacker.stats[SP]];
     }
     
     if (move.hits > 1) {
@@ -604,7 +655,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.weather = field.weather;
     } else if ((field.weather === "Harsh Sunshine" && move.type === "Water") || (field.weather === "Heavy Rain" && move.type === "Fire")) {
 //        return {"damage":[0], "description":buildDescription(description)};
-        return [':'+move.name, 0, 0];
+        return [move.name, 0, 0, attacker.stats[SP]];
     }
     if (field.isGravity || (attacker.type1 !== "Flying" && attacker.type2 !== "Flying" &&
                 attacker.item !== "Air Balloon" && attacker.ability !== "Levitate")) {
@@ -701,7 +752,7 @@ function getDamageResult(attacker, defender, move, field) {
         }
     }
 //    return {"damage":damage, "description":buildDescription(description)};
-    return [':'+move.name, damage[damage.length-1], damage[damage.length-1]/defender.maxHP]
+    return [move.name, damage[damage.length-1], damage[damage.length-1]/defender.curHP, attacker.stats[SP]]
 }
 
 function buildDescription(description) {
@@ -911,8 +962,8 @@ field = {
   "isHelpingHand": false
 }
 
-var damages = CALCULATE_ALL_MOVES_BW(pokemon1, pokemon2, field);
-print(JSON.stringify(damages).replace(/"/g, ''));
+var damages = CALCULATE_ALL_MOVES_BW(pokemon1, pokemon2, field, field);
+print(JSON.stringify(damages));
 
 
 

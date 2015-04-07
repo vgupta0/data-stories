@@ -126,6 +126,11 @@ div#ng-view .pure-g div {
   text-align:center;
 }
 
+div#ng-view table  {
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 /* about page */
 
@@ -186,7 +191,6 @@ div#ng-view .pure-g div {
   display: inline-block;
   margin-right: 0.5em;
 }
-
 
 
 

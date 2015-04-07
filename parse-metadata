@@ -7,7 +7,7 @@ function posts_data {
   do
     fp=${f#\.\/}
     p=${fp/posts\/}
-    echo -e "{""$(sed -n -e '/---/,/---/ p' $f | sed '1d; $d' | \
+    echo -e "{""$(sed -n '1,/---/p' $f | sed '1d; $d' | \
             sed -e 's/\(.*\): \(.*\)/"\1": \2,/g')" \
             "\n\"url\": \"/post/${p%\.*}\"},"
   done } | sed '$s/,//g'

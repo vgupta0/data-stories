@@ -8,6 +8,7 @@ do
 done
 
 # copy all the images
+
 for f in $(find . -maxdepth 2 -type d -name 'img')
 do
   cp $f/* web/static/img/
