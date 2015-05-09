@@ -8,6 +8,10 @@
 	src: url('../fonts/pier.otf') format('opentype');
 }
 
+[go-click]:hover,
+[go-click]:focus {
+  cursor: pointer;
+}
 
 #data-stories-menu.pure-menu {
   background-color: rgb(61, 79, 93);
@@ -17,19 +21,22 @@
 
 h1.brand-title {
   padding-bottom: 7px;
-}
-
-[go-click]:hover,
-[go-click]:focus {
-  cursor: pointer;
+  font-family: Pier, Open Sans, sans-serif;
+  font-size: 37.5px;
 }
 
 h2.brand-tagline {
-  color: #82edfe;
+  color: #82deff;
+  font-family: Aaargh,sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  padding: 5px 20px;
 }
 
 .pure-menu li > a {
   color: #52bcc0;
+  font-family: Pier;
+  font-weight: bold;
 }
 
 .content-header h1 {

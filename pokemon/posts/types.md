@@ -1,9 +1,9 @@
 --- 
 title: "Types"
-author: "Vishesh"
+author: "Vishesh Gupta"
 tags: ["pokemon"]
 summary: "In which I investigate the act of rating pokemon types and also look at which types are similar to each other. Then repeat the process with 2-type combinations."
-created: "2015-03-29 00:41:30"
+created: "2015-04-07 17:30:30"
 --- 
 
 ## Types {.post-title}

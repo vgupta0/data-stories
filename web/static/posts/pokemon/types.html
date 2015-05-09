@@ -1,0 +1,2118 @@
+<h2 id="types" class="post-title">Types</h2>
+<p>Pokemon have types. This is an interesting phenomenon since the types determine which kinds of moves get an extra boost (offensive typing) and what types of attacks the pokemon is weak to (defensive typing).</p>
+<p>However, in trying to classify pokemon, types are an interesting hurdle - on one hand they are discrete quantities, but on the other hand, we know that there are some similarities between different types - for example, we know that Ghost type and Dark type attacks are similar in nature.</p>
+<p>So the &quot;type&quot; attribute is actually a complex <em>loosely-ordered</em> axis on which to compare pokemon. The actual interaction between the current 18 types of pokemon are determined by the pokemon type chart:</p>
+<div class="figure">
+<img src="http://img.pokemondb.net/images/typechart.png" alt="pokemon type chart" />
+<p class="caption">pokemon type chart</p>
+</div>
+<p>The first question we can ask is how these types relate to each other offensively and defensively and then how they should be ranked - which types are the best offensively and defensively?</p>
+<p>Let's actually tackle the second question first. There are four possibilities when you use attack type X on pokemon type Y - super effective (o), neutral ( ), not very effective (-), and immune (x). The offensive effectiveness of each type can be expressed as a linear combination of how many types it's good against (super effective) and bad against, and ineffective against. So we generate the counts and then apply the following weights: [2, 1, -2, -2]*[#o,# ,#-,#x] (offensive) and [-1.25, 0, 1, 1.25] defensive. and we get the following tables (left offensive, right defensive).</p>
+<div class="figure">
+<img src="/img/pokemon_rankings_singletype.png" alt="type effectiveness rankings" />
+<p class="caption">type effectiveness rankings</p>
+</div>
+<p>First, some things are obvious - steel is a massively OP defensive type, and grass and bug are massively bad attack types (seriously 7 resistances!?). Of course, this doesn't handle the case of multiple attack types together, which severely changes the landscape - for example, fighting is one of the worst attack types but it actually has 5 types it's SE against, so pairing it with something is probably going to end well. However, no fighting type move is going to be ultra spammable any time soon. Ice is also a horrendously bad defensive type (score of -4 and rock's score is -2.25).</p>
+<p>Also offensively, the only thing interesting is that some types are bad. Aside from those, the scores of the other types are all between 10 (Ice) and 14 (Ghost) (and the lowest is 0, bug and grass).</p>
+<p>Now that we know this, another question we might want to ask is which types are similar offensively and defensively (for example, what's the most similar to grass, so that we can use that type instead of grass to attack something!</p>
+<p>Of course, each of these types is actually QUITE different! &quot;similarity&quot; is a loose term.</p>
+<div class="figure">
+<img src="/img/pokemon_dendrogram_singletype.png" alt="singletype dendrogram" />
+<p class="caption">singletype dendrogram</p>
+</div>
+<p>You can tell by the height of the dendrogram that some types are wierder than others. Ground and Fighting, for example, have the highest bars and therefore took the largest distance to integrate with the others. Defensively, the similarities look like this:</p>
+<div class="figure">
+<img src="/img/pokemon_dendrogram_defense.png" alt="singletype defensive dendrogram" />
+<p class="caption">singletype defensive dendrogram</p>
+</div>
+<p>Now defensively, we can see that Steel is very very different from the other types.</p>
+<p>There is a question of convergence, since this is a game we're playing. For example, Steel is the best defensive type, but it's weak to Ground, which is one of the best offensive types. So maybe we should be weighting the types not just based on the effect but also the score on the opposing side (eg, if steel is only weak to fire/ground/fighting then those types are much more important offensively.). Of course, it can be even more complicated when you consider the availability of certain types of pokemon (so if there's very very few ghost type pokemon, beating them isn't necessary). The best way to compute that would be to use type * usage percentage (% of times you see it in a battle). However, this is a good first step.</p>
+<p>Now, pokemon actually have up to two types, not 1! So we really want to analyze the defensive prowess of each two-type combination. With 2 types, we actually have a few more relations - something can be 4x SE or 1/4x NVE too! So the weights are {-2, -1.5, 0, 1.5, 1.75}. Basically my intuition is that neutral is a zero either way, 4x weakness sucks really bad (so -2) and it sucks much worse than it rocks to have an immunity. 2x weakness seems about equal to a 1/4x NVE type.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Rank</th>
+<th align="left">Type</th>
+<th align="left">4x</th>
+<th align="left">2x</th>
+<th align="left">1x</th>
+<th align="left">1/2x</th>
+<th align="left">1/4x</th>
+<th align="left">0x</th>
+<th align="left">Score</th>
+<th align="left"># of Pkmn with type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">Fairy-Steel</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">10.</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">Flying-Steel</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">9.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">Electric-Steel</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">9</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">8.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">Ghost-Steel</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">2</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">8.75</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">Poison-Steel</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">8.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">Normal-Steel</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">8.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">Bug-Steel</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">7</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">8.25</td>
+<td align="left">7</td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">Dragon-Steel</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">6</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">8.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">Fire-Steel</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">1</td>
+<td align="left">8.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">Steel-Water</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">8.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">11</td>
+<td align="left">Grass-Steel</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">7.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">12</td>
+<td align="left">Dark-Steel</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">7.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">13</td>
+<td align="left">Steel</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="left">10</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">7.25</td>
+<td align="left">4</td>
+</tr>
+<tr class="even">
+<td align="left">14</td>
+<td align="left">Fighting-Steel</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">6.25</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">15</td>
+<td align="left">Ground-Steel</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">6.</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">16</td>
+<td align="left">Ghost-Normal</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">5.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">17</td>
+<td align="left">Psychic-Steel</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">5.25</td>
+<td align="left">4</td>
+</tr>
+<tr class="even">
+<td align="left">18</td>
+<td align="left">Rock-Steel</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">5.25</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">19</td>
+<td align="left">Dark-Ghost</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">13</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">4.75</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">20</td>
+<td align="left">Ice-Steel</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">4.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">21</td>
+<td align="left">Electric-Poison</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">8</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">22</td>
+<td align="left">Dark-Poison</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">12</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">4.25</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">23</td>
+<td align="left">Electric-Ghost</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">4.</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">24</td>
+<td align="left">Electric-Fairy</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">25</td>
+<td align="left">Electric-Flying</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3.75</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">26</td>
+<td align="left">Fairy-Ghost</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">3.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">27</td>
+<td align="left">Fire-Flying</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">3.75</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">28</td>
+<td align="left">Ground-Water</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">12</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3.75</td>
+<td align="left">6</td>
+</tr>
+<tr class="odd">
+<td align="left">29</td>
+<td align="left">Electric-Fire</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">7</td>
+<td align="left">7</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">3.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">30</td>
+<td align="left">Fire-Ghost</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">31</td>
+<td align="left">Ghost-Water</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">3.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">32</td>
+<td align="left">Poison-Water</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">7</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">33</td>
+<td align="left">Fairy-Fire</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">3.25</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">34</td>
+<td align="left">Fairy-Poison</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">9</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">3.25</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">35</td>
+<td align="left">Fairy-Water</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">8</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">36</td>
+<td align="left">Fire-Ground</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3.25</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">37</td>
+<td align="left">Flying-Water</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3.25</td>
+<td align="left">4</td>
+</tr>
+<tr class="even">
+<td align="left">38</td>
+<td align="left">Fire-Poison</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">3.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">39</td>
+<td align="left">Flying-Ground</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">11</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">3.</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">40</td>
+<td align="left">Dragon-Fairy</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">2.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">41</td>
+<td align="left">Normal-Poison</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">11</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">2.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">42</td>
+<td align="left">Electric-Water</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">11</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">2.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">43</td>
+<td align="left">Fairy-Normal</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">2.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">44</td>
+<td align="left">Ghost-Poison</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">2.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">45</td>
+<td align="left">Ghost</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">2.5</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">46</td>
+<td align="left">Flying-Poison</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">2.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">47</td>
+<td align="left">Dragon-Ghost</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">2.</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">48</td>
+<td align="left">Fire-Water</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">2.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">49</td>
+<td align="left">Poison</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">11</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">2.</td>
+<td align="left">6</td>
+</tr>
+<tr class="even">
+<td align="left">50</td>
+<td align="left">Dark-Fire</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">1.75</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">51</td>
+<td align="left">Electric-Normal</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">1.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">52</td>
+<td align="left">Fire-Normal</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">1.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">53</td>
+<td align="left">Fairy</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">1.75</td>
+<td align="left">7</td>
+</tr>
+<tr class="even">
+<td align="left">54</td>
+<td align="left">Bug-Fire</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">1.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">55</td>
+<td align="left">Dark-Fairy</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">1.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">56</td>
+<td align="left">Dragon-Fire</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">57</td>
+<td align="left">Dragon-Poison</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">6</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">1.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">58</td>
+<td align="left">Fairy-Ground</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">1.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">59</td>
+<td align="left">Fighting-Poison</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">1.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">60</td>
+<td align="left">Ghost-Psychic</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">1.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">61</td>
+<td align="left">Electric</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">14</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.5</td>
+<td align="left">14</td>
+</tr>
+<tr class="even">
+<td align="left">62</td>
+<td align="left">Fire</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">9</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.5</td>
+<td align="left">11</td>
+</tr>
+<tr class="odd">
+<td align="left">63</td>
+<td align="left">Flying-Ghost</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">1.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">64</td>
+<td align="left">Ghost-Ground</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">1.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">65</td>
+<td align="left">Ground-Poison</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1.25</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">66</td>
+<td align="left">Normal-Water</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">1.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">67</td>
+<td align="left">Bug-Electric</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">68</td>
+<td align="left">Dragon-Water</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">13</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1.</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">69</td>
+<td align="left">Fairy-Flying</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">1.</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">70</td>
+<td align="left">Fighting-Ghost</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">1.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">71</td>
+<td align="left">Flying-Normal</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">1.</td>
+<td align="left">11</td>
+</tr>
+<tr class="even">
+<td align="left">72</td>
+<td align="left">Water</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.</td>
+<td align="left">26</td>
+</tr>
+<tr class="odd">
+<td align="left">73</td>
+<td align="left">Dark-Electric</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">74</td>
+<td align="left">Dragon-Flying</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">0.75</td>
+<td align="left">7</td>
+</tr>
+<tr class="odd">
+<td align="left">75</td>
+<td align="left">Bug-Water</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">76</td>
+<td align="left">Dark-Flying</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">0.5</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">77</td>
+<td align="left">Dragon-Electric</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">78</td>
+<td align="left">Electric-Fighting</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">79</td>
+<td align="left">Fighting-Fire</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0.5</td>
+<td align="left">4</td>
+</tr>
+<tr class="even">
+<td align="left">80</td>
+<td align="left">Fire-Rock</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">7</td>
+<td align="left">6</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">81</td>
+<td align="left">Dark-Fighting</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">11</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">0.25</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">82</td>
+<td align="left">Dark-Water</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0.25</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">83</td>
+<td align="left">Fairy-Rock</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0.25</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">84</td>
+<td align="left">Flying</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0.25</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">85</td>
+<td align="left">Normal</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">16</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0.25</td>
+<td align="left">35</td>
+</tr>
+<tr class="even">
+<td align="left">86</td>
+<td align="left">Bug-Ghost</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">0.</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">87</td>
+<td align="left">Bug-Poison</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0.</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">88</td>
+<td align="left">Fire-Grass</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">89</td>
+<td align="left">Ghost-Grass</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">0.</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">90</td>
+<td align="left">Poison-Psychic</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">91</td>
+<td align="left">Poison-Rock</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0.</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">92</td>
+<td align="left">Bug-Fairy</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">93</td>
+<td align="left">Dark-Dragon</td>
+<td align="left">1</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">94</td>
+<td align="left">Dragon-Ground</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">11</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">4</td>
+</tr>
+<tr class="odd">
+<td align="left">95</td>
+<td align="left">Dragon-Normal</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">96</td>
+<td align="left">Electric-Ground</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">97</td>
+<td align="left">Fairy-Grass</td>
+<td align="left">1</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">98</td>
+<td align="left">Fairy-Psychic</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">99</td>
+<td align="left">Normal-Psychic</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">14</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">100</td>
+<td align="left">Dark-Normal</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">-0.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">101</td>
+<td align="left">Fighting-Water</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-0.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">102</td>
+<td align="left">Fire-Psychic</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-0.5</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">103</td>
+<td align="left">Grass-Poison</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-0.5</td>
+<td align="left">6</td>
+</tr>
+<tr class="even">
+<td align="left">104</td>
+<td align="left">Ground-Normal</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">10</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">-0.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">105</td>
+<td align="left">Dragon</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-0.5</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">106</td>
+<td align="left">Bug-Normal</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">107</td>
+<td align="left">Fairy-Fighting</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">-0.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">108</td>
+<td align="left">Flying-Rock</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.75</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">109</td>
+<td align="left">Dark</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.75</td>
+<td align="left">7</td>
+</tr>
+<tr class="even">
+<td align="left">110</td>
+<td align="left">Ground</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-0.75</td>
+<td align="left">6</td>
+</tr>
+<tr class="odd">
+<td align="left">111</td>
+<td align="left">Dragon-Fighting</td>
+<td align="left">1</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-1.</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">112</td>
+<td align="left">Electric-Psychic</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-1.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">113</td>
+<td align="left">Electric-Rock</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-1.</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">114</td>
+<td align="left">Ghost-Ice</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">-1.</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">115</td>
+<td align="left">Ghost-Rock</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">-1.</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">116</td>
+<td align="left">Grass-Water</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-1.</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">117</td>
+<td align="left">Rock-Water</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-1.</td>
+<td align="left">6</td>
+</tr>
+<tr class="even">
+<td align="left">118</td>
+<td align="left">Bug-Ground</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">10</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-1.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">119</td>
+<td align="left">Fighting-Flying</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-1.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">120</td>
+<td align="left">Fighting-Normal</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">10</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-1.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">121</td>
+<td align="left">Bug-Fighting</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-1.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">122</td>
+<td align="left">Dark-Ground</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">-1.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">123</td>
+<td align="left">Electric-Grass</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">10</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-1.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">124</td>
+<td align="left">Psychic-Water</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-1.5</td>
+<td align="left">4</td>
+</tr>
+<tr class="odd">
+<td align="left">125</td>
+<td align="left">Bug</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-1.5</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">126</td>
+<td align="left">Fighting</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-1.5</td>
+<td align="left">10</td>
+</tr>
+<tr class="odd">
+<td align="left">127</td>
+<td align="left">Bug-Dark</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-1.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">128</td>
+<td align="left">Dark-Psychic</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">15</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-1.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">129</td>
+<td align="left">Fairy-Ice</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-1.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">130</td>
+<td align="left">Bug-Dragon</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-2.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">131</td>
+<td align="left">Fire-Ice</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">10</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-2.</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">132</td>
+<td align="left">Bug-Flying</td>
+<td align="left">1</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">-2.25</td>
+<td align="left">11</td>
+</tr>
+<tr class="odd">
+<td align="left">133</td>
+<td align="left">Flying-Psychic</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">9</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-2.25</td>
+<td align="left">4</td>
+</tr>
+<tr class="even">
+<td align="left">134</td>
+<td align="left">Normal-Rock</td>
+<td align="left">1</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-2.25</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">135</td>
+<td align="left">Bug-Rock</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">13</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-2.5</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">136</td>
+<td align="left">Fighting-Psychic</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">13</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-2.5</td>
+<td align="left">6</td>
+</tr>
+<tr class="odd">
+<td align="left">137</td>
+<td align="left">Ice-Poison</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-2.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">138</td>
+<td align="left">Psychic</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">13</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-2.5</td>
+<td align="left">25</td>
+</tr>
+<tr class="odd">
+<td align="left">139</td>
+<td align="left">Fighting-Ground</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-2.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">140</td>
+<td align="left">Flying-Grass</td>
+<td align="left">1</td>
+<td align="left">4</td>
+<td align="left">9</td>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-2.75</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">141</td>
+<td align="left">Flying-Ice</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-2.75</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">142</td>
+<td align="left">Grass-Ground</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">11</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-2.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">143</td>
+<td align="left">Ground-Rock</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-2.75</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">144</td>
+<td align="left">Dragon-Psychic</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-3.</td>
+<td align="left">4</td>
+</tr>
+<tr class="odd">
+<td align="left">145</td>
+<td align="left">Electric-Ice</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">11</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-3.</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">146</td>
+<td align="left">Dark-Grass</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-3.25</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">147</td>
+<td align="left">Dark-Rock</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-3.25</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">148</td>
+<td align="left">Grass-Normal</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-3.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">149</td>
+<td align="left">Ground-Psychic</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-3.25</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">150</td>
+<td align="left">Dragon-Rock</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-3.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">151</td>
+<td align="left">Fighting-Grass</td>
+<td align="left">1</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-3.5</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">152</td>
+<td align="left">Ice-Water</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">12</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-3.5</td>
+<td align="left">4</td>
+</tr>
+<tr class="odd">
+<td align="left">153</td>
+<td align="left">Grass</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-3.5</td>
+<td align="left">14</td>
+</tr>
+<tr class="even">
+<td align="left">154</td>
+<td align="left">Rock</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-3.5</td>
+<td align="left">4</td>
+</tr>
+<tr class="odd">
+<td align="left">155</td>
+<td align="left">Ice-Normal</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">12</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-3.75</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">156</td>
+<td align="left">Bug-Grass</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">-4.</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">157</td>
+<td align="left">Bug-Ice</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">11</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-4.</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">158</td>
+<td align="left">Dragon-Grass</td>
+<td align="left">1</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">-4.</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">159</td>
+<td align="left">Grass-Rock</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-4.</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">160</td>
+<td align="left">Bug-Psychic</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">8</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">-4.5</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">161</td>
+<td align="left">Dragon-Ice</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">10</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-4.5</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">162</td>
+<td align="left">Fighting-Rock</td>
+<td align="left">0</td>
+<td align="left">7</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-4.5</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">163</td>
+<td align="left">Dark-Ice</td>
+<td align="left">1</td>
+<td align="left">5</td>
+<td align="left">8</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-4.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">164</td>
+<td align="left">Ground-Ice</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">11</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">-4.75</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">165</td>
+<td align="left">Grass-Psychic</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-5.</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">166</td>
+<td align="left">Ice</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">13</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-5.</td>
+<td align="left">8</td>
+</tr>
+<tr class="odd">
+<td align="left">167</td>
+<td align="left">Psychic-Rock</td>
+<td align="left">0</td>
+<td align="left">7</td>
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-5.5</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">168</td>
+<td align="left">Fighting-Ice</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">9</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-6.</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">169</td>
+<td align="left">Ice-Rock</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="left">8</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-6.</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">170</td>
+<td align="left">Grass-Ice</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-7.</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">171</td>
+<td align="left">Ice-Psychic</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">10</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">-7.</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<p>This is a lot of information - a better way to think about it is to look at the scores plotted. First, note - the mean is 0.51, median is zero, max is 10, min is -7, and STDEV is 3.53728.</p>
+<div class="figure">
+<img src="/img/pokemon_rankbyscore.png" alt="rank by score" />
+<p class="caption">rank by score</p>
+</div>
+<p>Here we can see that the first 20ish types are all steel combos which have insane defensive potential. Then there's a nice sort of gradual linear curve down to the 150th rank, after which things get bad very quickly.</p>
+<p>That's for the ranking - we have 171 types and we can also ask how they look similarity wise. First, here's an MST of what's going on:</p>
+<div class="figure">
+<img src="/img/pokemon_mst_doubletype.png" alt="2 type minimum spanning tree" />
+<p class="caption">2 type minimum spanning tree</p>
+</div>
+<p>It looks like for the most part that a majority of the types form clusters around themselves, and there are a select very few types that exist in between those spaces. It makes a lot of sense then, that when we do an agglomeration and split it into 30 clusters, we get something like this:</p>
+<div class="figure">
+<img src="/img/pokemon_groups_doubletype.png" alt="2 type clusters" />
+<p class="caption">2 type clusters</p>
+</div>
+<p>Fairy/Steel/Grass/Dragon are pretty stuborn types and they really cluster well. The others are more mixed.</p>
+<p>That's all for now - the next thing to try is categorizing pokemon by their base stats!</p>

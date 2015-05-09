@@ -53,6 +53,18 @@ Posts are written using markdown and most of the analysis is done with mathemati
 Either use `foreman run web` (from heroku) or `python server.py` (both from within the web directory).
 
 
+# TODO
+
+* majors: post on the idea of major dominance (bar charts), and the mse boundary
+	- It's about $$, sadly.
+* majors: post on the arbitrary tech coefficients
+* majors: post on the techiness based major size consideration (line graph, listplot of norms), tech score over time vs average/median tech score
+* majors: post on the "other end" - developing the opposite of STEM (or not)!
+* pokemon: post on categorizing pokemon by base stats 
+* pokemon: post on the 1v1 damage only simulation, future directions (defensive win conditions, and status considerations).
+* add the vizualizations of the crisistextline 
+* find new data sets!
+
 
 
 
