@@ -12,14 +12,14 @@
 <p>My mission, should I accept it (and I did) is to make new groupings and fix the color imbalance - we need more greens and blues in this house.</p>
 <h3 id="scraping">Scraping</h3>
 <p>This was a pretty easy scrape - one jquery call like</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="co">// inject jquery onto the page</span>
-<span class="kw">var</span> element1 = <span class="ot">document</span>.<span class="fu">createElement</span>(<span class="st">&quot;script&quot;</span>);
-<span class="ot">element1</span>.<span class="fu">src</span> = <span class="st">&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;</span>;
-<span class="ot">element1</span>.<span class="fu">type</span>=<span class="st">&quot;text/javascript&quot;</span>;
-<span class="ot">document</span>.<span class="fu">getElementsByTagName</span>(<span class="st">&quot;head&quot;</span>)[<span class="dv">0</span>].<span class="fu">appendChild</span>(element1);
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="co">// inject jquery onto the page</span>
+<span class="kw">var</span> element1 <span class="op">=</span> <span class="va">document</span>.<span class="at">createElement</span>(<span class="st">&quot;script&quot;</span>)<span class="op">;</span>
+<span class="va">element1</span>.<span class="at">src</span> <span class="op">=</span> <span class="st">&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;</span><span class="op">;</span>
+<span class="va">element1</span>.<span class="at">type</span><span class="op">=</span><span class="st">&quot;text/javascript&quot;</span><span class="op">;</span>
+<span class="va">document</span>.<span class="at">getElementsByTagName</span>(<span class="st">&quot;head&quot;</span>)[<span class="dv">0</span>].<span class="at">appendChild</span>(element1)<span class="op">;</span>
 
 <span class="co">// now scrape the boxes</span>
-<span class="ot">JSON</span>.<span class="fu">stringify</span>(
-  <span class="ot">$</span>.<span class="fu">map</span>(<span class="fu">$</span>(<span class="st">&#39;figure.colors &gt; div&#39;</span>),
-    <span class="kw">function</span>(d){ <span class="kw">return</span> <span class="ot">d</span>.<span class="ot">innerText</span>.<span class="fu">split</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>).<span class="fu">slice</span>(<span class="dv">0</span>,<span class="dv">2</span>); }))</code></pre>
+<span class="va">JSON</span>.<span class="at">stringify</span>(
+  <span class="va">$</span>.<span class="at">map</span>(<span class="at">$</span>(<span class="st">&#39;figure.colors &gt; div&#39;</span>)<span class="op">,</span>
+    <span class="kw">function</span>(d)<span class="op">{</span> <span class="cf">return</span> <span class="va">d</span>.<span class="va">innerText</span>.<span class="at">split</span>(<span class="st">&#39;</span><span class="sc">\n</span><span class="st">&#39;</span>).<span class="at">slice</span>(<span class="dv">0</span><span class="op">,</span><span class="dv">2</span>)<span class="op">;</span> <span class="op">}</span>))</code></pre></div>
 <p>plus a little formatting (partitioned into groups of [name, hexcode] and grouped into their original groups) and the scraping part of this exercise is done.</p>

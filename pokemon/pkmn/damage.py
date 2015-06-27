@@ -66,9 +66,13 @@ def movemap(move):
           "dealsPhysicalDamage": physdamage, "isCrit": False, "hits": 1}
 
 def namestats(stats):
+  ''' Just names the stats by taking a list of 6 numbers [1,2,3,4,5,6]
+      and outputting [['hp', 1], ['at', 2]...] '''
   return dict(map(lambda k,v: (k,v), ['hp','at','df','sa','sd','sp'],stats))
 
 def pkmnmap(pkname, pkset, moves, state = [1, "Healthy", [], [0,0,0,0,0,0,0]]):
+  ''' Takes an internal pkmn representation and converts it to dictionary
+      so that it can be converted to json. '''
   types,basestats,weight = pkc.pkmn[pkname]
   item,ability,nature,evs = pkset
   curHP,status,volatile_status,boosts = state

@@ -53,6 +53,12 @@
   "started": "21 January 2015 14:38:00",
   "description" : "Which majors are popular at Stanford by gender?",
   "posts": [
+{"title": "Axes Of Humanities",
+"author": "Vishesh",
+"tags": ["majors"],
+"summary": "",
+"created": "2015-05-12 23:28:30", 
+"url": "/post/majors/axes-of-humanities"},
 {"title": "Fuzzy Techie Divide",
 "author": "Vishesh",
 "tags": ["majors"],
@@ -70,7 +76,13 @@
 "tags": ["majors"],
 "summary": "From Stanford's registrar's office - my first mini data project. The main interesting things here would be to look at the changes in major selection over time, and the differences in majors by gender. I'm mostly interested in the undergrad majors.",
 "created": "2015-01-21 16:35:29", 
-"url": "/post/majors/majors-datasetup"}
+"url": "/post/majors/majors-datasetup"},
+{"title": "Tech Coefficients",
+"author": "Vishesh",
+"tags": ["majors"],
+"summary": "Discussing the rather arbitrary measure I created for evaluating the techiness of the major. There's a better discussion in Fuzzie Techie Divide",
+"created": "2015-05-12 17:37:49", 
+"url": "/post/majors/tech-coefficients"}
   ]
 },
 {

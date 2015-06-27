@@ -11,7 +11,7 @@ created: "2015-03-05 12:13:53"
 
 One of the interesting questions that we can ask is about the fuzzy techie divide at Stanford. There have been a lot of recent articles (here's [one](https://alumni.stanford.edu/get/page/magazine/article/?article_id=57728)) about the fact that fuzziness is being taken over by techniess. We can investigate this if we can come up with a way to describe what exactly is techie versus fuzzy.
 
-The gut instinct solution is just to assing a number (negative for fuzzy, positive for techie) and then average over gender over time and see what's up, but I think that really doesn't help much since it's hard to know how techie some of the in between majors are (STS, HumBio/Psych, SymSys etc).
+The gut instinct solution is just to assign a number (negative for fuzzy, positive for techie) and then average over gender over time and see what's up, but I think that really doesn't help much since it's hard to know how techie some of the in between majors are (STS, HumBio/Psych, SymSys etc).
 
 Majors are effectively made up of classes, so if we could somehow classify each class as being techie or fuzzy, we could then determine how techie/fuzzy the majors are and then average over the students. However, that requires a gut reaction for what the different classes' techie/fuzziness are.
 

@@ -99,6 +99,7 @@
 ["OU", "Landorus", "Calm Mind", ["Life Orb", "Sheer Force", "Timid", [0, 0, 4, 252, 0, 252]], ["Calm Mind", "Earth Power", "Psychic", "Focus Blast"]]
 ["OU", "Landorus", "Rock Polish", ["Life Orb", "Sheer Force", "Rash", [0, 8, 0, 252, 0, 248]], ["Rock Polish", "Earth Power", "Psychic", "Knock Off"]]
 ["OU", "Landorus", "Special Attacker", ["Life Orb", "Sheer Force", "Naive", [0, 0, 4, 252, 0, 252]], ["Earth Power", "Psychic", "Focus Blast", "Knock Off"]]
+["ORAS", "Landorus", "ORAS Special Attacker", ["Life Orb", "Sheer Force", "Naive", [0, 0, 4, 252, 0, 252]], ["Earth Power", "Sludge Wave", "Focus Blast", "Hidden Power Ice"]]
 ["OU", "Landorus-T", "Choice Scarf", ["Choice Scarf", "Intimidate", "Jolly", [0, 252, 24, 0, 0, 232]], ["Earthquake", "U turn", "Superpower", "Stone Edge"]]
 ["OU", "Landorus-T", "Defensive", ["Leftovers", "Intimidate", "Impish", [252, 0, 240, 0, 8, 8]], ["Stealth Rock", "Earthquake", "U turn", "Stone Edge"]]
 ["OU", "Landorus-T", "Double Dance", ["Leftovers", "Intimidate", "Adamant", [56, 220, 0, 0, 0, 232]], ["Swords Dance", "Rock Polish", "Earthquake", "Stone Edge"]]

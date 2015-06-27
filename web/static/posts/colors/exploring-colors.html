@@ -47,9 +47,9 @@ Ward Linkage Clustering
 <p class="caption">hierarchical color groups</p>
 </div>
 <p>So here are the final groups, arranged by size. Of coure, we're still seeing a couple large groups (tan/yellow and white/light grey) but the beauty of hierarchical clustering is that we can now selectively split the larger groups down into smaller ones. Consider a pair of functions like:</p>
-<pre class="sourceCode mathematica"><code class="sourceCode mathematica">CondClusterSplit[<span class="dt">clist_</span>, <span class="dt">cond_</span>] := 
+<div class="sourceCode"><pre class="sourceCode mathematica"><code class="sourceCode mathematica">CondClusterSplit[<span class="dt">clist_</span>, <span class="dt">cond_</span>] := 
   <span class="fu">Map</span>[<span class="fu">If</span>[<span class="fu">And</span>[Head@# === Cluster, cond@#], ClusterSplit[#, <span class="dv">2</span>], {#}] &amp;, clist];
-SizeSplit[<span class="dt">size_</span>] := <span class="fu">Flatten</span>[#, <span class="dv">1</span>] &amp;@CondClusterSplit[#, #[[<span class="dv">4</span>]] + #[[<span class="dv">5</span>]] &gt; size &amp;] &amp;</code></pre>
+SizeSplit[<span class="dt">size_</span>] := <span class="fu">Flatten</span>[#, <span class="dv">1</span>] &amp;@CondClusterSplit[#, #[[<span class="dv">4</span>]] + #[[<span class="dv">5</span>]] &gt; size &amp;] &amp;</code></pre></div>
 <p>The first one takes a list of clusters and only splits the ones that match cond into two separate groups. SizeSplit is a partial implementation of that function for the condition of having the clusters be larger than some size. so <code>SizeSplit[10]</code> returns a function that when applied to a list of clusters, will split the ones that are larger than some size.</p>
 <p>With this in place, we can now split the larger clusters. I did <code>SizeSplit[10]@SizeSplit[15]&amp;</code> (so two splits) since I wanted groups of less than 10 (of which there are around 20).</p>
 <p>And we get</p>

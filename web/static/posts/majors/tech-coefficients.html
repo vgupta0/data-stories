@@ -1,0 +1,675 @@
+<h2 id="tech-coefficients" class="post-title">Tech Coefficients</h2>
+<p>First, you should read <a href="/#/post/majors/fuzzy-techie-divide">Fuzzy Techie Divide</a> for a look at what a <em>real</em> metric for the techniess of a major would look like. It's really, really intensive, and I'm sure the hours of work spent on some assignment will have lots of strange distributions, and in the end you still have to rely on arbitrary constants for how techie particular kinds of assignments or work is. These arbitrary constants would need to be hopefully a little less arbitrary by applying some framework to them, but in the end, it's just slightly better guesswork.</p>
+<p>So, I thought I'd take a stab at giving each major for Stanford undergrads a techiness score, by evaluating the <strong>presence or absence</strong> of techiness in a major (0-1 scale for each of STEM). This means that there are a lot of majors with a score of 0. I'm not doing an analysis of the polarization of stanford majors, which would require having an opposite metric for the humanities (the 4 axes of a humanities major, anyone?) mostly because I don't really know how to come up with a metric for the humanities.</p>
+<p>Here is a table of the actual scores, sorted by norm. This way you can scan it and ask &quot;is X major more/less techy than Y major?&quot;.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Major</th>
+<th align="left">S</th>
+<th align="left">T</th>
+<th align="left">E</th>
+<th align="left">M</th>
+<th align="left">Norm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Electrical Engineering</td>
+<td align="left">0.7</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1.86815</td>
+</tr>
+<tr class="even">
+<td align="left">Computer Science</td>
+<td align="left">0.3</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">0.9</td>
+<td align="left">1.70294</td>
+</tr>
+<tr class="odd">
+<td align="left">Civil Engineering</td>
+<td align="left">0.5</td>
+<td align="left">0.8</td>
+<td align="left">1</td>
+<td align="left">0.8</td>
+<td align="left">1.5906</td>
+</tr>
+<tr class="even">
+<td align="left">Chemical Engineering</td>
+<td align="left">0.7</td>
+<td align="left">0.8</td>
+<td align="left">1</td>
+<td align="left">0.6</td>
+<td align="left">1.57797</td>
+</tr>
+<tr class="odd">
+<td align="left">Engineering</td>
+<td align="left">0.5</td>
+<td align="left">0.8</td>
+<td align="left">1</td>
+<td align="left">0.7</td>
+<td align="left">1.54272</td>
+</tr>
+<tr class="even">
+<td align="left">Materials Science and Engineering</td>
+<td align="left">0.8</td>
+<td align="left">0.7</td>
+<td align="left">1</td>
+<td align="left">0.5</td>
+<td align="left">1.54272</td>
+</tr>
+<tr class="odd">
+<td align="left">Mathematical and Computational Science</td>
+<td align="left">0</td>
+<td align="left">0.8</td>
+<td align="left">0.7</td>
+<td align="left">1</td>
+<td align="left">1.45945</td>
+</tr>
+<tr class="even">
+<td align="left">Physics</td>
+<td align="left">1</td>
+<td align="left">0.3</td>
+<td align="left">0.2</td>
+<td align="left">0.9</td>
+<td align="left">1.39284</td>
+</tr>
+<tr class="odd">
+<td align="left">Mechanical Engineering</td>
+<td align="left">0.3</td>
+<td align="left">0.7</td>
+<td align="left">1</td>
+<td align="left">0.6</td>
+<td align="left">1.39284</td>
+</tr>
+<tr class="even">
+<td align="left">Environmental Engineering</td>
+<td align="left">0.7</td>
+<td align="left">0.4</td>
+<td align="left">1</td>
+<td align="left">0.3</td>
+<td align="left">1.31909</td>
+</tr>
+<tr class="odd">
+<td align="left">Environmental Systems Engineering</td>
+<td align="left">0.7</td>
+<td align="left">0.4</td>
+<td align="left">1</td>
+<td align="left">0.3</td>
+<td align="left">1.31909</td>
+</tr>
+<tr class="even">
+<td align="left">Chemistry</td>
+<td align="left">1</td>
+<td align="left">0.4</td>
+<td align="left">0.2</td>
+<td align="left">0.6</td>
+<td align="left">1.249</td>
+</tr>
+<tr class="odd">
+<td align="left">Energy Resources Engineering</td>
+<td align="left">0.3</td>
+<td align="left">0.5</td>
+<td align="left">1</td>
+<td align="left">0.4</td>
+<td align="left">1.22474</td>
+</tr>
+<tr class="even">
+<td align="left">Mathematics</td>
+<td align="left">0</td>
+<td align="left">0.6</td>
+<td align="left">0.2</td>
+<td align="left">1</td>
+<td align="left">1.18322</td>
+</tr>
+<tr class="odd">
+<td align="left">Petroleum Engineering</td>
+<td align="left">0.3</td>
+<td align="left">0.5</td>
+<td align="left">1</td>
+<td align="left">0.2</td>
+<td align="left">1.17473</td>
+</tr>
+<tr class="even">
+<td align="left">Symbolic Systems</td>
+<td align="left">0.3</td>
+<td align="left">0.7</td>
+<td align="left">0.6</td>
+<td align="left">0.6</td>
+<td align="left">1.14018</td>
+</tr>
+<tr class="odd">
+<td align="left">Industrial Engineering</td>
+<td align="left">0.2</td>
+<td align="left">0.3</td>
+<td align="left">1</td>
+<td align="left">0.4</td>
+<td align="left">1.13578</td>
+</tr>
+<tr class="even">
+<td align="left">Earth Systems</td>
+<td align="left">0.8</td>
+<td align="left">0.4</td>
+<td align="left">0.5</td>
+<td align="left">0.3</td>
+<td align="left">1.06771</td>
+</tr>
+<tr class="odd">
+<td align="left">Biological Sciences</td>
+<td align="left">1</td>
+<td align="left">0.3</td>
+<td align="left">0</td>
+<td align="left">0.2</td>
+<td align="left">1.06301</td>
+</tr>
+<tr class="even">
+<td align="left">Biology</td>
+<td align="left">1</td>
+<td align="left">0.3</td>
+<td align="left">0</td>
+<td align="left">0.2</td>
+<td align="left">1.06301</td>
+</tr>
+<tr class="odd">
+<td align="left">Human Biology</td>
+<td align="left">1</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0.3</td>
+<td align="left">1.06301</td>
+</tr>
+<tr class="even">
+<td align="left">Management Science and Engineering</td>
+<td align="left">0.3</td>
+<td align="left">0.6</td>
+<td align="left">0.4</td>
+<td align="left">0.7</td>
+<td align="left">1.04881</td>
+</tr>
+<tr class="odd">
+<td align="left">Statistics</td>
+<td align="left">0</td>
+<td align="left">0.3</td>
+<td align="left">0.1</td>
+<td align="left">1</td>
+<td align="left">1.04881</td>
+</tr>
+<tr class="even">
+<td align="left">Linguistics</td>
+<td align="left">0.4</td>
+<td align="left">0.6</td>
+<td align="left">0.2</td>
+<td align="left">0.6</td>
+<td align="left">0.959166</td>
+</tr>
+<tr class="odd">
+<td align="left">Geophysics</td>
+<td align="left">0.9</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.3</td>
+<td align="left">0.948683</td>
+</tr>
+<tr class="even">
+<td align="left">Geological and Environmental Sciences</td>
+<td align="left">0.7</td>
+<td align="left">0.4</td>
+<td align="left">0.2</td>
+<td align="left">0.3</td>
+<td align="left">0.883176</td>
+</tr>
+<tr class="odd">
+<td align="left">Psychology</td>
+<td align="left">0.8</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+<td align="left">0.830662</td>
+</tr>
+<tr class="even">
+<td align="left">Economics</td>
+<td align="left">0.4</td>
+<td align="left">0.3</td>
+<td align="left">0.2</td>
+<td align="left">0.6</td>
+<td align="left">0.806226</td>
+</tr>
+<tr class="odd">
+<td align="left">Science and Technology and Society</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0.6</td>
+</tr>
+<tr class="even">
+<td align="left">Science, Technology, and Society</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0.6</td>
+</tr>
+<tr class="odd">
+<td align="left">Science Technology and Society</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0.6</td>
+</tr>
+<tr class="even">
+<td align="left">Sociology</td>
+<td align="left">0.5</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0.3</td>
+<td align="left">0.591608</td>
+</tr>
+<tr class="odd">
+<td align="left">Archaeology</td>
+<td align="left">0.2</td>
+<td align="left">0.3</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0.412311</td>
+</tr>
+<tr class="even">
+<td align="left">Anthropological Sciences</td>
+<td align="left">0.4</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.412311</td>
+</tr>
+<tr class="odd">
+<td align="left">Anthropology</td>
+<td align="left">0.4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.4</td>
+</tr>
+<tr class="even">
+<td align="left">Music</td>
+<td align="left">0.3</td>
+<td align="left">0.2</td>
+<td align="left">0.1</td>
+<td align="left">0.1</td>
+<td align="left">0.387298</td>
+</tr>
+<tr class="odd">
+<td align="left">Urban Studies</td>
+<td align="left">0.3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.2</td>
+<td align="left">0.360555</td>
+</tr>
+<tr class="even">
+<td align="left">Cultural and Social Anthropology</td>
+<td align="left">0.3</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.3</td>
+</tr>
+<tr class="odd">
+<td align="left">Communication</td>
+<td align="left">0.1</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.223607</td>
+</tr>
+<tr class="even">
+<td align="left">Comparative Studies in Race and Ethnicity</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.2</td>
+</tr>
+<tr class="odd">
+<td align="left">International Relations</td>
+<td align="left">0.2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.2</td>
+</tr>
+<tr class="even">
+<td align="left">Philosophy</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.2</td>
+<td align="left">0.2</td>
+</tr>
+<tr class="odd">
+<td align="left">African and African American Studies</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="even">
+<td align="left">American Studies</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="odd">
+<td align="left">Art</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="even">
+<td align="left">Asian American Studies</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="odd">
+<td align="left">Chicana and Chicano Studies</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="even">
+<td align="left">Chicana/o Studies</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="odd">
+<td align="left">Drama</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="even">
+<td align="left">East Asian Studies</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="odd">
+<td align="left">History</td>
+<td align="left">0.1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="even">
+<td align="left">Philosophy and Religious Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.1</td>
+<td align="left">0.1</td>
+</tr>
+<tr class="odd">
+<td align="left">Art History</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Art Practice</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Chinese</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Classics</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Comparative Literature</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">English</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">English and French Literature</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">English and German Literatures</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">English and Italian Literature</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">English and Spanish Literature</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Feminist, Gender, and Sexuality Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Feminist Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Film and Media Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">French</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">German Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Humanities</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Iberian &amp; Latin American Cultures</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Individually Designed Major</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">International Policy Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Italian</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Japanese</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Native American Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Political Science</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Public Policy</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Religious Studies</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">Slavic Languages and Literatures</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Spanish</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table>
+<p>I'm sure there are some mistakes here, since I definitely don't know the ins and outs of more than a few of the majors at stanford. A lot of these are just my perceptions. Ok, numbers are boring to look at - let's see how good I did at creating a smooth gradient of techiness:</p>
+<div class="figure">
+<img src="/img/majors_techscoresplot.png" alt="tech scores plot" />
+<p class="caption">tech scores plot</p>
+</div>
+<p>Eh, not bad. There are some definite plateaus here and of course the trailing end is close to zero but I think overall this isn't a bad distribution to run a first pass score calculation on.</p>
+<p>Before I get there though, let's just color a line plot of all the majors by how techie majors are - the red things are non-tech and the blue things are tech.</p>
+<div class="figure">
+<img src="/img/majors_coloredenrollment.png" alt="plot of major enrollment colored by tech coefficient score - left side axis is percentage of declared majors." />
+<p class="caption">plot of major enrollment colored by tech coefficient score - left side axis is percentage of declared majors.</p>
+</div>
+<p>The large blue line that keeps increasing is CS. We can see HumBio (the dominant major before CS took over) was actually slowing down its ascent even at 11% of major enrollment, but CS is ready to push 15% and shows no signs of stopping (well there's a slight lowering of the acceleration in the last couple years, but still very steep upwards curve going on). So this picture makes it seem like CS is really something unique in terms of how fast its growing and how it shows no signs of stopping. There is one caveat here - technical majors might be declaring earlier in recent years than they have in past years (note that if technical majors just declare earlier on principal, then this is a consistent effect and therefore not a cause of the increase in technically declared majors), which could skew these results. It would be much more accurate to look at diplomas handed out, but I couldn't find that.</p>
+<p>Now, the combined tech score that I'm calculating for each year at Stanford is just a weighted average, so (tech score * # of people in major for all majors)/(total # of declared majors). Since it's just a number, for reference I'm also going to calculate the average (mean) tech score (which is ~0.26003) times the number of declared majors to give a sense of how much higher the tech score is than if we had a purely even class distribution (there are problems here - if there are numerically more engineering majors to choose from, then the &quot;mean&quot; is still heavily weighted towards lots of engineers. Stanford's major breakdown is just very even this way and choosing the mean coeff score is pretty representative. The median is 0.1, so that's another option).</p>
+<p>There is one more thing we need to get an idea of how &quot;techie&quot; Stanford is - the maximum far end of technical things. I looked up MIT's enrollment stats (and I don't think MIT is really as technical as it gets, they are actually fairly well rounded) and they loosely have a 675 engineering, 289 science, 34 management, 45 humanities, and 17 architecture breakdown. Now, MIT actually has a large core curriculum (5 math 5 physics 2 chem 1 bio I think?) so I think it's fair to say that for a gross upper end estimate it's okay to use the Engineering, Physics, MS&amp;E, 0, and 0 as the coefficients respectively.</p>
+<p>That gives us <span class="math inline">1/2(675 * 1.54 + 289 * 1.39 + 34 * 1.04) = 738.265</span>. Ok, the problem here is that I forgot to normalize by the number of people in the class - for MIT it's 1060, so the score is 0.696 (the tech coeff for a pretty technical school). The 1/2 comes from normalizing the norms (|{1,1,1,1}| = 2).</p>
+<div class="figure">
+<img src="/img/majors_techscores.png" alt="stanford&#39;s techiness plotted over time - stanford (blue), mean techiness coeff (red), MIT coeff (yellow)" />
+<p class="caption">stanford's techiness plotted over time - stanford (blue), mean techiness coeff (red), MIT coeff (yellow)</p>
+</div>
+<p>As you can see in the plot, Stanford's tech score is actually ~0.5 right now. The total percentage of engineering students is 20% of the class, whereas for MIT it's 65% of the class.</p>
+<p>First, in order to <em>really</em> say anything here, we'd need similar data from a lot of other colleges to know where Stanford actually stands. Is MIT at 2 STDEVs? 3? 10? I can't really tell with this data. So we can say that Stanford is 'half way to being an engineering school' but without understanding the landscape of other colleges, we can't really say that that's true. Also, the way normal distributions work is that the first halfway is easy to slip down (till the inflection point, the slope increases), and then it becomes harder and harder to get to the MIT point. Regardless, the key missing piece of information is where the inflection point is on this graph. For that I would need data from other ivys, etc etc.</p>
+<p>Also, this analysis can say how technical the majors are, but it can't say how technically oriented the mindset is. For example, STS is definitely not as technical as, say, CS is, but it still involves a lot of thinking about technology. Also, a lot of those majors can end up as PMs or PMMs in companies, which can be fairly technical jobs. At the very least, it's a job in the tech industry, which arguably makes you a tech person whether or not your major was in that discipline.</p>
+<p>So, conclusions - stanford isn't bad compared to an actual technical school, so those sensationalist articles like &quot;Startup U&quot; saying &quot;who even needs the humanities?&quot; need to chill out. A school like MIT is where 'no one needs humanities' is at, and Stanford's admission policies still have admittance for non-technically oriented people, and its commitment to a liberal education means that if things get much worse than this, they'll definitely step in and implement some changes. However, there's a much hairier analysis left to be done about where the mindset of the campus is, and that might be much more technical than the major distribution gives it credit for.</p>
+<p>Also, I think there's a larger discussion (getting on my soapbox here, leaving the world of data) that higher (and secondary) education need to have about literacy in relation to any particular field. I think that it's pretty much required at this point to have your primary area of study AND be literate in a variety of fields. For example, I've wanted to be literate in chemistry, aerospace engineering, political science, and communications (to name a few), but there doesn't seem to be a lot of ways to get that information without taking the formal courses for the major. Eg, to take Organic Chemistry (which I'd really like to learn), I need to take Chem 31 A/B + Chem 33 + Chem 35, and I just don't have space for that or the time to compete with premeds over grades.</p>
+<p>However, it is possible to a larger extent to take a one-off humanities course and gain a lot from it if taught properly and inclusively to those who have little background in the subject. I've experienced this with a storytelling class, and with ethics classes. I also want to take some sociology/psychology and CSRE and well, quite a lot more things. But ultimately what this means is that if I were someone with a wide variety of interests, it would be safer to hedge on the technical side, since that takes more investment to gain even literacy in (simply due to the way that college courses are structured) technical disciplines, rather than hedge on the humanities side. Eg. 106A is really not making you literate about Computer Science or programming in in of itself.</p>

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[   1515108,      34716]
-NotebookOptionsPosition[   1509929,      34548]
-NotebookOutlinePosition[   1510305,      34565]
-CellTagsIndexPosition[   1510262,      34562]
+NotebookDataLength[   1599857,      36076]
+NotebookOptionsPosition[   1593892,      35891]
+NotebookOutlinePosition[   1594268,      35908]
+CellTagsIndexPosition[   1594225,      35905]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -7675,7 +7675,8 @@ Cell[BoxData[
     RowBox[{"\<\"Shadow Punch\"\>", ",", "60"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"\<\"Shadow Sneak\"\>", ",", "40"}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{{3.6351370087009087`*^9, 3.6351371322645693`*^9}}]
+ CellChangeTimes->{{3.6351370087009087`*^9, 3.6351371322645693`*^9}, 
+   3.64105934874657*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -28681,7 +28682,7 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`i$$], 1, 30, 1}}, Typeset`size$$ = {
-    856., {337.625, 343.375}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    1004., {93.125, 98.875}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True, $CellContext`i$395017$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`i$$ = 1}, 
@@ -28709,7 +28710,7 @@ Cell[BoxData[
            Part[$CellContext`pkmnclusters, $CellContext`i$$]]]}], 
       "Specifications" :> {{$CellContext`i$$, 1, 30, 1}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{901., {383., 388.}},
+     ImageSizeCache->{1049., {138., 143.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -28729,7 +28730,369 @@ Cell[BoxData[
    3.637494572890664*^9, 3.637494632894054*^9}, {3.6379244557542152`*^9, 
    3.637924466598599*^9}, {3.637924555323786*^9, 3.6379245696934013`*^9}, 
    3.637926247447672*^9, 3.637926353035976*^9, {3.637926624200807*^9, 
-   3.637926638064871*^9}}]
+   3.637926638064871*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Flatten", "::", "normal"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Nonatomic expression expected at position \
+\[NoBreak]\\!\\(1\\)\[NoBreak] in \[NoBreak]\\!\\(Flatten[\\(\\(pkmnclusters, \
+1\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/normal\\\", ButtonNote -> \
+\\\"Flatten::normal\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662292579092*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \[NoBreak]\\!\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\[NoBreak] is longer than \
+depth of object. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\
+\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partd\\\", ButtonNote -> \
+\\\"Part::partd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662292660976*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"MapThread", "::", "mptd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Object \
+\[NoBreak]\\!\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters, \
+1\\)\\)]\\)\\)]\\)\[NoBreak] at position {2, \[NoBreak]\\!\\(1\\)\[NoBreak]} \
+in \[NoBreak]\\!\\(MapThread[\\(\\(List, \
+\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters, \
+1\\)\\)]\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\\)]\\)\\), \
+\\(\\({\\\"name\\\", \\\"total\\\", \\\"hp\\\", \\\"atk\\\", \\\"def\\\", \
+\\\"spa\\\", \\\"spd\\\", \\\"spe\\\"}\\)\\)}\\)\\)\\)\\)]\\)\[NoBreak] has \
+only \[NoBreak]\\!\\(0\\)\[NoBreak] of required \
+\[NoBreak]\\!\\(1\\)\[NoBreak] dimensions. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/MapThread/mptd\\\", ButtonNote -> \
+\\\"MapThread::mptd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6426622926627502`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"MapThread", "::", "argtu"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(MapThread\\)\[NoBreak] called with 1 \
+argument; \[NoBreak]\\!\\(2\\)\[NoBreak] or \[NoBreak]\\!\\(3\\)\[NoBreak] \
+arguments are expected. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/argtu\\\", ButtonNote -> \
+\\\"MapThread::argtu\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662292668438*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partw"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part \[NoBreak]\\!\\({2, 4, 6, 3, 5, 7, 1}\\)\[NoBreak] of \
+\[NoBreak]\\!\\(MapThread[\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(\
+pkmnclusters, 1\\)\\)]\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\\)]\\)\\), \
+\\(\\({\\\"name\\\", \\\"total\\\", \\\"hp\\\", \\\"atk\\\", \\\"def\\\", \
+\\\"spa\\\", \\\"spd\\\", \\\"spe\\\"}\\)\\)}\\)\\)]\\)\[NoBreak] does not \
+exist. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partw\\\", ButtonNote -> \
+\\\"Part::partw\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6426622927619057`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(2\\)\[NoBreak] in \
+\[NoBreak]\\!\\(\\(\\(SmoothHistogram[\\(\\(\\(\\({#1, #2}\\)\\), 0.01`, \
+\\(\\(Filling \[Rule] Axis\\)\\), \\(\\(ImageSize \[Rule] 200\\)\\), \
+\\(\\(PlotLabel \[Rule] #3\\)\\)\\)\\)]\\)\\) &\\)\[NoBreak] cannot be filled \
+from \[NoBreak]\\!\\(\\(\\((\\(\\(\\(SmoothHistogram[\\(\\(\\(\\({#1, \
+#2}\\)\\), 0.01`, \\(\\(Filling \[Rule] Axis\\)\\), \\(\\(ImageSize \[Rule] \
+200\\)\\), \\(\\(PlotLabel \[Rule] #3\\)\\)\\)\\)]\\)\\) \
+&\\))\\)\\)[\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters, 1\\)\\)]\
+\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \[LeftDoubleBracket] 1 \
+\[RightDoubleBracket]\\)\\)]\\)\\), \\(\\({\\\"name\\\", \\\"total\\\", \
+\\\"hp\\\", \\\"atk\\\", \\\"def\\\", \\\"spa\\\", \\\"spd\\\", \
+\\\"spe\\\"}\\)\\)}\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.64266229276834*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(3\\)\[NoBreak] in \
+\[NoBreak]\\!\\(\\(\\(SmoothHistogram[\\(\\(\\(\\({#1, #2}\\)\\), 0.01`, \
+\\(\\(Filling \[Rule] Axis\\)\\), \\(\\(ImageSize \[Rule] 200\\)\\), \
+\\(\\(PlotLabel \[Rule] #3\\)\\)\\)\\)]\\)\\) &\\)\[NoBreak] cannot be filled \
+from \[NoBreak]\\!\\(\\(\\((\\(\\(\\(SmoothHistogram[\\(\\(\\(\\({#1, \
+#2}\\)\\), 0.01`, \\(\\(Filling \[Rule] Axis\\)\\), \\(\\(ImageSize \[Rule] \
+200\\)\\), \\(\\(PlotLabel \[Rule] #3\\)\\)\\)\\)]\\)\\) \
+&\\))\\)\\)[\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters, 1\\)\\)]\
+\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \[LeftDoubleBracket] 1 \
+\[RightDoubleBracket]\\)\\)]\\)\\), \\(\\({\\\"name\\\", \\\"total\\\", \
+\\\"hp\\\", \\\"atk\\\", \\\"def\\\", \\\"spa\\\", \\\"spd\\\", \
+\\\"spe\\\"}\\)\\)}\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6426622927705812`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Flatten", "::", "normal"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Nonatomic expression expected at position \
+\[NoBreak]\\!\\(1\\)\[NoBreak] in \[NoBreak]\\!\\(Flatten[\\(\\(pkmnclusters, \
+1.`\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/normal\\\", ButtonNote -> \
+\\\"Flatten::normal\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6426622928865967`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(2\\)\[NoBreak] in \
+\[NoBreak]\\!\\(\\(\\(Message[\\(\\(\\(\\(#1 :: \\\"ldata\\\"\\)\\), \
+\\(\\({\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters, \
+1\\)\\)]\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\\)]\\)\\), \
+\\(\\({\\\"name\\\", \\\"total\\\", \\\"hp\\\", \\\"atk\\\", \\\"def\\\", \
+\\\"spa\\\", \\\"spd\\\", \\\"spe\\\"}\\)\\)}\\)\\), #2}\\)\\)\\)\\)]\\)\\) &\
+\\)\[NoBreak] cannot be filled from \
+\[NoBreak]\\!\\(\\(\\((\\(\\(\\(Message[\\(\\(\\(\\(#1 :: \
+\\\"ldata\\\"\\)\\), \
+\\(\\({\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters, \
+1\\)\\)]\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\\)]\\)\\), \
+\\(\\({\\\"name\\\", \\\"total\\\", \\\"hp\\\", \\\"atk\\\", \\\"def\\\", \
+\\\"spa\\\", \\\"spd\\\", \\\"spe\\\"}\\)\\)}\\)\\), #2}\\)\\)\\)\\)]\\)\\) &\
+\\))\\)\\)[SmoothHistogram]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662292960466*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Function \
+:: slotn\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662292961987*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"SmoothHistogram", "::", "ldata"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], \
+"\<\"\[NoBreak]\\!\\({\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters,\
+ 1\\)\\)]\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\\)]\\)\\), \
+\\(\\({\\\"name\\\", \\\"total\\\", \\\"hp\\\", \\\"atk\\\", \\\"def\\\", \
+\\\"spa\\\", \\\"spd\\\", \\\"spe\\\"}\\)\\)}\\)\\), #2}\\)\[NoBreak] is not \
+a valid dataset or list of datasets. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/SmoothHistogram\\\", ButtonNote \
+-> \\\"SmoothHistogram::ldata\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6426622930461617`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pspec"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \
+\[NoBreak]\\!\\(\\*GraphicsBox[List[List[], \
+GraphicsComplexBox[List[List[1.95`, 0.`], List[1.95`, 0.`], List[1.95`, \
+0.00006876152430741147`], List[1.9520527859237535`, 0.00022330486182369077`], \
+List[1.9541055718475073`, 0.0005805686461411998`], List[1.956158357771261`, \
+0.001447506481753009`], List[1.9582111436950147`, 0.003461003723708698`], \
+List[1.9602639296187683`, 0.007935993748955176`], List[1.9623167155425218`, \
+0.017451042484420858`], List[1.9643695014662756`, 0.03680148651844072`], \
+List[1.9664222873900292`, 0.07442800857641542`], List[1.968475073313783`, \
+0.14435692239563888`], List[1.9705278592375366`, 0.2685172122449551`], \
+List[1.9725806451612902`, 0.4790083182866786`], List[1.974633431085044`, \
+0.8195085440019253`], List[1.9766862170087975`, 1.3446414433057192`], \
+List[1.9787390029325513`, 2.115948617757746`], List[1.980791788856305`, \
+3.1933929759343713`], List[1.9828445747800587`, 4.62222624975243`], \
+List[1.9848973607038123`, 6.416593555987592`], List[1.9869501466275659`, \
+8.54309455891407`], List[1.9890029325513197`, 10.909027497667612`], \
+List[1.9910557184750732`, 13.360407881906704`], List[1.993108504398827`, \
+15.693466773937443`], List[1.9951612903225806`, 17.680156810528437`], \
+List[1.9972140762463342`, 19.10397908930059`], List[1.999266862170088`, \
+19.798596806724873`], List[2.0013196480938418`, 19.679773281050537`], \
+List[2.0033724340175953`, 18.76216726157487`], List[2.005425219941349`, \
+17.156360277416816`], List[2.0074780058651025`, 15.04694850426531`], \
+List[2.009530791788856`, 12.657693653691652`], List[2.01158357771261`, \
+10.212808801063119`], List[2.0136363636363637`, 7.90354186179902`], \
+List[2.0156891495601172`, 5.866587608453232`], List[2.017741935483871`, \
+4.1767431103259245`], List[2.0197947214076244`, 2.8521960078474553`], \
+List[2.0218475073313784`, 1.8681476737727576`], List[2.023900293255132`, \
+1.173637402916983`], List[2.0259530791788856`, 0.7072094972585508`], \
+List[2.028005865102639`, 0.40874642185251`], List[2.0300586510263927`, \
+0.2265957409930512`], List[2.0321114369501467`, 0.12048733876959841`], \
+List[2.0341642228739003`, 0.06145012804789976`], List[2.036217008797654`, \
+0.030060453823384136`], List[2.0382697947214075`, 0.01410454610830599`], \
+List[2.040322580645161`, 0.006347648237590518`], List[2.042375366568915`, \
+0.002740033623967852`], List[2.0444281524926686`, 0.0011344548677207373`], \
+List[2.046480938416422`, 0.00045051128290796925`], Skeleton[1116]], \
+List[List[List[EdgeForm[], Directive[List[Skeleton[2]]], \
+GraphicsGroupBox[List[Skeleton[12]]]], List[EdgeForm[], \
+Directive[List[Skeleton[2]]], GraphicsGroupBox[List[Skeleton[16]]]], List[], \
+List[]], List[List[], List[], List[Hue[0.67`, 0.6`, 0.6`], \
+Directive[RGBColor[Skeleton[3]]], LineBox[List[Skeleton[1166]]]]]]], List[]], \
+List[Rule[AxesLabel, List[None, None]], Rule[AspectRatio, \
+NCache[Power[GoldenRatio, -1], 0.6180339887498948`]], Rule[Axes, List[True, \
+True]], Rule[AxesOrigin, List[2.`, 0]], Rule[ImageSize, 200], Rule[Method, \
+List[]], Rule[PlotLabel, FormBox[\\\"6\\\", TraditionalForm]], \
+Rule[PlotRange, List[List[1.95`, 4.05`], List[-2.7755592582717113`*^-15, \
+19.798596806724994`]]], Rule[PlotRangeClipping, True], Rule[PlotRangePadding, \
+Scaled[0.02`]]]]\\)\[NoBreak] is neither a machine-sized integer nor a list \
+of machine-sized integers. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/pspec\\\", ButtonNote -> \
+\\\"Part::pspec\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662293641596*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \[NoBreak]\\!\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\[NoBreak] is longer than \
+depth of object. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\
+\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partd\\\", ButtonNote -> \
+\\\"Part::partd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.64266229365447*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Flatten", "::", "normal"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Nonatomic expression expected at position \
+\[NoBreak]\\!\\(1\\)\[NoBreak] in \[NoBreak]\\!\\(Flatten[\\(\\(pkmnclusters, \
+1.`\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/normal\\\", ButtonNote -> \
+\\\"Flatten::normal\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662293874837*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Flatten \
+:: normal\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during \
+this calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6426622939423*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"SmoothHistogram", "::", "ldata"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], \
+"\<\"\[NoBreak]\\!\\({\\(\\({\\(\\(Transpose[\\(\\(Flatten[\\(\\(pkmnclusters,\
+ 1\\)\\)]\\)\\)]\\)\\), \\(\\(Transpose[\\(\\(pkmnclusters \
+\[LeftDoubleBracket] 1 \[RightDoubleBracket]\\)\\)]\\)\\), \
+\\(\\({\\\"name\\\", \\\"total\\\", \\\"hp\\\", \\\"atk\\\", \\\"def\\\", \
+\\\"spa\\\", \\\"spd\\\", \\\"spe\\\"}\\)\\)}\\)\\), #2}\\)\[NoBreak] is not \
+a valid dataset or list of datasets. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/SmoothHistogram\\\", ButtonNote \
+-> \\\"SmoothHistogram::ldata\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662294010124*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pspec"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \
+\[NoBreak]\\!\\(\\*GraphicsBox[List[List[], \
+GraphicsComplexBox[List[List[1.95`, 0.`], List[1.95`, 0.`], List[1.95`, \
+0.00006876152430741147`], List[1.9520527859237535`, 0.00022330486182369077`], \
+List[1.9541055718475073`, 0.0005805686461411998`], List[1.956158357771261`, \
+0.001447506481753009`], List[1.9582111436950147`, 0.003461003723708698`], \
+List[1.9602639296187683`, 0.007935993748955176`], List[1.9623167155425218`, \
+0.017451042484420858`], List[1.9643695014662756`, 0.03680148651844072`], \
+List[1.9664222873900292`, 0.07442800857641542`], List[1.968475073313783`, \
+0.14435692239563888`], List[1.9705278592375366`, 0.2685172122449551`], \
+List[1.9725806451612902`, 0.4790083182866786`], List[1.974633431085044`, \
+0.8195085440019253`], List[1.9766862170087975`, 1.3446414433057192`], \
+List[1.9787390029325513`, 2.115948617757746`], List[1.980791788856305`, \
+3.1933929759343713`], List[1.9828445747800587`, 4.62222624975243`], \
+List[1.9848973607038123`, 6.416593555987592`], List[1.9869501466275659`, \
+8.54309455891407`], List[1.9890029325513197`, 10.909027497667612`], \
+List[1.9910557184750732`, 13.360407881906704`], List[1.993108504398827`, \
+15.693466773937443`], List[1.9951612903225806`, 17.680156810528437`], \
+List[1.9972140762463342`, 19.10397908930059`], List[1.999266862170088`, \
+19.798596806724873`], List[2.0013196480938418`, 19.679773281050537`], \
+List[2.0033724340175953`, 18.76216726157487`], List[2.005425219941349`, \
+17.156360277416816`], List[2.0074780058651025`, 15.04694850426531`], \
+List[2.009530791788856`, 12.657693653691652`], List[2.01158357771261`, \
+10.212808801063119`], List[2.0136363636363637`, 7.90354186179902`], \
+List[2.0156891495601172`, 5.866587608453232`], List[2.017741935483871`, \
+4.1767431103259245`], List[2.0197947214076244`, 2.8521960078474553`], \
+List[2.0218475073313784`, 1.8681476737727576`], List[2.023900293255132`, \
+1.173637402916983`], List[2.0259530791788856`, 0.7072094972585508`], \
+List[2.028005865102639`, 0.40874642185251`], List[2.0300586510263927`, \
+0.2265957409930512`], List[2.0321114369501467`, 0.12048733876959841`], \
+List[2.0341642228739003`, 0.06145012804789976`], List[2.036217008797654`, \
+0.030060453823384136`], List[2.0382697947214075`, 0.01410454610830599`], \
+List[2.040322580645161`, 0.006347648237590518`], List[2.042375366568915`, \
+0.002740033623967852`], List[2.0444281524926686`, 0.0011344548677207373`], \
+List[2.046480938416422`, 0.00045051128290796925`], Skeleton[1116]], \
+List[List[List[EdgeForm[], Directive[List[Skeleton[2]]], \
+GraphicsGroupBox[List[Skeleton[12]]]], List[EdgeForm[], \
+Directive[List[Skeleton[2]]], GraphicsGroupBox[List[Skeleton[16]]]], List[], \
+List[]], List[List[], List[], List[Hue[0.67`, 0.6`, 0.6`], \
+Directive[RGBColor[Skeleton[3]]], LineBox[List[Skeleton[1166]]]]]]], List[]], \
+List[Rule[AxesLabel, List[None, None]], Rule[AspectRatio, \
+NCache[Power[GoldenRatio, -1], 0.6180339887498948`]], Rule[Axes, List[True, \
+True]], Rule[AxesOrigin, List[2.`, 0]], Rule[ImageSize, 200], Rule[Method, \
+List[]], Rule[PlotLabel, FormBox[\\\"6\\\", TraditionalForm]], \
+Rule[PlotRange, List[List[1.95`, 4.05`], List[-2.7755592582717113`*^-15, \
+19.798596806724994`]]], Rule[PlotRangeClipping, True], Rule[PlotRangePadding, \
+Scaled[0.02`]]]]\\)\[NoBreak] is neither a machine-sized integer nor a list \
+of machine-sized integers. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/pspec\\\", ButtonNote -> \
+\\\"Part::pspec\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642662294012038*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -33732,7 +34095,7 @@ Cell[BoxData[
    3.6324529275927677`*^9, 3.632452929064221*^9}, {3.632453918797659*^9, 
    3.632453931043358*^9}}]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -33763,11 +34126,13 @@ Cell[BoxData[{
   3.636528066735372*^9}, {3.636528774081225*^9, 3.6365288081538258`*^9}, {
   3.636531147147229*^9, 3.636531149982671*^9}}],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{
   RowBox[{
    RowBox[{"sweepers", "[", 
-    RowBox[{"[", "156", "]"}], "]"}], "//", 
+    RowBox[{"[", "95", "]"}], "]"}], "//", 
    RowBox[{
     RowBox[{"SortBy", "[", 
      RowBox[{"#", ",", 
@@ -33777,7 +34142,987 @@ Cell[BoxData[
   "TableForm"}]], "Input",
  CellChangeTimes->{{3.636528107840012*^9, 3.636528240388452*^9}, {
    3.636528566628531*^9, 3.636528600100094*^9}, 3.6365287721322107`*^9, {
-   3.636528812143403*^9, 3.6365288132934427`*^9}}],
+   3.636528812143403*^9, 3.6365288132934427`*^9}, {3.641060034862934*^9, 
+   3.641060058844895*^9}, {3.641093749094055*^9, 3.641093768853446*^9}, {
+   3.642662403187488*^9, 3.64266240329547*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "75", "0.313807531381`", "423", "0", "1", 
+     "4", "\<\"  Mega-Aggron\"\>", "\<\"  RestTalk\"\>", "\<\"  Iron \
+Head\"\>", "272", "0.951048951049`", "136", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "75", "0.313807531381`", "423", "0", "1", 
+     "4", "\<\"  Mega-Aggron\"\>", "\<\"  Tank\"\>", "\<\"  Iron Head\"\>", 
+     "272", "0.951048951049`", "136", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "83", "0.333333333333`", "423", "0", "0", 
+     "3", "\<\"  Mega-Steelix\"\>", "\<\"  Steelix\"\>", "\<\"  Gyro \
+Ball\"\>", "378", "1.32167832168`", "86", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "114", "0.373770491803`", "423", "0", "0.902530546545`", 
+     "3", "\<\"  Mega-Audino\"\>", "\<\"  Mega Audino\"\>", "\<\"  Dazzling \
+Gleam\"\>", "206", "0.72027972028`", "136", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "82", "0.377880184332`", "423", "0", "0.955841461713`", 
+     "3", "\<\"  Doublade\"\>", "\<\"  Mixed Wall\"\>", "\<\"  Gyro Ball\"\>",
+      "308", "1.07692307692`", "95", "0", "0.47619047619`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "99", "0.414225941423`", "423", "0", "1", 
+     "3", "\<\"  Mega-Scizor\"\>", "\<\"  Defog\"\>", "\<\"  Bullet \
+Punch\"\>", "218", "0.762237762238`", "186", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "100", "0.420168067227`", "423", "0", "1", 
+     "3", "\<\"  Mega-Scizor\"\>", "\<\"  Baton Pass\"\>", "\<\"  Bullet \
+Punch\"\>", "218", "0.762237762238`", "192", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "106", "0.429149797571`", "423", "0", "1", 
+     "3", "\<\"  Ferrothorn\"\>", "\<\"  Utility\"\>", "\<\"  Gyro Ball\"\>", 
+     "362", "1.26573426573`", "68", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "118", "0.495798319328`", "423", "0", "1", 
+     "3", "\<\"  Mega-Scizor\"\>", "\<\"  Bulky Swords Dance\"\>", "\<\"  \
+Bullet Punch\"\>", "234", "0.818181818182`", "186", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "152", "0.525951557093`", "423", "0", "0.216412742382`", 
+     "2", "\<\"  Clefable\"\>", "\<\"  Physically Defensive\"\>", "\<\"  \
+Moonblast\"\>", "282", "0.986013986014`", "156", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "130", "0.546218487395`", "423", "0", "0.619986850756`", 
+     "2", "\<\"  Mega-Scizor\"\>", "\<\"  Roost + 3 Attacks\"\>", "\<\"  \
+Bullet Punch\"\>", "258", "0.902097902098`", "186", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "139", "0.549407114625`", "423", "0", "0.679232153845`", 
+     "2", "\<\"  Cobalion\"\>", "\<\"  Offensive Pivot\"\>", "\<\"  Close \
+Combat\"\>", "318", "1.11188811189`", "346", "0", "0.670859538784`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "164", "0.567474048443`", "423", "0", "0.914039262344`", 
+     "2", "\<\"  Mega-Slowbro\"\>", "\<\"  Slowbro\"\>", "\<\"  Scald\"\>", 
+     "78", "0.272727272727`", "96", "0", "1", "4"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "164", "0.567474048443`", "423", "0", "0.914039262344`", 
+     "2", "\<\"  Sylveon\"\>", "\<\"  Calm Mind + Baton Pass\"\>", "\<\"  \
+Hyper Voice\"\>", "392", "1.37062937063`", "159", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "172", "0.57525083612`", "423", "0", "0.9672796106`", 
+     "2", "\<\"  Jirachi\"\>", "\<\"  Wishmaker\"\>", "\<\"  Iron Head\"\>", 
+     "206", "0.72027972028`", "236", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "173", "0.578595317726`", "423", "0", "0.982172623357`", 
+     "2", "\<\"  Jirachi\"\>", "\<\"  Paraflinch\"\>", "\<\"  Iron Head\"\>", 
+     "284", "0.993006993007`", "236", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "168", "0.581314878893`", "423", "0", "0.990898211136`", 
+     "2", "\<\"  Sylveon\"\>", "\<\"  Cleric\"\>", "\<\"  Hyper Voice\"\>", 
+     "392", "1.37062937063`", "156", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "198", "0.58407079646`", "423", "0", "0.996735027038`", 
+     "2", "\<\"  Cresselia\"\>", "\<\"  Defensive\"\>", "\<\"  Psychic\"\>", 
+     "111", "0.388111888112`", "206", "0", "0.999073016329`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "165", "0.589285714286`", "423", "0", "1", 
+     "2", "\<\"  Heatran\"\>", "\<\"  Specially Defensive\"\>", "\<\"  Lava \
+Plume\"\>", "156", "0.545454545455`", "207", "0", "0.604938271605`", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "160", "0.594795539033`", "423", "0", "1", 
+     "2", "\<\"  Porygon2\"\>", "\<\"  Physically Defensive\"\>", "\<\"  Ice \
+Beam\"\>", "97", "0.339160839161`", "156", "0", "0.00676347334278`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "122", "0.613065326633`", "423", "0", "1", 
+     "2", "\<\"  Diancie\"\>", "\<\"  Tank\"\>", "\<\"  Moonblast\"\>", "408",
+      "1.42657342657`", "122", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "133", "0.62441314554`", "423", "0", "1", 
+     "2", "\<\"  Klefki\"\>", "\<\"  Dual Screens\"\>", "\<\"  No Move\"\>", 
+     "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "138", "0.630136986301`", "423", "0", "1", 
+     "2", "\<\"  Magnezone\"\>", "\<\"  Choice Specs\"\>", "\<\"  Flash \
+Cannon\"\>", "618", "2.16083916084`", "177", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "184", "0.636678200692`", "423", "0", "1", 
+     "2", "\<\"  Clefable\"\>", "\<\"  Magic Guard + Calm Mind\"\>", "\<\"  \
+Moonblast\"\>", "282", "0.986013986014`", "156", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "184", "0.636678200692`", "423", "0", "1", 
+     "2", "\<\"  Clefable\"\>", "\<\"  Stealth Rock\"\>", "\<\"  \
+Moonblast\"\>", "282", "0.986013986014`", "156", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "220", "0.650887573964`", "423", "0", "1", 
+     "2", "\<\"  Cresselia\"\>", "\<\"  Dual Screens\"\>", "\<\"  No \
+Move\"\>", "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "153", "0.656652360515`", "423", "0", "1", 
+     "2", "\<\"  Bronzong\"\>", "\<\"  Special Tank\"\>", "\<\"  Gyro \
+Ball\"\>", "270", "0.944055944056`", "91", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "153", "0.656652360515`", "423", "0", "1", 
+     "2", "\<\"  Bronzong\"\>", "\<\"  Trick Room Support\"\>", "\<\"  Gyro \
+Ball\"\>", "270", "0.944055944056`", "91", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "138", "0.663461538462`", "423", "0", "1", 
+     "2", "\<\"  Magnezone\"\>", "\<\"  Magnet Rise\"\>", "\<\"  Flash Cannon\
+\"\>", "414", "1.44755244755`", "188", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "136", "0.69387755102`", "423", "0", "1", 
+     "2", "\<\"  Mega-Metagross\"\>", "\<\"  Mega Metagross\"\>", "\<\"  \
+Meteor Mash\"\>", "378", "1.32167832168`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "210", "0.704697986577`", "423", "0", "1", 
+     "2", "\<\"  Tyranitar\"\>", "\<\"  Support\"\>", "\<\"  Crunch\"\>", 
+     "132", "0.461538461538`", "142", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "173", "0.726890756303`", "423", "0", "1", 
+     "2", "\<\"  Scizor\"\>", "\<\"  Choice Band\"\>", "\<\"  Superpower\"\>",
+      "508", "1.77622377622`", "166", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "173", "0.733050847458`", "423", "0", "1", 
+     "2", "\<\"  Jirachi\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Iron \
+Head\"\>", "260", "0.909090909091`", "492", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "130", "0.738636363636`", "423", "0", "1", 
+     "2", "\<\"  Mega-Scizor\"\>", "\<\"  Offensive Swords Dance\"\>", "\<\"  \
+Superpower\"\>", "378", "1.32167832168`", "249", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "318", "0.741258741259`", "423", "0", "1", 
+     "2", "\<\"  Wobbuffet\"\>", "\<\"  Oh no it's Wobbuffet!\"\>", "\<\"  \
+Counter\"\>", "4", "0.013986013986`", "102", 
+     RowBox[{"-", "5"}], "1", "72"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "165", "0.746606334842`", "423", "0", "1", 
+     "2", "\<\"  Heatran\"\>", "\<\"  Offensive Air Balloon\"\>", "\<\"  Fire \
+Blast\"\>", "258", "0.902097902098`", "276", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "165", "0.756880733945`", "423", "0", "1", 
+     "2", "\<\"  Heatran\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Flash \
+Cannon\"\>", "414", "1.44755244755`", "379", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "228", "0.76254180602`", "423", "0", "1", 
+     "2", "\<\"  Suicune\"\>", "\<\"  CroCune\"\>", "\<\"  Scald\"\>", "57", 
+     "0.199300699301`", "206", "0", "1", "6"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "411", "0.765363128492`", "423", "0", "1", 
+     "2", "\<\"  Chansey\"\>", "\<\"  Support\"\>", "\<\"  Seismic Toss\"\>", 
+     "100", "0.34965034965`", "136", "0", "0.13550617284`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "411", "0.765363128492`", "423", "0", "1", 
+     "2", "\<\"  Chansey\"\>", "\<\"  Wish Support\"\>", "\<\"  Seismic \
+Toss\"\>", "100", "0.34965034965`", "136", "0", "0.13550617284`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "137", "0.778409090909`", "423", "0", "1", 
+     "2", "\<\"  Magnezone\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Flash \
+Cannon\"\>", "378", "1.32167832168`", "360", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "238", "0.823529411765`", "423", "0", "1", 
+     "2", "\<\"  Slowbro\"\>", "\<\"  Physical Wall\"\>", "\<\"  Fire Blast\"\
+\>", "114", "0.398601398601`", "96", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "266", "0.836477987421`", "423", "0", "1", 
+     "2", "\<\"  Mandibuzz\"\>", "\<\"  Utility\"\>", "\<\"  Foul Play\"\>", 
+     "246", "0.86013986014`", "200", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "226", "0.840148698885`", "423", "0", "1", 
+     "2", "\<\"  Porygon2\"\>", "\<\"  Specially Defensive\"\>", "\<\"  Ice \
+Beam\"\>", "97", "0.339160839161`", "156", "0", "0.00676347334278`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "226", "0.840148698885`", "423", "0", "1", 
+     "2", "\<\"  Porygon2\"\>", "\<\"  Trick Room Support\"\>", "\<\"  Ice \
+Beam\"\>", "134", "0.468531468531`", "140", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "252", "0.842809364548`", "423", "0", "1", 
+     "2", "\<\"  Manaphy\"\>", "\<\"  Calm Mind\"\>", "\<\"  Scald\"\>", "62",
+      "0.216783216783`", "240", "0", "1", "5"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "255", "0.852842809365`", "423", "0", "1", 
+     "2", "\<\"  Mew\"\>", "\<\"  Entry Hazard Control\"\>", "\<\"  Knock Off\
+\"\>", "83", "0.29020979021`", "274", "0", "1", "4"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "255", "0.852842809365`", "423", "0", "1", 
+     "2", "\<\"  Mew\"\>", "\<\"  Stallbreaker\"\>", "\<\"  Knock Off\"\>", 
+     "83", "0.29020979021`", "274", "0", "1", "4"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "245", "0.853658536585`", "423", "0", "1", 
+     "2", "\<\"  Sylveon\"\>", "\<\"  Choice Specs\"\>", "\<\"  Hyper Voice\"\
+\>", "800", "2.7972027972`", "159", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "256", "0.85618729097`", "423", "0", "1", 
+     "2", "\<\"  Tangrowth\"\>", "\<\"  Assault Vest\"\>", "\<\"  Leaf \
+Storm\"\>", "109", "0.381118881119`", "122", "0", "0.980107786137`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "249", "0.861591695502`", "423", "0", "1", 
+     "2", "\<\"  Quagsire\"\>", "\<\"  Physically Defensive\"\>", "\<\"  \
+Earthquake\"\>", "112", "0.391608391608`", "95", "0", "0.999997750423`", 
+     "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "198", "0.864628820961`", "423", "0", "1", 
+     "2", "\<\"  Skarmory\"\>", "\<\"  Physically Defensive\"\>", "\<\"  No \
+Move\"\>", "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "285", "0.88785046729`", "423", "0", "1", 
+     "2", "\<\"  Gastrodon\"\>", "\<\"  Physically Defensive\"\>", "\<\"  \
+Earth Power\"\>", "130", "0.454545454545`", "114", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "208", "0.908296943231`", "423", "0", "1", 
+     "2", "\<\"  Skarmory\"\>", "\<\"  Spikes\"\>", "\<\"  No Move\"\>", "0", 
+     "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "233", "0.91015625`", "423", "0", "1", 
+     "2", "\<\"  Excadrill\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Iron Head\"\
+\>", "320", "1.11888111888`", "453", "0", "0.708333333333`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "233", "0.91015625`", "423", "0", "1", 
+     "2", "\<\"  Excadrill\"\>", "\<\"  Sand Rush Sweeper\"\>", "\<\"  Iron \
+Head\"\>", "455", "1.59090909091`", "275", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "236", "0.911196911197`", "423", "0", "1", 
+     "2", "\<\"  Mega-Venusaur\"\>", "\<\"  Defensive\"\>", "\<\"  Sludge \
+Bomb\"\>", "166", "0.58041958042`", "200", "0", "0.988355026532`", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "219", "0.927966101695`", "423", "0", "1", 
+     "2", "\<\"  Mega-Tyranitar\"\>", "\<\"  Dragon Dance\"\>", "\<\"  Stone \
+Edge\"\>", "458", "1.6013986014`", "265", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "192", "0.964824120603`", "423", "0", "1", 
+     "2", "\<\"  Mega-Sableye\"\>", "\<\"  Mega Sableye\"\>", "\<\"  Shadow \
+Ball\"\>", "109", "0.381118881119`", "76", "0", "0.980107786137`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "318", "0.97247706422`", "423", "0", "1", 
+     "2", "\<\"  Amoonguss\"\>", "\<\"  Defensive\"\>", "\<\"  Clear \
+Smog\"\>", "69", "0.241258741259`", "96", "0", "1", "5"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "314", "0.996825396825`", "423", "0", "1", 
+     "2", "\<\"  Hippowdon\"\>", "\<\"  Mixed Wall\"\>", "\<\"  Stone \
+Edge\"\>", "188", "0.657342657343`", "130", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "562", "1.02742230347`", "423", "0", "0.17793594306`", 
+     "1", "\<\"  Blissey\"\>", "\<\"  Cleric\"\>", "\<\"  Seismic Toss\"\>", 
+     "100", "0.34965034965`", "146", "0", "0.13550617284`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "562", "1.02742230347`", "423", "0", "0.17793594306`", 
+     "1", "\<\"  Blissey\"\>", "\<\"  Wish Passer\"\>", "\<\"  Seismic Toss\"\
+\>", "100", "0.34965034965`", "146", "0", "0.13550617284`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "261", "1.02755905512`", "423", "0", "0.178799489144`", 
+     "1", "\<\"  Mega-Venusaur\"\>", "\<\"  Offensive\"\>", "\<\"  Sludge \
+Bomb\"\>", "222", "0.776223776224`", "201", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "173", "1.03592814371`", "423", "0", "0.231213872832`", 
+     "1", "\<\"  Bisharp\"\>", "\<\"  Defiant Attacker\"\>", "\<\"  Iron Head\
+\"\>", "332", "1.16083916084`", "239", "0", "0.923694779116`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "225", "1.05140186916`", "423", "0", "0.325925925926`", 
+     "1", "\<\"  Cofagrigus\"\>", "\<\"  Trick Room Sweeper\"\>", "\<\"  \
+Shadow Ball\"\>", "166", "0.58041958042`", "86", "0", "0.988355026532`", 
+     "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "266", "1.06827309237`", "423", "0", "0.426065162907`", 
+     "1", "\<\"  Mega-Altaria\"\>", "\<\"  Bulky Mega Altaria\"\>", "\<\"  \
+Hyper Voice\"\>", "392", "1.37062937063`", "197", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "214", "1.07537688442`", "423", "0", "0.467289719626`", 
+     "1", "\<\"  Rotom-H\"\>", "\<\"  Defensive\"\>", "\<\"  Overheat\"\>", 
+     "210", "0.734265734266`", "208", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "302", "1.08243727599`", "423", "0", "0.507726269316`", 
+     "1", "\<\"  Zapdos\"\>", "\<\"  Defensive\"\>", "\<\"  Heat Wave\"\>", 
+     "126", "0.440559440559`", "241", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "286", "1.09160305344`", "423", "0", "0.559440559441`", 
+     "1", "\<\"  Mega-Swampert\"\>", "\<\"  Swift Swim\"\>", "\<\"  Low \
+Kick\"\>", "378", "1.32167832168`", "214", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "286", "1.09578544061`", "423", "0", "0.582750582751`", 
+     "1", "\<\"  Mega-Swampert\"\>", "\<\"  Swampert\"\>", "\<\"  \
+Earthquake\"\>", "235", "0.821678321678`", "215", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "220", "1.11111111111`", "423", "0", "0.666666666667`", 
+     "1", "\<\"  Rotom-W\"\>", "\<\"  Defensive\"\>", "\<\"  Hydro Pump\"\>", 
+     "89", "0.311188811189`", "219", "0", "1", "4"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "296", "1.16996047431`", "423", "0", "0.968468468468`", 
+     "1", "\<\"  Mega-Blastoise\"\>", "\<\"  Rapid Spin\"\>", "\<\"  Aura \
+Sphere\"\>", "284", "0.993006993007`", "197", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "160", "1.17647058824`", "423", "0", "1.`", 
+     "1", "\<\"  Mega-Diancie\"\>", "\<\"  Diancie\"\>", "\<\"  \
+Moonblast\"\>", "522", "1.82517482517`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "363", "1.19407894737`", "423", "0", "1", 
+     "1", "\<\"  Reuniclus\"\>", "\<\"  Trick Room\"\>", "\<\"  Focus Blast\"\
+\>", "523", "1.82867132867`", "86", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "286", "1.21186440678`", "423", "0", "1", 
+     "1", "\<\"  Tyranitar\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Stone \
+Edge\"\>", "396", "1.38461538462`", "364", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "333", "1.24253731343`", "423", "0", "1", 
+     "1", "\<\"  Volcarona\"\>", "\<\"  Bulky Quiver Dance\"\>", "\<\"  Fire \
+Blast\"\>", "220", "0.769230769231`", "267", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "348", "1.26545454545`", "423", "0", "1", 
+     "1", "\<\"  Chesnaught\"\>", "\<\"  Physical Tank\"\>", "\<\"  Hammer \
+Arm\"\>", "270", "0.944055944056`", "164", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "368", "1.27777777778`", "423", "0", "1", 
+     "1", "\<\"  Krookodile\"\>", "\<\"  Support\"\>", "\<\"  Earthquake\"\>",
+      "147", "0.513986013986`", "220", "0", "0.0658161979834`", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "326", "1.29365079365`", "423", "0", "1", 
+     "1", "\<\"  Tentacruel\"\>", "\<\"  Physically Defensive\"\>", "\<\"  \
+Sludge Bomb\"\>", "117", "0.409090909091`", "244", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "310", "1.29707112971`", "423", "0", "1", 
+     "1", "\<\"  Mega-Camerupt\"\>", "\<\"  Mega Camerupt\"\>", "\<\"  Fire \
+Blast\"\>", "307", "1.07342657343`", "68", "0", "0.456026058632`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "230", "1.30681818182`", "423", "0", "1", 
+     "1", "\<\"  Lucario\"\>", "\<\"  Life Orb Attacker\"\>", "\<\"  Close \
+Combat\"\>", "588", "2.05594405594`", "279", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "266", "1.31683168317`", "423", "0", "1", 
+     "1", "\<\"  Mega-Altaria\"\>", "\<\"  Mega Dragon Dance\"\>", "\<\"  \
+Return\"\>", "480", "1.67832167832`", "259", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "324", "1.31707317073`", "423", "0", "1", 
+     "1", "\<\"  Conkeldurr\"\>", "\<\"  Assault Vest\"\>", "\<\"  Drain \
+Punch\"\>", "338", "1.18181818182`", "131", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "346", "1.33076923077`", "423", "0", "1", 
+     "1", "\<\"  Manaphy\"\>", "\<\"  Tail Glow + Rain Dance\"\>", "\<\"  \
+Psychic\"\>", "118", "0.412587412587`", "303", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "354", "1.33082706767`", "423", "0", "1", 
+     "1", "\<\"  Entei\"\>", "\<\"  All-Out Attacker\"\>", "\<\"  Stone \
+Edge\"\>", "388", "1.35664335664`", "299", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "362", "1.34572490706`", "423", "0", "1", 
+     "1", "\<\"  Togekiss\"\>", "\<\"  Baton Pass\"\>", "\<\"  Air Slash\"\>",
+      "136", "0.475524475524`", "200", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "268", "1.34673366834`", "423", "0", "1", 
+     "1", "\<\"  Sableye\"\>", "\<\"  Prankster Utility\"\>", "\<\"  Knock \
+Off\"\>", "99", "0.346153846154`", "136", "0", "0.0677403512337`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "362", "1.35074626866`", "423", "0", "1", 
+     "1", "\<\"  Togekiss\"\>", "\<\"  Defensive\"\>", "\<\"  Air Slash\"\>", 
+     "138", "0.482517482517`", "196", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "346", "1.3515625`", "423", "0", "1", 
+     "1", "\<\"  Manaphy\"\>", "\<\"  Tail Glow\"\>", "\<\"  Ice Beam\"\>", 
+     "118", "0.412587412587`", "308", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "378", "1.35971223022`", "423", "0", "1", 
+     "1", "\<\"  Moltres\"\>", "\<\"  SubToxic\"\>", "\<\"  Flamethrower\"\>",
+      "169", "0.590909090909`", "241", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "394", "1.36332179931`", "423", "0", "1", 
+     "1", "\<\"  Slowking\"\>", "\<\"  Specially Defensive\"\>", "\<\"  \
+Psyshock\"\>", "103", "0.36013986014`", "96", "0", "0.491505338772`", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "237", "1.37790697674`", "423", "0", "1", 
+     "1", "\<\"  Mega-Gardevoir\"\>", "\<\"  Calm Mind\"\>", "\<\"  Hyper \
+Voice\"\>", "714", "2.4965034965`", "299", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "237", "1.37790697674`", "423", "0", "1", 
+     "1", "\<\"  Mega-Gardevoir\"\>", "\<\"  Offensive\"\>", "\<\"  Hyper \
+Voice\"\>", "648", "2.26573426573`", "328", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "274", "1.39795918367`", "423", "0", "1", 
+     "1", "\<\"  Mega-Heracross\"\>", "\<\"  Offensive\"\>", "\<\"  Close \
+Combat\"\>", "606", "2.11888111888`", "273", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "446", "1.39811912226`", "423", "0", "1", 
+     "1", "\<\"  Rhyperior\"\>", "\<\"  Defensive\"\>", "\<\"  Stone \
+Edge\"\>", "386", "1.34965034965`", "116", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "416", "1.40540540541`", "423", "0", "1", 
+     "1", "\<\"  Azumarill\"\>", "\<\"  Assault Vest\"\>", "\<\"  Play \
+Rough\"\>", "422", "1.47552447552`", "136", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "249", "1.41477272727`", "423", "0", "1", 
+     "1", "\<\"  Mega-Manectric\"\>", "\<\"  Special Attacker\"\>", "\<\"  \
+Overheat\"\>", "209", "0.730769230769`", "405", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "320", "1.41592920354`", "423", "0", "1", 
+     "1", "\<\"  Mega-Gyarados\"\>", "\<\"  Mega Dragon Dance\"\>", "\<\"  \
+Earthquake\"\>", "161", "0.562937062937`", "261", "0", "0.870298213803`", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "266", "1.42245989305`", "423", "0", "1", 
+     "1", "\<\"  Mega-Altaria\"\>", "\<\"  Mega Special Attacker\"\>", "\<\"  \
+Draco Meteor\"\>", "596", "2.08391608392`", "259", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "382", "1.43609022556`", "423", "0", "1", 
+     "1", "\<\"  Empoleon\"\>", "\<\"  Specially Defensive\"\>", "\<\"  Scald\
+\"\>", "68", "0.237762237762`", "156", "0", "1", "5"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "384", "1.44360902256`", "423", "0", "1", 
+     "1", "\<\"  Empoleon\"\>", "\<\"  Choice Specs\"\>", "\<\"  Flash Cannon\
+\"\>", "554", "1.93706293706`", "158", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "416", "1.44444444444`", "423", "0", "1", 
+     "1", "\<\"  Slowking\"\>", "\<\"  Assault Vest\"\>", "\<\"  Future Sight\
+\"\>", "238", "0.832167832168`", "96", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "372", "1.453125`", "423", "0", "1", 
+     "1", "\<\"  Mamoswine\"\>", "\<\"  Focus Sash\"\>", "\<\"  \
+Earthquake\"\>", "193", "0.674825174825`", "284", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "373", "1.45703125`", "423", "0", "1", 
+     "1", "\<\"  Mamoswine\"\>", "\<\"  Physical Attacker\"\>", "\<\"  \
+Earthquake\"\>", "250", "0.874125874126`", "284", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "391", "1.46992481203`", "423", "0", "1", 
+     "1", "\<\"  Seismitoad\"\>", "\<\"  Rain Sweeper\"\>", "\<\"  Focus \
+Blast\"\>", "403", "1.40909090909`", "227", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "294", "1.47738693467`", "423", "0", "1", 
+     "1", "\<\"  Rotom-W\"\>", "\<\"  Specially Defensive\"\>", "\<\"  Hydro \
+Pump\"\>", "89", "0.311188811189`", "219", "0", "1", "4"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "334", "1.53211009174`", "423", "0", "1", 
+     "1", "\<\"  Scolipede\"\>", "\<\"  QuickPass\"\>", "\<\"  No Move\"\>", 
+     "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "339", "1.55504587156`", "423", "0", "1", 
+     "1", "\<\"  Terrakion\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Close \
+Combat\"\>", "462", "1.61538461538`", "519", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "339", "1.55504587156`", "423", "0", "1", 
+     "1", "\<\"  Terrakion\"\>", "\<\"  Life Orb Attacker\"\>", "\<\"  Close \
+Combat\"\>", "601", "2.1013986014`", "346", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "339", "1.55504587156`", "423", "0", "1", 
+     "1", "\<\"  Terrakion\"\>", "\<\"  Stealth Rock\"\>", "\<\"  Close \
+Combat\"\>", "462", "1.61538461538`", "346", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "438", "1.56989247312`", "423", "0", "1", 
+     "1", "\<\"  Politoed\"\>", "\<\"  Specially Defensive\"\>", "\<\"  Scald\
+\"\>", "57", "0.199300699301`", "176", "0", "1", "6"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "474", "1.58528428094`", "423", "0", "1", 
+     "1", "\<\"  Tangrowth\"\>", "\<\"  Knock it Off Mojonbo Rules \
+Here!\"\>", "\<\"  Knock Off\"\>", "83", "0.29020979021`", "122", "0", "1", 
+     "4"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "332", "1.58851674641`", "423", "0", "1", 
+     "1", "\<\"  Gorebyss\"\>", "\<\"  SmashPass\"\>", "\<\"  Surf\"\>", "78",
+      "0.272727272727`", "203", "0", "1", "4"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "348", "1.58904109589`", "423", "0", "1", 
+     "1", "\<\"  Whimsicott\"\>", "\<\"  Support\"\>", "\<\"  U turn\"\>", 
+     "44", "0.153846153846`", "268", "0", "1", "7"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "391", "1.58943089431`", "423", "0", "1", 
+     "1", "\<\"  Azelf\"\>", "\<\"  Dual Screens\"\>", "\<\"  No Move\"\>", 
+     "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "391", "1.58943089431`", "423", "0", "1", 
+     "1", "\<\"  Azelf\"\>", "\<\"  Rain Dance\"\>", "\<\"  Explosion\"\>", 
+     "256", "0.895104895105`", "361", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "414", "1.60465116279`", "423", "0", "1", 
+     "1", "\<\"  Azumarill\"\>", "\<\"  Choice Band\"\>", "\<\"  Play Rough\"\
+\>", "632", "2.20979020979`", "177", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "416", "1.60617760618`", "423", "0", "1", 
+     "1", "\<\"  Azumarill\"\>", "\<\"  Belly Drum\"\>", "\<\"  Play \
+Rough\"\>", "422", "1.47552447552`", "177", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "372", "1.64601769912`", "423", "0", "1", 
+     "1", "\<\"  Krookodile\"\>", "\<\"  Offensive\"\>", "\<\"  Stone \
+Edge\"\>", "312", "1.09090909091`", "311", "0", "0.555555555556`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "350", "1.67464114833`", "423", "0", "1", 
+     "1", "\<\"  Gourgeist-Small\"\>", "\<\"  SubSeed\"\>", "\<\"  No \
+Move\"\>", "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "438", "1.69111969112`", "423", "0", "1", 
+     "1", "\<\"  Politoed\"\>", "\<\"  Offensive\"\>", "\<\"  Focus \
+Blast\"\>", "320", "1.11888111888`", "197", "0", "0.708333333333`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "373", "1.70319634703`", "423", "0", "1", 
+     "1", "\<\"  Breloom\"\>", "\<\"  Leech Seed\"\>", "\<\"  Drain \
+Punch\"\>", "242", "0.846153846154`", "176", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "378", "1.71818181818`", "423", "0", "1", 
+     "1", "\<\"  Keldeo\"\>", "\<\"  Endeavor\"\>", "\<\"  Secret Sword\"\>", 
+     "326", "1.13986013986`", "346", "0", "0.81799591002`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "376", "1.7247706422`", "423", "0", "1", 
+     "1", "\<\"  Keldeo\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Secret Sword\"\
+\>", "330", "1.15384615385`", "519", "0", "0.888888888889`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "339", "1.72959183673`", "423", "0", "1", 
+     "1", "\<\"  Chandelure\"\>", "\<\"  Stallbreaker\"\>", "\<\"  Fire Blast\
+\"\>", "288", "1.00699300699`", "244", "0", "0.0462962962963`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "378", "1.73394495413`", "423", "0", "1", 
+     "1", "\<\"  Keldeo\"\>", "\<\"  Calm Mind\"\>", "\<\"  Secret Sword\"\>",
+      "330", "1.15384615385`", "346", "0", "0.888888888889`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "378", "1.73394495413`", "423", "0", "1", 
+     "1", "\<\"  Keldeo\"\>", "\<\"  Choice Specs\"\>", "\<\"  Secret Sword\"\
+\>", "488", "1.70629370629`", "346", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "378", "1.73394495413`", "423", "0", "1", 
+     "1", "\<\"  Keldeo\"\>", "\<\"  SubCM\"\>", "\<\"  Secret Sword\"\>", 
+     "330", "1.15384615385`", "346", "0", "0.888888888889`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "360", "1.74757281553`", "423", "0", "1", 
+     "1", "\<\"  Togekiss\"\>", "\<\"  Stallbreaker\"\>", "\<\"  Air \
+Slash\"\>", "183", "0.63986013986`", "259", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "528", "1.74834437086`", "423", "0", "1", 
+     "1", "\<\"  Zygarde\"\>", "\<\"  SubCoil\"\>", "\<\"  Dragon Tail\"\>", 
+     "156", "0.545454545455`", "240", "0", "0.604938271605`", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "394", "1.75892857143`", "423", "0", "1", 
+     "1", "\<\"  Raikou\"\>", "\<\"  Calm Mind\"\>", "\<\"  Extrasensory\"\>",
+      "115", "0.402097902098`", "354", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "394", "1.75892857143`", "423", "0", "1", 
+     "1", "\<\"  Raikou\"\>", "\<\"  Choice Specs\"\>", "\<\"  Shadow \
+Ball\"\>", "172", "0.601398601399`", "354", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "458", "1.8031496063`", "423", "0", "1", 
+     "1", "\<\"  Talonflame\"\>", "\<\"  Bulk Up\"\>", "\<\"  Brave Bird\"\>",
+      "129", "0.451048951049`", "290", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "458", "1.8031496063`", "423", "0", "1", 
+     "1", "\<\"  Talonflame\"\>", "\<\"  Stallbreaker\"\>", "\<\"  Brave Bird\
+\"\>", "129", "0.451048951049`", "290", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "300", "1.80722891566`", "423", "0", "1", 
+     "1", "\<\"  Mega-Pinsir\"\>", "\<\"  Swords Dance\"\>", "\<\"  Close \
+Combat\"\>", "352", "1.23076923077`", "339", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "300", "1.80722891566`", "423", "0", "1", 
+     "1", "\<\"  Mega-Pinsir\"\>", "\<\"  Swords Dance\"\>", "\<\"  Close \
+Combat\"\>", "352", "1.23076923077`", "339", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "337", "1.81182795699`", "423", "0", "1", 
+     "1", "\<\"  Mega-Houndoom\"\>", "\<\"  Nasty Plot\"\>", "\<\"  Fire \
+Blast\"\>", "273", "0.954545454545`", "361", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "396", "1.81651376147`", "423", "0", "1", 
+     "1", "\<\"  Starmie\"\>", "\<\"  Reflect Type\"\>", "\<\"  Scald\"\>", 
+     "62", "0.216783216783`", "359", "0", "1", "5"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "394", "1.82407407407`", "423", "0", "1", 
+     "1", "\<\"  Raikou\"\>", "\<\"  Assault Vest\"\>", "\<\"  Shadow \
+Ball\"\>", "115", "0.402097902098`", "354", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "416", "1.83259911894`", "423", "0", "1", 
+     "1", "\<\"  Tornadus-T\"\>", "\<\"  Assault Vest\"\>", "\<\"  Focus \
+Blast\"\>", "310", "1.08391608392`", "365", "0", "0.516129032258`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "451", "1.84081632653`", "423", "0", "1", 
+     "1", "\<\"  Exploud\"\>", "\<\"  Choice Specs\"\>", "\<\"  Focus Blast\"\
+\>", "484", "1.69230769231`", "235", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "324", "1.84090909091`", "423", "0", "1", 
+     "1", "\<\"  Gothitelle\"\>", "\<\"  Choice Specs\"\>", "\<\"  Psyshock\"\
+\>", "205", "0.716783216783`", "229", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "385", "1.85990338164`", "423", "0", "1", 
+     "1", "\<\"  Diggersby\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Return\"\>",
+      "255", "0.891608391608`", "382", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "385", "1.85990338164`", "423", "0", "1", 
+     "1", "\<\"  Diggersby\"\>", "\<\"  Swords Dance\"\>", "\<\"  Return\"\>",
+      "255", "0.891608391608`", "255", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "324", "1.88372093023`", "423", "0", "1", 
+     "1", "\<\"  Mega-Gallade\"\>", "\<\"  Mega Gallade\"\>", "\<\"  Close \
+Combat\"\>", "554", "1.93706293706`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "372", "1.89795918367`", "423", "0", "1", 
+     "1", "\<\"  Mega-Glalie\"\>", "\<\"  Mega Glalie\"\>", "\<\"  \
+Explosion\"\>", "591", "2.06643356643`", "328", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "441", "1.91739130435`", "423", "0", "1", 
+     "1", "\<\"  Volcarona\"\>", "\<\"  Offensive Quiver Dance\"\>", "\<\"  \
+Fire Blast\"\>", "291", "1.01748251748`", "276", "0", "0.114547537228`", 
+     "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "376", "1.91836734694`", "423", "0", "1", 
+     "1", "\<\"  Mega-Aerodactyl\"\>", "\<\"  Offensive\"\>", "\<\"  Stone \
+Edge\"\>", "426", "1.48951048951`", "399", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "376", "1.91836734694`", "423", "0", "1", 
+     "1", "\<\"  Mega-Aerodactyl\"\>", "\<\"  Stallbreaker\"\>", "\<\"  \
+Aerial Ace\"\>", "132", "0.461538461538`", "391", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "580", "1.92052980132`", "423", "0", "1", 
+     "1", "\<\"  Zygarde\"\>", "\<\"  Parashuffler\"\>", "\<\"  Dragon Tail\"\
+\>", "156", "0.545454545455`", "240", "0", "0.604938271605`", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "560", "1.94444444444`", "423", "0", "1", 
+     "1", "\<\"  Gyarados\"\>", "\<\"  RestTalk\"\>", "\<\"  Waterfall\"\>", 
+     "62", "0.216783216783`", "200", "0", "1", "5"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "325", "1.9578313253`", "423", "0", "1", 
+     "1", "\<\"  Mega-Lopunny\"\>", "\<\"  Mega Lopunny\"\>", "\<\"  High \
+Jump Kick\"\>", "518", "1.81118881119`", "405", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "628", "1.99365079365`", "423", "0", "1", 
+     "1", "\<\"  Garchomp\"\>", "\<\"  Tank\"\>", "\<\"  Dragon Tail\"\>", 
+     "194", "0.678321678322`", "240", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "466", "2.03493449782`", "423", "0", "1", 
+     "1", "\<\"  Espeon\"\>", "\<\"  Dual Screens\"\>", "\<\"  No Move\"\>", 
+     "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "416", "2.04926108374`", "423", "0", "1", 
+     "1", "\<\"  Mega-Pidgeot\"\>", "\<\"  Mega Pidgeot\"\>", "\<\"  \
+Hurricane\"\>", "291", "1.01748251748`", "341", "0", "0.114547537228`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "508", "2.05668016194`", "423", "0", "1", 
+     "1", "\<\"  Gliscor\"\>", "\<\"  Specially Defensive\"\>", "\<\"  \
+Earthquake\"\>", "123", "0.43006993007`", "244", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "580", "2.05673758865`", "423", "0", "1", 
+     "1", "\<\"  Zygarde\"\>", "\<\"  DDRest\"\>", "\<\"  Outrage\"\>", "426",
+      "1.48951048951`", "260", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "458", "2.06306306306`", "423", "0", "1", 
+     "1", "\<\"  Talonflame\"\>", "\<\"  Swords Dance\"\>", "\<\"  Brave Bird\
+\"\>", "202", "0.706293706294`", "354", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "330", "2.11538461538`", "423", "0", "1", 
+     "1", "\<\"  Kabutops\"\>", "\<\"  Physical Attacker\"\>", "\<\"  Stone \
+Edge\"\>", "507", "1.77272727273`", "259", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "340", "2.125`", "423", "0", "1", 
+     "1", "\<\"  Scolipede\"\>", "\<\"  Offensive\"\>", "\<\"  Megahorn\"\>", 
+     "277", "0.968531468531`", "319", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "417", "2.12755102041`", "423", "0", "1", 
+     "1", "\<\"  Ludicolo\"\>", "\<\"  Rain Sweeper\"\>", "\<\"  Focus \
+Blast\"\>", "416", "1.45454545455`", "239", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "414", "2.13402061856`", "423", "0", "1", 
+     "1", "\<\"  Thundurus\"\>", "\<\"  Nasty Plot\"\>", "\<\"  Hidden Power \
+Flying\"\>", "138", "0.482517482517`", "353", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "414", "2.13402061856`", "423", "0", "1", 
+     "1", "\<\"  Thundurus\"\>", "\<\"  Prankster Attacker\"\>", "\<\"  Focus \
+Blast\"\>", "476", "1.66433566434`", "353", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "417", "2.13846153846`", "423", "0", "1", 
+     "1", "\<\"  Thundurus-T\"\>", "\<\"  Nasty Plot\"\>", "\<\"  Focus Blast\
+\"\>", "408", "1.42657342657`", "331", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "458", "2.14018691589`", "423", "0", "1", 
+     "1", "\<\"  Talonflame\"\>", "\<\"  Swords Dance + Natural Gift\"\>", \
+"\<\"  Brave Bird\"\>", "169", "0.590909090909`", "363", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "596", "2.14388489209`", "423", "0", "1", 
+     "1", "\<\"  Mega-Ampharos\"\>", "\<\"  Specially Defensive\"\>", "\<\"  \
+Dragon Pulse\"\>", "416", "1.45454545455`", "126", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "416", "2.14432989691`", "423", "0", "1", 
+     "1", "\<\"  Tornadus-T\"\>", "\<\"  Life Orb\"\>", "\<\"  Hurricane\"\>",
+      "290", "1.01398601399`", "365", "0", "0.0919540229885`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "294", "2.14598540146`", "423", "0", "1", 
+     "1", "\<\"  Rotom-H\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Overheat\"\>",
+      "262", "0.916083916084`", "447", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "417", "2.14948453608`", "423", "0", "1", 
+     "1", "\<\"  Thundurus\"\>", "\<\"  Mixed Attacker\"\>", "\<\"  \
+Superpower\"\>", "320", "1.11888111888`", "353", "0", "0.708333333333`", 
+     "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "337", "2.16025641026`", "423", "0", "1", 
+     "1", "\<\"  Chandelure\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Overheat\"\
+\>", "363", "1.26923076923`", "388", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "620", "2.16783216783`", "423", "0", "1", 
+     "1", "\<\"  Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  \
+Outrage\"\>", "620", "2.16783216783`", "423", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "411", "2.18617021277`", "423", "0", "1", 
+     "1", "\<\"  Infernape\"\>", "\<\"  MixApe\"\>", "\<\"  Close Combat\"\>",
+      "499", "1.74475524476`", "346", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "422", "2.19791666667`", "423", "0", "1", 
+     "1", "\<\"  Mega-Charizard-Y\"\>", "\<\"  Drought Wallbreaker\"\>", \
+"\<\"  Focus Blast\"\>", "436", "1.52447552448`", "328", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "355", "2.21875`", "423", "0", "1", 
+     "1", "\<\"  Mega-Medicham\"\>", "\<\"  All-Out Attacker\"\>", "\<\"  \
+High Jump Kick\"\>", "906", "3.16783216783`", "299", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "355", "2.21875`", "423", "0", "1", 
+     "1", "\<\"  Mega-Medicham\"\>", "\<\"  Wallbreaker\"\>", "\<\"  High \
+Jump Kick\"\>", "906", "3.16783216783`", "299", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "417", "2.24193548387`", "423", "0", "1", 
+     "1", "\<\"  Azelf\"\>", "\<\"  Suicide Lead\"\>", "\<\"  Explosion\"\>", 
+     "300", "1.04895104895`", "361", "0", "0.311111111111`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "570", "2.24409448819`", "423", "0", "1", 
+     "1", "\<\"  Mega-Charizard-X\"\>", "\<\"  Bulky Will-O-Wisp\"\>", "\<\"  \
+Dragon Claw\"\>", "258", "0.902097902098`", "264", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "438", "2.25773195876`", "423", "0", "1", 
+     "1", "\<\"  Hawlucha\"\>", "\<\"  Swords Dance\"\>", "\<\"  High Jump \
+Kick\"\>", "434", "1.51748251748`", "334", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "560", "2.25806451613`", "423", "0", "1", 
+     "1", "\<\"  Gyarados\"\>", "\<\"  Bulky Dragon Dance\"\>", "\<\"  Bounce\
+\"\>", "169", "0.590909090909`", "254", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "678", "2.26`", "423", "0", "1", 
+     "1", "\<\"  Kyurem\"\>", "\<\"  SubRoost\"\>", "\<\"  Ice Beam\"\>", 
+     "225", "0.786713286713`", "289", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "580", "2.29249011858`", "423", "0", "1", 
+     "1", "\<\"  Zygarde\"\>", "\<\"  Dragon Dance\"\>", "\<\"  Outrage\"\>", 
+     "554", "1.93706293706`", "289", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "692", "2.30666666667`", "423", "0", "1", 
+     "1", "\<\"  Kyurem-Black\"\>", "\<\"  Substitute Attacker\"\>", "\<\"  \
+Ice Beam\"\>", "219", "0.765734265734`", "276", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "476", "2.31067961165`", "423", "0", "1", 
+     "1", "\<\"  Staraptor\"\>", "\<\"  Choice Band\"\>", "\<\"  Close Combat\
+\"\>", "436", "1.52447552448`", "328", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "476", "2.31067961165`", "423", "0", "1", 
+     "1", "\<\"  Staraptor\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Close \
+Combat\"\>", "292", "1.02097902098`", "492", "0", "0.13698630137`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "417", "2.35593220339`", "423", "0", "1", 
+     "1", "\<\"  Froslass\"\>", "\<\"  Suicide Spiker\"\>", "\<\"  Ice Beam\"\
+\>", "153", "0.534965034965`", "350", "0", "0.379720999995`", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "456", "2.375`", "423", "0", "1", 
+     "1", "\<\"  Talonflame\"\>", "\<\"  Revenge Killer\"\>", "\<\"  Brave \
+Bird\"\>", "277", "0.968531468531`", "351", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "648", "2.38235294118`", "423", "0", "1", 
+     "1", "\<\"  Dragonite\"\>", "\<\"  Bulky Roost\"\>", "\<\"  Dragon \
+Claw\"\>", "306", "1.06993006993`", "196", "0", "0.435729847495`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "660", "2.38267148014`", "423", "0", "1", 
+     "1", "\<\"  Landorus-T\"\>", "\<\"  Defensive\"\>", "\<\"  Stone \
+Edge\"\>", "236", "0.825174825175`", "220", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "692", "2.41958041958`", "423", "0", "1", 
+     "1", "\<\"  Kyurem-Black\"\>", "\<\"  Physically Based Mixed \
+Attacker\"\>", "\<\"  Dragon Claw\"\>", "541", "1.89160839161`", "276", "0", 
+     "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "692", "2.41958041958`", "423", "0", "1", 
+     "1", "\<\"  Kyurem-Black\"\>", "\<\"  Specially Based Mixed \
+Attacker\"\>", "\<\"  Ice Beam\"\>", "285", "0.996503496503`", "276", "0", 
+     "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "426", "2.42045454545`", "423", "0", "1", 
+     "1", "\<\"  Weavile\"\>", "\<\"  Life Orb\"\>", "\<\"  Low Kick\"\>", 
+     "380", "1.32867132867`", "378", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "396", "2.42944785276`", "423", "0", "1", 
+     "1", "\<\"  Crawdaunt\"\>", "\<\"  Wallbreaker\"\>", "\<\"  Knock \
+Off\"\>", "338", "1.18181818182`", "209", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "570", "2.5`", "423", "0", "1", 
+     "1", "\<\"  Mega-Charizard-X\"\>", "\<\"  Bulky Dragon Dance\"\>", "\<\" \
+ Dragon Claw\"\>", "342", "1.1958041958`", "264", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "396", "2.52229299363`", "423", "0", "1", 
+     "1", "\<\"  Starmie\"\>", "\<\"  Offensive Spinner\"\>", "\<\"  Psyshock\
+\"\>", "218", "0.762237762238`", "361", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "640", "2.53968253968`", "423", "0", "1", 
+     "1", "\<\"  Mega-Garchomp\"\>", "\<\"  Mixed\"\>", "\<\"  Draco Meteor\"\
+\>", "576", "2.01398601399`", "283", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "648", "2.56126482213`", "423", "0", "1", 
+     "1", "\<\"  Garchomp\"\>", "\<\"  Swords Dance\"\>", "\<\"  Outrage\"\>",
+      "464", "1.62237762238`", "333", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "460", "2.61363636364`", "423", "0", "1", 
+     "1", "\<\"  Mega-Sharpedo\"\>", "\<\"  Mega Sharpedo\"\>", "\<\"  Crunch\
+\"\>", "180", "0.629370629371`", "309", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "476", "2.64444444444`", "423", "0", "1", 
+     "1", "\<\"  Greninja\"\>", "\<\"  All-Out Attacker\"\>", "\<\"  Ice Beam\
+\"\>", "234", "0.818181818182`", "377", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "476", "2.64444444444`", "423", "0", "1", 
+     "1", "\<\"  Greninja\"\>", "\<\"  Spikes\"\>", "\<\"  Ice Beam\"\>", 
+     "234", "0.818181818182`", "377", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "480", "2.66666666667`", "423", "0", "1", 
+     "1", "\<\"  Greninja\"\>", "\<\"  ORAS All-Out Attacker\"\>", "\<\"  Low \
+Kick\"\>", "382", "1.33566433566`", "377", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "416", "2.66666666667`", "423", "0", "1", 
+     "1", "\<\"  Breloom\"\>", "\<\"  Offensive\"\>", "\<\"  Mach Punch\"\>", 
+     "234", "0.818181818182`", "262", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "596", "2.7465437788`", "423", "0", "1", "1", "\<\"  Mega-Ampharos\"\>",
+      "\<\"  Agility\"\>", "\<\"  Dragon Pulse\"\>", "524", "1.83216783217`", 
+     "189", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "708", "2.80952380952`", "423", "0", "1", 
+     "1", "\<\"  Garchomp\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>",
+      "464", "1.62237762238`", "499", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "708", "2.80952380952`", "423", "0", "1", 
+     "1", "\<\"  Garchomp\"\>", "\<\"  Offensive Stealth Rock\"\>", "\<\"  \
+Outrage\"\>", "464", "1.62237762238`", "333", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "700", "2.81124497992`", "423", "0", "1", 
+     "1", "\<\"  Gliscor\"\>", "\<\"  Physically Defensive\"\>", "\<\"  \
+Earthquake\"\>", "123", "0.43006993007`", "276", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "469", "2.82530120482`", "423", "0", "1", 
+     "1", "\<\"  Mega-Absol\"\>", "\<\"  All-Out Attacker\"\>", "\<\"  \
+Superpower\"\>", "344", "1.2027972028`", "354", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "700", "2.83400809717`", "423", "0", "1", 
+     "1", "\<\"  Gliscor\"\>", "\<\"  SubToxic\"\>", "\<\"  Earthquake\"\>", 
+     "123", "0.43006993007`", "285", "0", "1", "3"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "441", "2.86363636364`", "423", "0", "1", 
+     "1", "\<\"  Mega-Alakazam\"\>", "\<\"  Mega Special Attacker\"\>", "\<\" \
+ Focus Blast\"\>", "516", "1.8041958042`", "392", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "746", "2.88030888031`", "423", "0", "1", 
+     "1", "\<\"  Latios\"\>", "\<\"  Dual Screen Support\"\>", "\<\"  Draco \
+Meteor\"\>", "504", "1.76223776224`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "664", "2.91228070175`", "423", "0", "1", 
+     "1", "\<\"  Landorus-T\"\>", "\<\"  Double Dance\"\>", "\<\"  Stone Edge\
+\"\>", "302", "1.05594405594`", "276", "0", "0.353200883002`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "566", "2.94791666667`", "423", "0", "1", 
+     "1", "\<\"  Mega-Charizard-X\"\>", "\<\"  Dragon Dance\"\>", "\<\"  \
+Dragon Claw\"\>", "342", "1.1958041958`", "299", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "469", "2.96835443038`", "423", "0", "1", 
+     "1", "\<\"  Gengar\"\>", "\<\"  Hex\"\>", "\<\"  Sludge Wave\"\>", "223",
+      "0.77972027972`", "350", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "648", "2.97247706422`", "423", "0", "1", 
+     "1", "\<\"  Dragonite\"\>", "\<\"  Choice Band\"\>", "\<\"  Outrage\"\>",
+      "776", "2.71328671329`", "259", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "648", "2.97247706422`", "423", "0", "1", 
+     "1", "\<\"  Dragonite\"\>", "\<\"  Dragon Dance\"\>", "\<\"  \
+Outrage\"\>", "522", "1.82517482517`", "259", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "466", "2.98717948718`", "423", "0", "1", 
+     "1", "\<\"  Gengar\"\>", "\<\"  SubSplit\"\>", "\<\"  Focus Blast\"\>", 
+     "489", "1.70979020979`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "469", "3.00641025641`", "423", "0", "1", 
+     "1", "\<\"  Gengar\"\>", "\<\"  Life Orb Attacker\"\>", "\<\"  Focus \
+Blast\"\>", "489", "1.70979020979`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "834", "3.02173913043`", "423", "0", "1", 
+     "1", "\<\"  Goodra\"\>", "\<\"  Assault Vest\"\>", "\<\"  Draco Meteor\"\
+\>", "596", "2.08391608392`", "200", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "664", "3.10280373832`", "423", "0", "1", 
+     "1", "\<\"  Landorus\"\>", "\<\"  Calm Mind\"\>", "\<\"  Focus \
+Blast\"\>", "447", "1.56293706294`", "331", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "664", "3.10280373832`", "423", "0", "1", 
+     "1", "\<\"  Landorus-T\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Superpower\
+\"\>", "336", "1.17482517483`", "454", "0", "0.992063492063`", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "538", "3.16470588235`", "423", "0", "1", 
+     "1", "\<\"  Smeargle\"\>", "\<\"  Sticky Web\"\>", "\<\"  No Move\"\>", 
+     "0", "0", "0", "0", "1", "100"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "678", "3.16822429907`", "423", "0", "1", 
+     "1", "\<\"  Latias\"\>", "\<\"  Bulky Defog\"\>", "\<\"  Draco \
+Meteor\"\>", "665", "2.32517482517`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "648", "3.20792079208`", "423", "0", "1", 
+     "1", "\<\"  Kingdra\"\>", "\<\"  CritDra\"\>", "\<\"  Draco Meteor\"\>", 
+     "540", "1.88811188811`", "254", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "648", "3.20792079208`", "423", "0", "1", 
+     "1", "\<\"  Kingdra\"\>", "\<\"  Rain Wallbreaker\"\>", "\<\"  Draco \
+Meteor\"\>", "806", "2.81818181818`", "254", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "736", "3.43925233645`", "423", "0", "1", 
+     "1", "\<\"  Landorus\"\>", "\<\"  ORAS Special Attacker\"\>", "\<\"  \
+Focus Blast\"\>", "447", "1.56293706294`", "331", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "736", "3.43925233645`", "423", "0", "1", 
+     "1", "\<\"  Landorus\"\>", "\<\"  Rock Polish\"\>", "\<\"  Earth Power\"\
+\>", "277", "0.968531468531`", "300", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Ice Beam\"\>", 
+     "736", "3.43925233645`", "423", "0", "1", 
+     "1", "\<\"  Landorus\"\>", "\<\"  Special Attacker\"\>", "\<\"  Focus \
+Blast\"\>", "447", "1.56293706294`", "331", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "648", "3.48387096774`", "423", "0", "1", 
+     "1", "\<\"  Kingdra\"\>", "\<\"  Mixed Rain Sweeper\"\>", "\<\"  Draco \
+Meteor\"\>", "702", "2.45454545455`", "254", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "678", "3.53125`", "423", "0", "1", 
+     "1", "\<\"  Haxorus\"\>", "\<\"  Dragon Dance\"\>", "\<\"  Outrage\"\>", 
+     "725", "2.53496503497`", "290", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "678", "3.53125`", "423", "0", "1", 
+     "1", "\<\"  Haxorus\"\>", "\<\"  Stallbreaker\"\>", "\<\"  Outrage\"\>", 
+     "558", "1.95104895105`", "290", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "744", "3.61165048544`", "423", "0", "1", 
+     "1", "\<\"  Noivern\"\>", "\<\"  Life Orb\"\>", "\<\"  Draco Meteor\"\>",
+      "647", "2.26223776224`", "379", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "836", "3.69911504425`", "423", "0", "1", 
+     "1", "\<\"  Gyarados\"\>", "\<\"  Offensive Dragon Dance\"\>", "\<\"  \
+Stone Edge\"\>", "276", "0.965034965035`", "261", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "746", "3.80612244898`", "423", "0", "1", 
+     "1", "\<\"  Latios\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Draco Meteor\"\
+\>", "612", "2.13986013986`", "525", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "746", "3.80612244898`", "423", "0", "1", 
+     "1", "\<\"  Latios\"\>", "\<\"  Life Orb\"\>", "\<\"  Draco Meteor\"\>", 
+     "795", "2.77972027972`", "350", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "576", "3.94520547945`", "423", "0", "1", 
+     "1", "\<\"  Alakazam\"\>", "\<\"  Revenge Killer\"\>", "\<\"  Focus \
+Blast\"\>", "386", "1.34965034965`", "372", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Fusion \
+Bolt\"\>", "702", "4.22891566265`", "423", "0", "1", 
+     "1", "\<\"  Mega-Beedrill\"\>", "\<\"  Mega Beedrill\"\>", "\<\"  U turn\
+\"\>", "222", "0.776223776224`", "389", "0", "1", "2"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "788", "4.47727272727`", "423", "0", "1", 
+     "1", "\<\"  Mega-Sceptile\"\>", "\<\"  Mega Sceptile\"\>", "\<\"  Dragon \
+Pulse\"\>", "434", "1.51748251748`", "427", "0", "1", "1"},
+    {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "\<\"  Outrage\"\>", 
+     "534", "5.03773584906`", "423", "0", "1", 
+     "1", "\<\"  Dugtrio\"\>", "\<\"  Trapper\"\>", "\<\"  Earthquake\"\>", 
+     "141", "0.493006993007`", "372", "0", "1", "3"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.642662362188052*^9, 3.642662403688485*^9}]
+}, Open  ]],
 
 Cell[BoxData[{
  RowBox[{
@@ -33808,34 +35153,6 @@ Cell[BoxData[{
       RowBox[{"target", "/", "d"}], "]"}]}]}], "]"}]}]}], "Input",
  CellChangeTimes->{{3.636217452579122*^9, 3.636217500582323*^9}, {
   3.636217553829731*^9, 3.636217585956265*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Function", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"d", ",", "t"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"nko", "[", 
-       RowBox[{"d", ",", "t"}], "]"}], ",", 
-      RowBox[{"kochance", "[", 
-       RowBox[{
-        RowBox[{"nko", "[", 
-         RowBox[{"d", ",", "t"}], "]"}], ",", "d", ",", "t"}], "]"}]}], 
-     "}"}]}], "]"}], "[", 
-  RowBox[{"0.33", ",", 
-   RowBox[{"1", "-", ".0625"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.636217587553213*^9, 3.636217695514202*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"3", ",", "0.19873204032983766`"}], "}"}]], "Output",
- CellChangeTimes->{{3.636217677178892*^9, 3.636217688957959*^9}, {
-  3.637409858279854*^9, 3.637409870766089*^9}}]
-}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -33900,6 +35217,34 @@ Cell[BoxData[
   3.636163321296728*^9, 3.6361636735506973`*^9}, {3.6361637085930967`*^9, 
   3.6361637334613457`*^9}, {3.636163915710639*^9, 3.6361639815804243`*^9}, {
   3.636164646208424*^9, 3.636164649363244*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"GatherBy", "[", 
+     RowBox[{
+      RowBox[{"Transpose", "@", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"#", "[", 
+          RowBox[{"[", 
+           RowBox[{";;", ",", "10"}], "]"}], "]"}], ",", 
+         RowBox[{"#", "[", 
+          RowBox[{"[", 
+           RowBox[{";;", ",", "11"}], "]"}], "]"}], ",", 
+         RowBox[{"wins", "[", "#", " ", "]"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"#", "[", 
+        RowBox[{"[", 
+         RowBox[{"-", "1"}], "]"}], "]"}], "&"}]}], "]"}], "&"}], "@", 
+   RowBox[{"sweepers", "[", 
+    RowBox[{"[", "95", "]"}], "]"}]}], "//", 
+  RowBox[{
+   RowBox[{"TableForm", "/@", "#"}], "&"}]}]], "Input",
+ CellChangeTimes->{{3.641060377978181*^9, 3.641060487315424*^9}, {
+  3.6410939747319593`*^9, 3.641093974852419*^9}, {3.6426625627381983`*^9, 
+  3.642662562882471*^9}}],
 
 Cell[CellGroupData[{
 
@@ -33991,7 +35336,7 @@ Cell[BoxData[
     RowBox[{"#", ",", 
      RowBox[{"TableHeadings", "\[Rule]", 
       RowBox[{"{", 
-       RowBox[{"None", ",", 
+       RowBox[{"Automatic", ",", 
         RowBox[{"{", 
          RowBox[{
          "\"\<Name\>\"", ",", "\"\<Set\>\"", ",", "\"\<LD\>\"", ",", 
@@ -34015,12 +35360,14 @@ Cell[BoxData[
    3.636529709703498*^9, 3.6365297248875847`*^9}, {3.636529764832453*^9, 
    3.636529766870687*^9}, {3.6365298084337597`*^9, 3.636529844954919*^9}, {
    3.636529875062251*^9, 3.636529942415498*^9}, {3.63653007404993*^9, 
-   3.636530077048448*^9}}],
+   3.636530077048448*^9}, {3.641059594887583*^9, 3.641059595879547*^9}}],
 
 Cell[BoxData[
  TagBox[
   TagBox[GridBox[{
      {
+      StyleBox["\[Null]",
+       ShowStringCharacters->False], 
       TagBox["\<\"Name\"\>",
        HoldForm], 
       TagBox["\<\"Set\"\>",
@@ -34039,494 +35386,488 @@ Cell[BoxData[
        HoldForm], 
       TagBox["\<\"WP\"\>",
        HoldForm]},
-     {"\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "24", "8", "0", "1", 
-      "106", "102", "0"},
-     {"\<\"Dragonite\"\>", "\<\"  Choice Band\"\>", "5", "30", "0", "3", 
-      "177", "26", "0"},
-     {"\<\"Garchomp\"\>", "\<\"  Choice Scarf\"\>", "37", "2", "0", "1", "85",
-       "116", "0"},
-     {"\<\"Landorus-T\"\>", "\<\"  Choice Scarf\"\>", "36", "3", "0", "1", 
-      "88", "113", "0"},
-     {"\<\"Mega-Swampert\"\>", "\<\"  Swift Swim\"\>", "11", "31", "0", "1", 
-      "179", "19", "0"},
-     {"\<\"Noivern\"\>", "\<\"  Life Orb\"\>", "30", "16", "0", "1", "73", 
-      "121", "0"},
-     {"\<\"Latios\"\>", "\<\"  Choice Scarf\"\>", "47", "0", "0", "1", "68", 
-      "125", "0"},
-     {"\<\"Mega-Swampert\"\>", "\<\"  Swampert\"\>", "12", "35", "0", "1", 
-      "173", "20", "0"},
-     {"\<\"Mega-Lopunny\"\>", "\<\"  Mega Lopunny\"\>", "43", "10", "0", "2", 
-      "47", "139", "0"},
-     {"\<\"Diggersby\"\>", "\<\"  Choice Scarf\"\>", "41", "15", "0", "1", 
-      "44", "140", "0"},
-     {"\<\"Dragonite\"\>", "\<\"  Dragon Dance\"\>", "25", "29", "0", "3", 
-      "166", "18", "0"},
-     {"\<\"Greninja\"\>", "\<\"  All-Out Attacker\"\>", "36", "20", "0", "2", 
-      "54", "129", "0"},
-     {"\<\"Zygarde\"\>", "\<\"  Dragon Dance\"\>", "14", "42", "0", "2", 
-      "129", "54", "0"},
-     {"\<\"Keldeo\"\>", "\<\"  Choice Scarf\"\>", "59", "0", "0", "2", "88", 
-      "92", "0"},
-     {"\<\"Mega-Alakazam\"\>", "\<\"  Mega Special Attacker\"\>", "46", "14", 
-      "0", "1", "29", "151", "0"},
-     {"\<\"Azumarill\"\>", "\<\"  Assault Vest\"\>", "7", "54", "0", "1", 
-      "175", "4", "0"},
-     {"\<\"Greninja\"\>", "\<\"  All-Out Attacker\"\>", "40", "20", "0", "2", 
-      "49", "130", "0"},
-     {"\<\"Raikou\"\>", "\<\"  Choice Specs\"\>", "37", "24", "0", "3", "85", 
-      "92", "0"},
-     {"\<\"Dragonite\"\>", "\<\"  Bulky Roost\"\>", "20", "45", "0", "1", 
-      "160", "15", "0"},
-     {"\<\"Keldeo\"\>", "\<\"  Choice Specs\"\>", "23", "39", "0", "4", "103",
-       "72", "0"},
-     {"\<\"Mega-Aerodactyl\"\>", "\<\"  Offensive\"\>", "54", "11", "0", "1", 
-      "66", "109", "0"},
-     {"\<\"Staraptor\"\>", "\<\"  Choice Scarf\"\>", "62", "3", "0", "2", 
-      "34", "140", "0"},
-     {"\<\"Weavile\"\>", "\<\"  Life Orb\"\>", "47", "20", "0", "1", "37", 
-      "136", "0"},
-     {"\<\"Heatran\"\>", "\<\"  Choice Scarf\"\>", "56", "13", "0", "1", "78",
-       "93", "0"},
-     {"\<\"Latios\"\>", "\<\"  Life Orb\"\>", "27", "34", "0", "9", "83", 
-      "88", "0"},
-     {"\<\"Greninja\"\>", "\<\"  Spikes\"\>", "51", "20", "0", "1", "46", 
-      "123", "0"},
-     {"\<\"Mega-Garchomp\"\>", "\<\"  Mixed\"\>", "21", "50", "0", "1", "126",
-       "43", "0"},
-     {"\<\"Thundurus\"\>", "\<\"  Prankster Attacker\"\>", "37", "32", "0", 
-      "3", "71", "98", "0"},
-     {"\<\"Latias\"\>", "\<\"  Bulky Defog\"\>", "34", "31", "0", "8", "97", 
-      "71", "0"},
-     {"\<\"Goodra\"\>", "\<\"  Assault Vest\"\>", "12", "60", "0", "2", "151",
-       "16", "0"},
-     {"\<\"Azelf\"\>", "\<\"  Suicide Lead\"\>", "47", "24", "0", "4", "38", 
-      "128", "0"},
-     {"\<\"Excadrill\"\>", "\<\"  Choice Scarf\"\>", "72", "2", "0", "1", 
-      "51", "115", "0"},
-     {"\<\"Garchomp\"\>", "\<\"  Swords Dance\"\>", "37", "37", "0", "2", 
-      "96", "69", "0"},
-     {"\<\"Talonflame\"\>", "\<\"  Revenge Killer\"\>", "42", "33", "0", "1", 
-      "63", "102", "0"},
-     {"\<\"Tornadus-T\"\>", "\<\"  Assault Vest\"\>", "61", "14", "0", "1", 
-      "84", "81", "0"},
-     {"\<\"Sylveon\"\>", "\<\"  Choice Specs\"\>", "5", "71", "0", "1", "152",
-       "12", "0"},
-     {"\<\"Thundurus\"\>", "\<\"  Mixed Attacker\"\>", "43", "32", "0", "3", 
-      "62", "101", "0"},
-     {"\<\"Tornadus-T\"\>", "\<\"  Life Orb\"\>", "55", "22", "0", "1", "49", 
-      "114", "0"},
-     {"\<\"Mega-Gardevoir\"\>", "\<\"  Offensive\"\>", "25", "50", "0", "4", 
-      "73", "89", "0"},
-     {"\<\"Rotom-H\"\>", "\<\"  Choice Scarf\"\>", "73", "5", "0", "1", "65", 
-      "97", "0"},
-     {"\<\"Azumarill\"\>", "\<\"  Choice Band\"\>", "6", "72", "0", "2", 
-      "148", "13", "0"},
-     {"\<\"Manaphy\"\>", "\<\"  Tail Glow\"\>", "52", "27", "0", "1", "118", 
-      "43", "0"},
-     {"\<\"Mega-Manectric\"\>", "\<\"  Special Attacker\"\>", "73", "5", "0", 
-      "2", "73", "88", "0"},
-     {"\<\"Terrakion\"\>", "\<\"  Choice Scarf\"\>", "77", "1", "0", "2", 
-      "49", "112", "0"},
-     {"\<\"Chandelure\"\>", "\<\"  Choice Scarf\"\>", "70", "10", "0", "1", 
-      "49", "111", "0"},
-     {"\<\"Mega-Gardevoir\"\>", "\<\"  Calm Mind\"\>", "18", "58", "0", "5", 
-      "82", "78", "0"},
-     {"\<\"Zygarde\"\>", "\<\"  DDRest\"\>", "31", "49", "0", "1", "123", 
-      "37", "0"},
-     {"\<\"Kyurem-Black\"\>", "\<\"  Physically Based Mixed Attacker\"\>", 
-      "16", "63", "0", "3", "110", "49", "0"},
-     {"\<\"Mega-Glalie\"\>", "\<\"  Mega Glalie\"\>", "19", "58", "0", "5", 
-      "73", "86", "0"},
-     {"\<\"Garchomp\"\>", "\<\"  Offensive Stealth Rock\"\>", "40", "41", "0",
-       "2", "84", "74", "0"},
-     {"\<\"Gyarados\"\>", "\<\"  Bulky Dragon Dance\"\>", "39", "42", "0", 
-      "2", "133", "25", "0"},
-     {"\<\"Mega-Gallade\"\>", "\<\"  Mega Gallade\"\>", "40", "34", "0", "9", 
-      "66", "92", "0"},
-     {"\<\"Azelf\"\>", "\<\"  Rain Dance\"\>", "62", "18", "0", "4", "63", 
-      "94", "0"},
-     {"\<\"Raikou\"\>", "\<\"  Assault Vest\"\>", "66", "15", "0", "3", "89", 
-      "68", "0"},
-     {"\<\"Kyurem-Black\"\>", "\<\"  Specially Based Mixed Attacker\"\>", 
-      "13", "68", "0", "4", "105", "51", "0"},
-     {"\<\"Mega-Metagross\"\>", "\<\"  Mega Metagross\"\>", "51", "28", "0", 
-      "7", "75", "80", "0"},
-     {"\<\"Mega-Sceptile\"\>", "\<\"  Mega Sceptile\"\>", "77", "8", "0", "1",
-       "32", "123", "0"},
-     {"\<\"Reuniclus\"\>", "\<\"  Trick Room\"\>", "7", "77", "0", "2", "153",
-       "2", "0"},
-     {"\<\"Starmie\"\>", "\<\"  Offensive Spinner\"\>", "54", "28", "0", "4", 
-      "45", "110", "0"},
-     {"\<\"Mega-Charizard-Y\"\>", "\<\"  Drought Wallbreaker\"\>", "43", "42",
-       "0", "4", "80", "72", "0"},
-     {"\<\"Staraptor\"\>", "\<\"  Choice Band\"\>", "16", "68", "0", "5", 
-      "45", "107", "0"},
-     {"\<\"Gengar\"\>", "\<\"  Life Orb Attacker\"\>", "43", "38", "0", "9", 
-      "48", "103", "0"},
-     {"\<\"Terrakion\"\>", "\<\"  Life Orb Attacker\"\>", "36", "46", "0", 
-      "8", "47", "104", "0"},
-     {"\<\"Mega-Pinsir\"\>", "\<\"  Swords Dance\"\>", "37", "53", "0", "1", 
-      "52", "98", "0"},
-     {"\<\"Landorus-T\"\>", "\<\"  Defensive\"\>", "47", "44", "0", "1", 
-      "124", "25", "0"},
-     {"\<\"Latios\"\>", "\<\"  Dual Screen Support\"\>", "61", "25", "0", "6",
-       "87", "62", "0"},
-     {"\<\"Mega-Venusaur\"\>", "\<\"  Offensive\"\>", "33", "58", "0", "1", 
-      "135", "14", "0"},
-     {"\<\"Kingdra\"\>", "\<\"  Rain Wallbreaker\"\>", "12", "79", "0", "3", 
-      "115", "32", "0"},
-     {"\<\"Mega-Aggron\"\>", "\<\"  Tank\"\>", "36", "54", "0", "4", "141", 
+     {"1", "\<\"Kyurem-Black\"\>", "\<\"  Choice Scarf\"\>", "24", "8", "0", 
+      "1", "103", "102", "0"},
+     {"2", "\<\"Dragonite\"\>", "\<\"  Choice Band\"\>", "5", "30", "0", "3", 
+      "174", "26", "0"},
+     {"3", "\<\"Garchomp\"\>", "\<\"  Choice Scarf\"\>", "37", "2", "0", "1", 
+      "81", "117", "0"},
+     {"4", "\<\"Landorus-T\"\>", "\<\"  Choice Scarf\"\>", "37", "3", "0", 
+      "1", "85", "112", "0"},
+     {"5", "\<\"Mega-Swampert\"\>", "\<\"  Swift Swim\"\>", "11", "30", "0", 
+      "1", "177", "19", "0"},
+     {"6", "\<\"Mega-Swampert\"\>", "\<\"  Swampert\"\>", "12", "34", "0", 
+      "1", "171", "20", "0"},
+     {"7", "\<\"Noivern\"\>", "\<\"  Life Orb\"\>", "30", "16", "0", "1", 
+      "70", "121", "0"},
+     {"8", "\<\"Latios\"\>", "\<\"  Choice Scarf\"\>", "47", "0", "0", "1", 
+      "68", "122", "0"},
+     {"9", "\<\"Mega-Lopunny\"\>", "\<\"  Mega Lopunny\"\>", "43", "10", "0", 
+      "2", "45", "138", "0"},
+     {"10", "\<\"Diggersby\"\>", "\<\"  Choice Scarf\"\>", "41", "15", "0", 
+      "1", "42", "139", "0"},
+     {"11", "\<\"Dragonite\"\>", "\<\"  Dragon Dance\"\>", "25", "29", "0", 
+      "3", "163", "18", "0"},
+     {"12", "\<\"Greninja\"\>", "\<\"  All-Out Attacker\"\>", "36", "20", "0",
+       "2", "51", "129", "0"},
+     {"13", "\<\"Zygarde\"\>", "\<\"  Dragon Dance\"\>", "14", "43", "0", "2",
+       "125", "54", "0"},
+     {"14", "\<\"Keldeo\"\>", "\<\"  Choice Scarf\"\>", "59", "0", "0", "2", 
+      "85", "92", "0"},
+     {"15", "\<\"Mega-Alakazam\"\>", "\<\"  Mega Special Attacker\"\>", "46", 
+      "14", "0", "1", "28", "149", "0"},
+     {"16", "\<\"Azumarill\"\>", "\<\"  Assault Vest\"\>", "7", "54", "0", 
+      "1", "172", "4", "0"},
+     {"17", "\<\"Greninja\"\>", "\<\"  ORAS All-Out Attacker\"\>", "40", "20",
+       "0", "2", "47", "129", "0"},
+     {"18", "\<\"Raikou\"\>", "\<\"  Choice Specs\"\>", "37", "24", "0", "3", 
+      "83", "91", "0"},
+     {"19", "\<\"Keldeo\"\>", "\<\"  Choice Specs\"\>", "23", "39", "0", "4", 
+      "100", "72", "0"},
+     {"20", "\<\"Mega-Aerodactyl\"\>", "\<\"  Offensive\"\>", "54", "11", "0",
+       "1", "63", "109", "0"},
+     {"21", "\<\"Dragonite\"\>", "\<\"  Bulky Roost\"\>", "20", "46", "0", 
+      "1", "156", "15", "0"},
+     {"22", "\<\"Staraptor\"\>", "\<\"  Choice Scarf\"\>", "62", "3", "0", 
+      "2", "32", "139", "0"},
+     {"23", "\<\"Weavile\"\>", "\<\"  Life Orb\"\>", "47", "20", "0", "1", 
+      "35", "135", "0"},
+     {"24", "\<\"Heatran\"\>", "\<\"  Choice Scarf\"\>", "56", "13", "0", "1",
+       "78", "90", "0"},
+     {"25", "\<\"Latios\"\>", "\<\"  Life Orb\"\>", "27", "34", "0", "9", 
+      "82", "86", "0"},
+     {"26", "\<\"Greninja\"\>", "\<\"  Spikes\"\>", "51", "20", "0", "1", 
+      "43", "123", "0"},
+     {"27", "\<\"Thundurus\"\>", "\<\"  Prankster Attacker\"\>", "37", "32", 
+      "0", "3", "69", "97", "0"},
+     {"28", "\<\"Goodra\"\>", "\<\"  Assault Vest\"\>", "12", "59", "0", "2", 
+      "149", "16", "0"},
+     {"29", "\<\"Latias\"\>", "\<\"  Bulky Defog\"\>", "34", "31", "0", "8", 
+      "95", "70", "0"},
+     {"30", "\<\"Mega-Garchomp\"\>", "\<\"  Mixed\"\>", "21", "51", "0", "1", 
+      "122", "43", "0"},
+     {"31", "\<\"Sylveon\"\>", "\<\"  Choice Specs\"\>", "5", "68", "0", "1", 
+      "152", "12", "0"},
+     {"32", "\<\"Azelf\"\>", "\<\"  Suicide Lead\"\>", "47", "24", "0", "4", 
+      "36", "127", "0"},
+     {"33", "\<\"Excadrill\"\>", "\<\"  Choice Scarf\"\>", "73", "2", "0", 
+      "1", "50", "112", "0"},
+     {"34", "\<\"Garchomp\"\>", "\<\"  Swords Dance\"\>", "37", "37", "0", 
+      "2", "92", "70", "0"},
+     {"35", "\<\"Talonflame\"\>", "\<\"  Revenge Killer\"\>", "42", "33", "0",
+       "1", "59", "103", "0"},
+     {"36", "\<\"Tornadus-T\"\>", "\<\"  Assault Vest\"\>", "61", "14", "0", 
+      "1", "82", "80", "0"},
+     {"37", "\<\"Thundurus\"\>", "\<\"  Mixed Attacker\"\>", "43", "32", "0", 
+      "3", "60", "100", "0"},
+     {"38", "\<\"Tornadus-T\"\>", "\<\"  Life Orb\"\>", "55", "22", "0", "1", 
+      "47", "113", "0"},
+     {"39", "\<\"Chandelure\"\>", "\<\"  Choice Scarf\"\>", "68", "10", "0", 
+      "1", "48", "111", "0"},
+     {"40", "\<\"Manaphy\"\>", "\<\"  Tail Glow\"\>", "52", "26", "0", "1", 
+      "116", "43", "0"},
+     {"41", "\<\"Rotom-H\"\>", "\<\"  Choice Scarf\"\>", "73", "5", "0", "1", 
+      "61", "98", "0"},
+     {"42", "\<\"Azumarill\"\>", "\<\"  Choice Band\"\>", "6", "72", "0", "2",
+       "145", "13", "0"},
+     {"43", "\<\"Mega-Gardevoir\"\>", "\<\"  Offensive\"\>", "25", "51", "0", 
+      "4", "72", "86", "0"},
+     {"44", "\<\"Mega-Manectric\"\>", "\<\"  Special Attacker\"\>", "73", "5",
+       "0", "2", "71", "87", "0"},
+     {"45", "\<\"Mega-Gardevoir\"\>", "\<\"  Calm Mind\"\>", "18", "59", "0", 
+      "4", "80", "77", "0"},
+     {"46", "\<\"Mega-Glalie\"\>", "\<\"  Mega Glalie\"\>", "19", "58", "0", 
+      "4", "72", "85", "0"},
+     {"47", "\<\"Terrakion\"\>", "\<\"  Choice Scarf\"\>", "78", "1", "0", 
+      "2", "48", "109", "0"},
+     {"48", "\<\"Kyurem-Black\"\>", "\<\"  Physically Based Mixed \
+Attacker\"\>", "16", "63", "0", "3", "107", "49", "0"},
+     {"49", "\<\"Zygarde\"\>", "\<\"  DDRest\"\>", "31", "50", "0", "1", 
+      "119", "37", "0"},
+     {"50", "\<\"Garchomp\"\>", "\<\"  Offensive Stealth Rock\"\>", "40", 
+      "41", "0", "2", "80", "75", "0"},
+     {"51", "\<\"Gyarados\"\>", "\<\"  Bulky Dragon Dance\"\>", "39", "42", 
+      "0", "2", "130", "25", "0"},
+     {"52", "\<\"Azelf\"\>", "\<\"  Rain Dance\"\>", "62", "18", "0", "4", 
+      "61", "93", "0"},
+     {"53", "\<\"Mega-Gallade\"\>", "\<\"  Mega Gallade\"\>", "41", "34", "0",
+       "9", "63", "91", "0"},
+     {"54", "\<\"Raikou\"\>", "\<\"  Assault Vest\"\>", "66", "15", "0", "3", 
+      "87", "67", "0"},
+     {"55", "\<\"Kyurem-Black\"\>", "\<\"  Specially Based Mixed \
+Attacker\"\>", "13", "68", "0", "4", "102", "51", "0"},
+     {"56", "\<\"Mega-Sceptile\"\>", "\<\"  Mega Sceptile\"\>", "76", "8", 
+      "0", "1", "32", "121", "0"},
+     {"57", "\<\"Starmie\"\>", "\<\"  Offensive Spinner\"\>", "53", "28", "0",
+       "4", "42", "111", "0"},
+     {"58", "\<\"Reuniclus\"\>", "\<\"  Trick Room\"\>", "7", "77", "0", "2", 
+      "150", "2", "0"},
+     {"59", "\<\"Mega-Metagross\"\>", "\<\"  Mega Metagross\"\>", "52", "28", 
+      "0", "7", "75", "76", "0"},
+     {"60", "\<\"Mega-Charizard-Y\"\>", "\<\"  Drought Wallbreaker\"\>", "43",
+       "42", "0", "4", "80", "69", "0"},
+     {"61", "\<\"Staraptor\"\>", "\<\"  Choice Band\"\>", "16", "69", "0", 
+      "4", "43", "106", "0"},
+     {"62", "\<\"Gengar\"\>", "\<\"  Life Orb Attacker\"\>", "43", "38", "0", 
+      "9", "48", "100", "0"},
+     {"63", "\<\"Terrakion\"\>", "\<\"  Life Orb Attacker\"\>", "36", "46", 
+      "0", "8", "46", "102", "0"},
+     {"64", "\<\"Mega-Pinsir\"\>", "\<\"  Swords Dance\"\>", "37", "53", "0", 
+      "1", "50", "97", "0"},
+     {"65", "\<\"Latios\"\>", "\<\"  Dual Screen Support\"\>", "61", "25", 
+      "0", "6", "85", "61", "0"},
+     {"66", "\<\"Landorus-T\"\>", "\<\"  Defensive\"\>", "48", "44", "0", "1",
+       "120", "25", "0"},
+     {"67", "\<\"Mega-Aggron\"\>", "\<\"  Tank\"\>", "35", "54", "0", "4", 
+      "139", "6", "0"},
+     {"68", "\<\"Mega-Venusaur\"\>", "\<\"  Offensive\"\>", "33", "59", "0", 
+      "1", "131", "14", "0"},
+     {"69", "\<\"Kingdra\"\>", "\<\"  Rain Wallbreaker\"\>", "12", "80", "0", 
+      "3", "111", "32", "0"},
+     {"70", "\<\"Mega-Medicham\"\>", "\<\"  All-Out Attacker\"\>", "13", "77",
+       "0", "5", "55", "88", "0"},
+     {"71", "\<\"Mega-Medicham\"\>", "\<\"  Wallbreaker\"\>", "13", "77", "0",
+       "5", "55", "88", "0"},
+     {"72", "\<\"Sylveon\"\>", "\<\"  Calm Mind + Baton Pass\"\>", "51", "43",
+       "0", "1", "136", "7", "0"},
+     {"73", "\<\"Sylveon\"\>", "\<\"  Cleric\"\>", "50", "46", "0", "1", 
+      "135", "6", "0"},
+     {"74", "\<\"Keldeo\"\>", "\<\"  Calm Mind\"\>", "61", "31", "0", "6", 
+      "86", "54", "0"},
+     {"75", "\<\"Mega-Gyarados\"\>", "\<\"  Mega Dragon Dance\"\>", "39", 
+      "57", "0", "2", "112", "28", "0"},
+     {"76", "\<\"Slowking\"\>", "\<\"  Assault Vest\"\>", "28", "68", "0", 
+      "2", "138", "2", "0"},
+     {"77", "\<\"Keldeo\"\>", "\<\"  Endeavor\"\>", "62", "31", "0", "6", 
+      "84", "55", "0"},
+     {"78", "\<\"Kyurem-Black\"\>", "\<\"  Substitute Attacker\"\>", "29", 
+      "65", "0", "5", "93", "46", "0"},
+     {"79", "\<\"Landorus\"\>", "\<\"  ORAS Special Attacker\"\>", "53", "45",
+       "0", "1", "59", "80", "0"},
+     {"80", "\<\"Mega-Blastoise\"\>", "\<\"  Rapid Spin\"\>", "44", "53", "0",
+       "2", "128", "11", "0"},
+     {"81", "\<\"Seismitoad\"\>", "\<\"  Rain Sweeper\"\>", "32", "66", "0", 
+      "1", "107", "32", "0"},
+     {"82", "\<\"Landorus-T\"\>", "\<\"  Double Dance\"\>", "40", "55", "0", 
+      "5", "96", "42", "0"},
+     {"83", "\<\"Mega-Altaria\"\>", "\<\"  Mega Special Attacker\"\>", "32", 
+      "65", "0", "4", "99", "38", "0"},
+     {"84", "\<\"Tyranitar\"\>", "\<\"  Choice Scarf\"\>", "79", "21", "0", 
+      "1", "62", "75", "0"},
+     {"85", "\<\"Azumarill\"\>", "\<\"  Belly Drum\"\>", "23", "78", "0", "1",
+       "117", "19", "0"},
+     {"86", "\<\"Tangrowth\"\>", "\<\"  Assault Vest\"\>", "50", "51", "0", 
+      "1", "133", "3", "0"},
+     {"87", "\<\"Mega-Pidgeot\"\>", "\<\"  Mega Pidgeot\"\>", "60", "42", "0",
+       "1", "45", "90", "0"},
+     {"88", "\<\"Raikou\"\>", "\<\"  Calm Mind\"\>", "83", "18", "0", "2", 
+      "65", "70", "0"},
+     {"89", "\<\"Gengar\"\>", "\<\"  SubSplit\"\>", "59", "36", "0", "9", 
+      "41", "93", "0"},
+     {"90", "\<\"Haxorus\"\>", "\<\"  Dragon Dance\"\>", "28", "74", "0", "2",
+       "68", "66", "0"},
+     {"91", "\<\"Infernape\"\>", "\<\"  MixApe\"\>", "51", "45", "0", "8", 
+      "43", "91", "0"},
+     {"92", "\<\"Mega-Altaria\"\>", "\<\"  Mega Dragon Dance\"\>", "39", "62",
+       "0", "3", "105", "29", "0"},
+     {"93", "\<\"Mega-Tyranitar\"\>", "\<\"  Dragon Dance\"\>", "41", "62", 
+      "0", "1", "91", "43", "0"},
+     {"94", "\<\"Talonflame\"\>", "\<\"  Swords Dance\"\>", "77", "25", "0", 
+      "2", "62", "72", "0"},
+     {"95", "\<\"Haxorus\"\>", "\<\"  Stallbreaker\"\>", "28", "75", "0", "2",
+       "53", "80", "0"},
+     {"96", "\<\"Porygon2\"\>", "\<\"  Trick Room Support\"\>", "51", "53", 
+      "0", "1", "127", "6", "0"},
+     {"97", "\<\"Rotom-W\"\>", "\<\"  Defensive\"\>", "62", "41", "0", "2", 
+      "117", "16", "0"},
+     {"98", "\<\"Entei\"\>", "\<\"  All-Out Attacker\"\>", "70", "32", "0", 
+      "4", "82", "50", "0"},
+     {"99", "\<\"Gyarados\"\>", "\<\"  Offensive Dragon Dance\"\>", "49", 
+      "55", "0", "2", "94", "38", "0"},
+     {"100", "\<\"Volcarona\"\>", "\<\"  Offensive Quiver Dance\"\>", "63", 
+      "40", "0", "3", "89", "43", "0"},
+     {"101", "\<\"Thundurus-T\"\>", "\<\"  Nasty Plot\"\>", "57", "47", "0", 
+      "3", "60", "71", "0"},
+     {"102", "\<\"Keldeo\"\>", "\<\"  SubCM\"\>", "77", "25", "0", "6", "77", 
+      "53", "0"},
+     {"103", "\<\"Mega-Altaria\"\>", "\<\"  Bulky Mega Altaria\"\>", "63", 
+      "43", "0", "2", "120", "10", "0"},
+     {"104", "\<\"Mega-Houndoom\"\>", "\<\"  Nasty Plot\"\>", "92", "14", "0",
+       "4", "40", "88", "0"},
+     {"105", "\<\"Scizor\"\>", "\<\"  Choice Band\"\>", "12", "97", "0", "1", 
+      "111", "17", "0"},
+     {"106", "\<\"Talonflame\"\>", "\<\"  Swords Dance + Natural Gift\"\>", 
+      "94", "15", "0", "1", "47", "81", "0"},
+     {"107", "\<\"Hawlucha\"\>", "\<\"  Swords Dance\"\>", "55", "55", "0", 
+      "1", "38", "89", "0"},
+     {"108", "\<\"Landorus\"\>", "\<\"  Special Attacker\"\>", "61", "47", 
+      "0", "3", "50", "77", "0"},
+     {"109", "\<\"Magnezone\"\>", "\<\"  Choice Scarf\"\>", "86", "25", "0", 
+      "1", "57", "69", "0"},
+     {"110", "\<\"Mega-Ampharos\"\>", "\<\"  Agility\"\>", "16", "95", "0", 
+      "1", "98", "28", "0"},
+     {"111", "\<\"Mega-Ampharos\"\>", "\<\"  Specially Defensive\"\>", "37", 
+      "75", "0", "1", "121", "4", "0"},
+     {"112", "\<\"Porygon2\"\>", "\<\"  Specially Defensive\"\>", "58", "52", 
+      "0", "3", "120", "5", "0"},
+     {"113", "\<\"Zapdos\"\>", "\<\"  Defensive\"\>", "72", "39", "0", "2", 
+      "106", "19", "0"},
+     {"114", "\<\"Chansey\"\>", "\<\"  Support\"\>", "61", "49", "0", "4", 
+      "119", "5", "0"},
+     {"115", "\<\"Chansey\"\>", "\<\"  Wish Support\"\>", "61", "49", "0", 
+      "4", "119", "5", "0"},
+     {"116", "\<\"Landorus\"\>", "\<\"  Calm Mind\"\>", "69", "42", "0", "3", 
+      "56", "68", "0"},
+     {"117", "\<\"Mega-Charizard-X\"\>", "\<\"  Dragon Dance\"\>", "49", "60",
+       "0", "5", "62", "62", "0"},
+     {"118", "\<\"Mega-Diancie\"\>", "\<\"  Diancie\"\>", "69", "40", "0", 
+      "5", "31", "93", "0"},
+     {"119", "\<\"Mega-Scizor\"\>", "\<\"  Offensive Swords Dance\"\>", "58", 
+      "55", "0", "1", "89", "35", "0"},
+     {"120", "\<\"Kingdra\"\>", "\<\"  Mixed Rain Sweeper\"\>", "19", "93", 
+      "0", "3", "81", "42", "0"},
+     {"121", "\<\"Porygon2\"\>", "\<\"  Physically Defensive\"\>", "73", "40",
+       "0", "2", "114", "9", "0"},
+     {"122", "\<\"Bronzong\"\>", "\<\"  Trick Room Support\"\>", "42", "73", 
+      "0", "1", "121", "1", "0"},
+     {"123", "\<\"Exploud\"\>", "\<\"  Choice Specs\"\>", "7", "108", "0", 
+      "1", "87", "35", "0"},
+     {"124", "\<\"Scolipede\"\>", "\<\"  Offensive\"\>", "61", "54", "0", "1",
+       "37", "85", "0"},
+     {"125", "\<\"Krookodile\"\>", "\<\"  Offensive\"\>", "51", "66", "0", 
+      "1", "47", "73", "0"},
+     {"126", "\<\"Kyurem\"\>", "\<\"  SubRoost\"\>", "57", "59", "0", "2", 
+      "74", "46", "0"},
+     {"127", "\<\"Kingdra\"\>", "\<\"  CritDra\"\>", "30", "85", "0", "4", 
+      "87", "32", "0"},
+     {"128", "\<\"Magnezone\"\>", "\<\"  Magnet Rise\"\>", "46", "72", "0", 
+      "1", "111", "8", "0"},
+     {"129", "\<\"Manaphy\"\>", "\<\"  Tail Glow + Rain Dance\"\>", "91", 
+      "27", "0", "1", "86", "33", "0"},
+     {"130", "\<\"Mega-Absol\"\>", "\<\"  All-Out Attacker\"\>", "83", "31", 
+      "0", "5", "25", "94", "0"},
+     {"131", "\<\"Rhyperior\"\>", "\<\"  Defensive\"\>", "41", "77", "0", "1",
+       "117", "2", "0"},
+     {"132", "\<\"Rotom-W\"\>", "\<\"  Specially Defensive\"\>", "63", "54", 
+      "0", "2", "106", "13", "0"},
+     {"133", "\<\"Mega-Heracross\"\>", "\<\"  Offensive\"\>", "61", "58", "0",
+       "1", "89", "29", "0"},
+     {"134", "\<\"Heatran\"\>", "\<\"  Offensive Air Balloon\"\>", "77", "40",
+       "0", "4", "94", "23", "0"},
+     {"135", "\<\"Conkeldurr\"\>", "\<\"  Assault Vest\"\>", "36", "85", "0", 
+      "1", "107", "9", "0"},
+     {"136", "\<\"Landorus\"\>", "\<\"  Rock Polish\"\>", "67", "54", "0", 
+      "1", "53", "63", "0"},
+     {"137", "\<\"Mega-Beedrill\"\>", "\<\"  Mega Beedrill\"\>", "114", "7", 
+      "0", "1", "20", "96", "0"},
+     {"138", "\<\"Empoleon\"\>", "\<\"  Choice Specs\"\>", "10", "112", "0", 
+      "1", "102", "13", "0"},
+     {"139", "\<\"Mega-Venusaur\"\>", "\<\"  Defensive\"\>", "68", "53", "0", 
+      "2", "108", "7", "0"},
+     {"140", "\<\"Politoed\"\>", "\<\"  Offensive\"\>", "45", "75", "0", "3", 
+      "92", "23", "0"},
+     {"141", "\<\"Mega-Scizor\"\>", "\<\"  Roost + 3 Attacks\"\>", "57", "65",
+       "0", "2", "93", "21", "0"},
+     {"142", "\<\"Cresselia\"\>", "\<\"  Defensive\"\>", "89", "35", "0", "1",
+       "97", "16", "0"},
+     {"143", "\<\"Hippowdon\"\>", "\<\"  Mixed Wall\"\>", "64", "60", "0", 
+      "1", "107", "6", "0"},
+     {"144", "\<\"Mega-Aggron\"\>", "\<\"  RestTalk\"\>", "59", "62", "0", 
+      "4", "108", "5", "0"},
+     {"145", "\<\"Mega-Slowbro\"\>", "\<\"  Slowbro\"\>", "87", "37", "0", 
+      "1", "112", "1", "0"},
+     {"146", "\<\"Rotom-H\"\>", "\<\"  Defensive\"\>", "80", "44", "0", "1", 
+      "99", "14", "0"},
+     {"147", "\<\"Alakazam\"\>", "\<\"  Revenge Killer\"\>", "103", "21", "0",
+       "2", "18", "94", "0"},
+     {"148", "\<\"Cobalion\"\>", "\<\"  Offensive Pivot\"\>", "99", "23", "0",
+       "4", "57", "55", "0"},
+     {"149", "\<\"Thundurus\"\>", "\<\"  Nasty Plot\"\>", "105", "18", "0", 
+      "3", "50", "62", "0"},
+     {"150", "\<\"Volcarona\"\>", "\<\"  Bulky Quiver Dance\"\>", "92", "33", 
+      "0", "1", "90", "22", "0"},
+     {"151", "\<\"Garchomp\"\>", "\<\"  Tank\"\>", "72", "52", "0", "3", "91",
+       "20", "0"},
+     {"152", "\<\"Ludicolo\"\>", "\<\"  Rain Sweeper\"\>", "29", "96", "0", 
+      "2", "86", "25", "0"},
+     {"153", "\<\"Gastrodon\"\>", "\<\"  Physically Defensive\"\>", "69", 
+      "58", "0", "1", "107", "3", "0"},
+     {"154", "\<\"Krookodile\"\>", "\<\"  Support\"\>", "82", "45", "0", "1", 
+      "80", "30", "0"},
+     {"155", "\<\"Terrakion\"\>", "\<\"  Stealth Rock\"\>", "82", "38", "0", 
+      "8", "47", "63", "0"},
+     {"156", "\<\"Excadrill\"\>", "\<\"  Sand Rush Sweeper\"\>", "43", "85", 
+      "0", "1", "56", "53", "0"},
+     {"157", "\<\"Lucario\"\>", "\<\"  Life Orb Attacker\"\>", "44", "84", 
+      "0", "1", "43", "66", "0"},
+     {"158", "\<\"Gyarados\"\>", "\<\"  RestTalk\"\>", "88", "43", "0", "1", 
+      "93", "13", "0"},
+     {"159", "\<\"Mamoswine\"\>", "\<\"  Physical Attacker\"\>", "57", "75", 
+      "0", "1", "47", "58", "0"},
+     {"160", "\<\"Mega-Charizard-X\"\>", "\<\"  Bulky Dragon Dance\"\>", "66",
+       "66", "0", "2", "64", "40", "0"},
+     {"161", "\<\"Blissey\"\>", "\<\"  Cleric\"\>", "85", "50", "0", "2", 
+      "89", "12", "0"},
+     {"162", "\<\"Blissey\"\>", "\<\"  Wish Passer\"\>", "85", "50", "0", "2",
+       "89", "12", "0"},
+     {"163", "\<\"Mega-Scizor\"\>", "\<\"  Defog\"\>", "91", "45", "0", "1", 
+      "86", "15", "0"},
+     {"164", "\<\"Mega-Aerodactyl\"\>", "\<\"  Stallbreaker\"\>", "129", "8", 
+      "0", "1", "49", "51", "0"},
+     {"165", "\<\"Mega-Camerupt\"\>", "\<\"  Mega Camerupt\"\>", "46", "91", 
+      "0", "1", "100", "0", "0"},
+     {"166", "\<\"Zygarde\"\>", "\<\"  SubCoil\"\>", "101", "35", "0", "2", 
+      "77", "23", "0"},
+     {"167", "\<\"Gothitelle\"\>", "\<\"  Choice Specs\"\>", "52", "86", "0", 
+      "1", "53", "46", "0"},
+     {"168", "\<\"Zygarde\"\>", "\<\"  Parashuffler\"\>", "100", "37", "0", 
+      "2", "81", "18", "0"},
+     {"169", "\<\"Magnezone\"\>", "\<\"  Choice Specs\"\>", "32", "106", "0", 
+      "2", "86", "12", "0"},
+     {"170", "\<\"Diggersby\"\>", "\<\"  Swords Dance\"\>", "50", "90", "0", 
+      "1", "39", "58", "0"},
+     {"171", "\<\"Manaphy\"\>", "\<\"  Calm Mind\"\>", "108", "31", "0", "3", 
+      "83", "13", "0"},
+     {"172", "\<\"Clefable\"\>", "\<\"  Stealth Rock\"\>", "64", "75", "0", 
+      "4", "88", "7", "0"},
+     {"173", "\<\"Mandibuzz\"\>", "\<\"  Utility\"\>", "87", "55", "0", "2", 
+      "86", "8", "0"},
+     {"174", "\<\"Mega-Scizor\"\>", "\<\"  Bulky Swords Dance\"\>", "80", 
+      "62", "0", "2", "81", "13", "0"},
+     {"175", "\<\"Mega-Sharpedo\"\>", "\<\"  Mega Sharpedo\"\>", "81", "64", 
+      "0", "1", "43", "49", "0"},
+     {"176", "\<\"Chandelure\"\>", "\<\"  Stallbreaker\"\>", "78", "67", "0", 
+      "2", "62", "29", "0"},
+     {"177", "\<\"Clefable\"\>", "\<\"  Magic Guard + Calm Mind\"\>", "68", 
+      "75", "0", "4", "82", "9", "0"},
+     {"178", "\<\"Mega-Charizard-X\"\>", "\<\"  Bulky Will-O-Wisp\"\>", "95", 
+      "50", "0", "2", "64", "27", "0"},
+     {"179", "\<\"Slowking\"\>", "\<\"  Specially Defensive\"\>", "79", "67", 
+      "0", "2", "87", "3", "0"},
+     {"180", "\<\"Suicune\"\>", "\<\"  CroCune\"\>", "112", "35", "0", "1", 
+      "85", "5", "0"},
+     {"181", "\<\"Jirachi\"\>", "\<\"  Paraflinch\"\>", "123", "25", "0", "1",
+       "67", "22", "0"},
+     {"182", "\<\"Mega-Audino\"\>", "\<\"  Mega Audino\"\>", "89", "59", "0", 
+      "1", "83", "6", "0"},
+     {"183", "\<\"Diancie\"\>", "\<\"  Tank\"\>", "67", "81", "0", "2", "82", 
       "6", "0"},
-     {"\<\"Mega-Medicham\"\>", "\<\"  All-Out Attacker\"\>", "13", "77", "0", 
-      "6", "57", "88", "0"},
-     {"\<\"Mega-Medicham\"\>", "\<\"  Wallbreaker\"\>", "13", "77", "0", "6", 
-      "57", "88", "0"},
-     {"\<\"Mega-Gyarados\"\>", "\<\"  Mega Dragon Dance\"\>", "39", "56", "0",
-       "2", "116", "28", "0"},
-     {"\<\"Keldeo\"\>", "\<\"  Calm Mind\"\>", "61", "31", "0", "6", "89", 
-      "54", "0"},
-     {"\<\"Kyurem-Black\"\>", "\<\"  Substitute Attacker\"\>", "29", "64", 
-      "0", "5", "97", "46", "0"},
-     {"\<\"Slowking\"\>", "\<\"  Assault Vest\"\>", "28", "68", "0", "2", 
-      "141", "2", "0"},
-     {"\<\"Sylveon\"\>", "\<\"  Calm Mind + Baton Pass\"\>", "53", "44", "0", 
-      "1", "136", "7", "0"},
-     {"\<\"Keldeo\"\>", "\<\"  Endeavor\"\>", "62", "31", "0", "6", "87", 
-      "55", "0"},
-     {"\<\"Landorus-T\"\>", "\<\"  Double Dance\"\>", "39", "55", "0", "5", 
-      "100", "42", "0"},
-     {"\<\"Mega-Blastoise\"\>", "\<\"  Rapid Spin\"\>", "44", "53", "0", "2", 
-      "131", "11", "0"},
-     {"\<\"Mega-Altaria\"\>", "\<\"  Mega Special Attacker\"\>", "32", "64", 
-      "0", "4", "103", "38", "0"},
-     {"\<\"Seismitoad\"\>", "\<\"  Rain Sweeper\"\>", "32", "67", "0", "1", 
-      "109", "32", "0"},
-     {"\<\"Sylveon\"\>", "\<\"  Cleric\"\>", "52", "47", "0", "1", "135", "6",
-       "0"},
-     {"\<\"Tyranitar\"\>", "\<\"  Choice Scarf\"\>", "79", "21", "0", "1", 
-      "65", "75", "0"},
-     {"\<\"Azumarill\"\>", "\<\"  Belly Drum\"\>", "23", "78", "0", "1", 
-      "120", "19", "0"},
-     {"\<\"Haxorus\"\>", "\<\"  Dragon Dance\"\>", "28", "73", "0", "2", "72",
-       "66", "0"},
-     {"\<\"Mega-Altaria\"\>", "\<\"  Mega Dragon Dance\"\>", "39", "61", "0", 
-      "3", "109", "29", "0"},
-     {"\<\"Mega-Pidgeot\"\>", "\<\"  Mega Pidgeot\"\>", "60", "42", "0", "1", 
-      "47", "91", "0"},
-     {"\<\"Raikou\"\>", "\<\"  Calm Mind\"\>", "83", "18", "0", "2", "67", 
-      "71", "0"},
-     {"\<\"Gengar\"\>", "\<\"  SubSplit\"\>", "59", "36", "0", "9", "41", 
-      "96", "0"},
-     {"\<\"Haxorus\"\>", "\<\"  Stallbreaker\"\>", "28", "74", "0", "2", "57",
-       "80", "0"},
-     {"\<\"Infernape\"\>", "\<\"  MixApe\"\>", "51", "45", "0", "8", "43", 
-      "94", "0"},
-     {"\<\"Mega-Tyranitar\"\>", "\<\"  Dragon Dance\"\>", "41", "62", "0", 
-      "1", "94", "43", "0"},
-     {"\<\"Talonflame\"\>", "\<\"  Swords Dance\"\>", "77", "25", "0", "2", 
-      "65", "72", "0"},
-     {"\<\"Tangrowth\"\>", "\<\"  Assault Vest\"\>", "51", "52", "0", "1", 
-      "134", "3", "0"},
-     {"\<\"Entei\"\>", "\<\"  All-Out Attacker\"\>", "69", "32", "0", "4", 
-      "86", "50", "0"},
-     {"\<\"Porygon2\"\>", "\<\"  Trick Room Support\"\>", "51", "53", "0", 
-      "1", "130", "6", "0"},
-     {"\<\"Gyarados\"\>", "\<\"  Offensive Dragon Dance\"\>", "49", "55", "0",
-       "2", "97", "38", "0"},
-     {"\<\"Rotom-W\"\>", "\<\"  Defensive\"\>", "62", "42", "0", "2", "119", 
-      "16", "0"},
-     {"\<\"Thundurus-T\"\>", "\<\"  Nasty Plot\"\>", "56", "47", "0", "3", 
-      "62", "73", "0"},
-     {"\<\"Keldeo\"\>", "\<\"  SubCM\"\>", "77", "25", "0", "6", "80", "53", 
-      "0"},
-     {"\<\"Mega-Altaria\"\>", "\<\"  Bulky Mega Altaria\"\>", "63", "43", "0",
-       "2", "123", "10", "0"},
-     {"\<\"Volcarona\"\>", "\<\"  Offensive Quiver Dance\"\>", "64", "41", 
-      "0", "3", "88", "45", "0"},
-     {"\<\"Talonflame\"\>", "\<\"  Swords Dance + Natural Gift\"\>", "94", 
-      "15", "0", "1", "50", "81", "0"},
-     {"\<\"Hawlucha\"\>", "\<\"  Swords Dance\"\>", "55", "55", "0", "1", 
-      "40", "90", "0"},
-     {"\<\"Landorus\"\>", "\<\"  Special Attacker\"\>", "61", "47", "0", "3", 
-      "52", "78", "0"},
-     {"\<\"Magnezone\"\>", "\<\"  Choice Scarf\"\>", "85", "25", "0", "1", 
-      "57", "73", "0"},
-     {"\<\"Mega-Ampharos\"\>", "\<\"  Agility\"\>", "16", "94", "0", "1", 
-      "102", "28", "0"},
-     {"\<\"Scizor\"\>", "\<\"  Choice Band\"\>", "12", "98", "0", "1", "113", 
-      "17", "0"},
-     {"\<\"Zapdos\"\>", "\<\"  Defensive\"\>", "72", "38", "0", "2", "110", 
-      "19", "0"},
-     {"\<\"Chansey\"\>", "\<\"  Support\"\>", "61", "48", "0", "4", "123", 
-      "5", "0"},
-     {"\<\"Chansey\"\>", "\<\"  Wish Support\"\>", "61", "48", "0", "4", 
-      "123", "5", "0"},
-     {"\<\"Mega-Ampharos\"\>", "\<\"  Specially Defensive\"\>", "37", "75", 
-      "0", "1", "124", "4", "0"},
-     {"\<\"Mega-Houndoom\"\>", "\<\"  Nasty Plot\"\>", "95", "14", "0", "4", 
-      "40", "88", "0"},
-     {"\<\"Kingdra\"\>", "\<\"  Mixed Rain Sweeper\"\>", "19", "92", "0", "3",
-       "85", "42", "0"},
-     {"\<\"Landorus\"\>", "\<\"  Calm Mind\"\>", "69", "42", "0", "3", "58", 
-      "69", "0"},
-     {"\<\"Mega-Charizard-X\"\>", "\<\"  Dragon Dance\"\>", "50", "59", "0", 
-      "6", "63", "63", "0"},
-     {"\<\"Mega-Scizor\"\>", "\<\"  Offensive Swords Dance\"\>", "59", "55", 
-      "0", "1", "91", "35", "0"},
-     {"\<\"Porygon2\"\>", "\<\"  Specially Defensive\"\>", "58", "54", "0", 
-      "3", "121", "5", "0"},
-     {"\<\"Porygon2\"\>", "\<\"  Physically Defensive\"\>", "73", "41", "0", 
-      "2", "116", "9", "0"},
-     {"\<\"Scolipede\"\>", "\<\"  Offensive\"\>", "60", "55", "0", "1", "37", 
-      "88", "0"},
-     {"\<\"Bronzong\"\>", "\<\"  Trick Room Support\"\>", "42", "74", "0", 
-      "1", "123", "1", "0"},
-     {"\<\"Exploud\"\>", "\<\"  Choice Specs\"\>", "7", "109", "0", "1", "89",
-       "35", "0"},
-     {"\<\"Kyurem\"\>", "\<\"  SubRoost\"\>", "57", "58", "0", "2", "77", 
-      "47", "0"},
-     {"\<\"Kingdra\"\>", "\<\"  CritDra\"\>", "30", "84", "0", "4", "91", 
-      "32", "0"},
-     {"\<\"Krookodile\"\>", "\<\"  Offensive\"\>", "51", "66", "0", "1", "49",
-       "74", "0"},
-     {"\<\"Mega-Diancie\"\>", "\<\"  Diancie\"\>", "73", "40", "0", "5", "31",
-       "92", "0"},
-     {"\<\"Mega-Absol\"\>", "\<\"  All-Out Attacker\"\>", "83", "31", "0", 
-      "5", "27", "95", "0"},
-     {"\<\"Rhyperior\"\>", "\<\"  Defensive\"\>", "41", "77", "0", "1", "120",
-       "2", "0"},
-     {"\<\"Rotom-W\"\>", "\<\"  Specially Defensive\"\>", "63", "54", "0", 
-      "2", "109", "13", "0"},
-     {"\<\"Magnezone\"\>", "\<\"  Magnet Rise\"\>", "46", "73", "0", "1", 
-      "113", "8", "0"},
-     {"\<\"Manaphy\"\>", "\<\"  Tail Glow + Rain Dance\"\>", "91", "28", "0", 
-      "1", "88", "33", "0"},
-     {"\<\"Heatran\"\>", "\<\"  Offensive Air Balloon\"\>", "78", "39", "0", 
-      "4", "97", "23", "0"},
-     {"\<\"Mega-Heracross\"\>", "\<\"  Offensive\"\>", "61", "59", "0", "1", 
-      "91", "29", "0"},
-     {"\<\"Landorus\"\>", "\<\"  Rock Polish\"\>", "67", "54", "0", "1", "55",
-       "64", "0"},
-     {"\<\"Empoleon\"\>", "\<\"  Choice Specs\"\>", "10", "112", "0", "1", 
-      "105", "13", "0"},
-     {"\<\"Mega-Venusaur\"\>", "\<\"  Defensive\"\>", "68", "53", "0", "2", 
-      "111", "7", "0"},
-     {"\<\"Conkeldurr\"\>", "\<\"  Assault Vest\"\>", "36", "87", "0", "1", 
-      "108", "9", "0"},
-     {"\<\"Hippowdon\"\>", "\<\"  Mixed Wall\"\>", "63", "60", "0", "1", 
-      "111", "6", "0"},
-     {"\<\"Mega-Beedrill\"\>", "\<\"  Mega Beedrill\"\>", "116", "7", "0", 
-      "1", "20", "97", "0"},
-     {"\<\"Politoed\"\>", "\<\"  Offensive\"\>", "45", "76", "0", "3", "94", 
-      "23", "0"},
-     {"\<\"Cresselia\"\>", "\<\"  Defensive\"\>", "89", "35", "0", "1", "100",
-       "16", "0"},
-     {"\<\"Mega-Scizor\"\>", "\<\"  Roost + 3 Attacks\"\>", "59", "64", "0", 
-      "2", "95", "21", "0"},
-     {"\<\"Rotom-H\"\>", "\<\"  Defensive\"\>", "80", "44", "0", "1", "102", 
-      "14", "0"},
-     {"\<\"Thundurus\"\>", "\<\"  Nasty Plot\"\>", "104", "18", "0", "3", 
-      "52", "64", "0"},
-     {"\<\"Garchomp\"\>", "\<\"  Tank\"\>", "71", "52", "0", "3", "95", "20", 
-      "0"},
-     {"\<\"Mega-Aggron\"\>", "\<\"  RestTalk\"\>", "60", "62", "0", "4", 
-      "110", "5", "0"},
-     {"\<\"Mega-Slowbro\"\>", "\<\"  Slowbro\"\>", "87", "38", "0", "1", 
-      "114", "1", "0"},
-     {"\<\"Alakazam\"\>", "\<\"  Revenge Killer\"\>", "104", "21", "0", "2", 
-      "18", "96", "0"},
-     {"\<\"Cobalion\"\>", "\<\"  Offensive Pivot\"\>", "100", "23", "0", "4", 
-      "57", "57", "0"},
-     {"\<\"Ludicolo\"\>", "\<\"  Rain Sweeper\"\>", "29", "96", "0", "2", 
-      "89", "25", "0"},
-     {"\<\"Terrakion\"\>", "\<\"  Stealth Rock\"\>", "81", "38", "0", "8", 
-      "48", "66", "0"},
-     {"\<\"Charizard\"\>", "\<\"  Drought Wallbreaker\"\>", "83", "42", "0", 
-      "3", "58", "55", "0"},
-     {"\<\"Krookodile\"\>", "\<\"  Support\"\>", "82", "45", "0", "1", "83", 
-      "30", "0"},
-     {"\<\"Volcarona\"\>", "\<\"  Bulky Quiver Dance\"\>", "92", "35", "0", 
-      "1", "89", "24", "0"},
-     {"\<\"Gastrodon\"\>", "\<\"  Physically Defensive\"\>", "69", "59", "0", 
-      "1", "109", "3", "0"},
-     {"\<\"Excadrill\"\>", "\<\"  Sand Rush Sweeper\"\>", "43", "86", "0", 
-      "1", "57", "54", "0"},
-     {"\<\"Gyarados\"\>", "\<\"  RestTalk\"\>", "88", "43", "0", "1", "96", 
-      "13", "0"},
-     {"\<\"Lucario\"\>", "\<\"  Life Orb Attacker\"\>", "48", "83", "0", "1", 
-      "43", "66", "0"},
-     {"\<\"Mamoswine\"\>", "\<\"  Physical Attacker\"\>", "58", "75", "0", 
-      "1", "48", "59", "0"},
-     {"\<\"Mega-Charizard-X\"\>", "\<\"  Bulky Dragon Dance\"\>", "65", "66", 
-      "0", "4", "66", "40", "0"},
-     {"\<\"Blissey\"\>", "\<\"  Cleric\"\>", "85", "51", "0", "2", "91", "12",
-       "0"},
-     {"\<\"Blissey\"\>", "\<\"  Wish Passer\"\>", "85", "51", "0", "2", "91", 
-      "12", "0"},
-     {"\<\"Mega-Aerodactyl\"\>", "\<\"  Stallbreaker\"\>", "129", "8", "0", 
-      "1", "52", "51", "0"},
-     {"\<\"Gothitelle\"\>", "\<\"  Choice Specs\"\>", "52", "86", "0", "1", 
-      "56", "46", "0"},
-     {"\<\"Mega-Scizor\"\>", "\<\"  Defog\"\>", "93", "45", "0", "1", "87", 
-      "15", "0"},
-     {"\<\"Mega-Camerupt\"\>", "\<\"  Mega Camerupt\"\>", "47", "93", "0", 
-      "1", "100", "0", "0"},
-     {"\<\"Zygarde\"\>", "\<\"  Parashuffler\"\>", "99", "40", "0", "2", "82",
-       "18", "0"},
-     {"\<\"Zygarde\"\>", "\<\"  SubCoil\"\>", "100", "39", "0", "2", "77", 
-      "23", "0"},
-     {"\<\"Diggersby\"\>", "\<\"  Swords Dance\"\>", "50", "91", "0", "1", 
-      "41", "58", "0"},
-     {"\<\"Manaphy\"\>", "\<\"  Calm Mind\"\>", "108", "31", "0", "3", "86", 
-      "13", "0"},
-     {"\<\"Magnezone\"\>", "\<\"  Choice Specs\"\>", "32", "109", "0", "2", 
-      "86", "12", "0"},
-     {"\<\"Mandibuzz\"\>", "\<\"  Utility\"\>", "87", "55", "0", "2", "89", 
-      "8", "0"},
-     {"\<\"Mega-Scizor\"\>", "\<\"  Bulky Swords Dance\"\>", "82", "61", "0", 
-      "2", "83", "13", "0"},
-     {"\<\"Clefable\"\>", "\<\"  Stealth Rock\"\>", "68", "74", "0", "4", 
-      "88", "7", "0"},
-     {"\<\"Mega-Sharpedo\"\>", "\<\"  Mega Sharpedo\"\>", "81", "64", "0", 
-      "1", "46", "49", "0"},
-     {"\<\"Slowking\"\>", "\<\"  Specially Defensive\"\>", "79", "67", "0", 
-      "2", "90", "3", "0"},
-     {"\<\"Suicune\"\>", "\<\"  CroCune\"\>", "112", "35", "0", "1", "88", 
-      "5", "0"},
-     {"\<\"Chandelure\"\>", "\<\"  Stallbreaker\"\>", "79", "68", "0", "2", 
-      "63", "29", "0"},
-     {"\<\"Mega-Charizard-X\"\>", "\<\"  Bulky Will-O-Wisp\"\>", "94", "51", 
-      "0", "4", "65", "27", "0"},
-     {"\<\"Clefable\"\>", "\<\"  Magic Guard + Calm Mind\"\>", "72", "74", 
-      "0", "4", "82", "9", "0"},
-     {"\<\"Jirachi\"\>", "\<\"  Paraflinch\"\>", "125", "26", "0", "1", "67", 
-      "22", "0"},
-     {"\<\"Mega-Audino\"\>", "\<\"  Mega Audino\"\>", "91", "60", "0", "1", 
-      "83", "6", "0"},
-     {"\<\"Mega-Pinsir\"\>", "\<\"  Swords Dance\"\>", "116", "35", "0", "1", 
-      "28", "61", "0"},
-     {"\<\"Crawdaunt\"\>", "\<\"  Wallbreaker\"\>", "27", "125", "0", "1", 
-      "54", "34", "0"},
-     {"\<\"Diancie\"\>", "\<\"  Tank\"\>", "69", "82", "0", "2", "82", "6", 
-      "0"},
-     {"\<\"Jirachi\"\>", "\<\"  Choice Scarf\"\>", "149", "2", "0", "2", "40",
-       "48", "0"},
-     {"\<\"Tyranitar\"\>", "\<\"  Support\"\>", "89", "63", "0", "1", "80", 
-      "8", "0"},
-     {"\<\"Charizard\"\>", "\<\"  Dragon Dance\"\>", "103", "46", "0", "5", 
-      "47", "40", "0"},
-     {"\<\"Bronzong\"\>", "\<\"  Special Tank\"\>", "101", "53", "0", "1", 
-      "86", "0", "0"},
-     {"\<\"Chesnaught\"\>", "\<\"  Physical Tank\"\>", "120", "34", "0", "1", 
-      "79", "7", "0"},
-     {"\<\"Gengar\"\>", "\<\"  Hex\"\>", "123", "25", "0", "7", "38", "48", 
-      "0"},
-     {"\<\"Mega-Steelix\"\>", "\<\"  Steelix\"\>", "72", "81", "0", "2", "85",
-       "1", "0"},
-     {"\<\"Slowbro\"\>", "\<\"  Physical Wall\"\>", "107", "46", "0", "2", 
-      "86", "0", "0"},
-     {"\<\"Tangrowth\"\>", "\<\"  Knock it Off Mojonbo Rules Here!\"\>", 
-      "102", "51", "0", "2", "85", "1", "0"},
-     {"\<\"Mamoswine\"\>", "\<\"  Focus Sash\"\>", "98", "58", "0", "1", "34",
-       "50", "0"},
-     {"\<\"Moltres\"\>", "\<\"  SubToxic\"\>", "130", "25", "0", "2", "70", 
-      "14", "0"},
-     {"\<\"Talonflame\"\>", "\<\"  Bulk Up\"\>", "124", "31", "0", "2", "55", 
-      "29", "0"},
-     {"\<\"Talonflame\"\>", "\<\"  Stallbreaker\"\>", "124", "31", "0", "2", 
-      "55", "29", "0"},
-     {"\<\"Clefable\"\>", "\<\"  Physically Defensive\"\>", "90", "65", "0", 
-      "4", "73", "9", "0"},
-     {"\<\"Togekiss\"\>", "\<\"  Baton Pass\"\>", "107", "50", "0", "2", "76",
-       "6", "0"},
-     {"\<\"Kabutops\"\>", "\<\"  Physical Attacker\"\>", "61", "94", "0", "5",
-       "32", "49", "0"},
-     {"\<\"Bisharp\"\>", "\<\"  Defiant Attacker\"\>", "67", "92", "0", "2", 
-      "46", "34", "0"},
-     {"\<\"Togekiss\"\>", "\<\"  Defensive\"\>", "107", "55", "0", "1", "76", 
-      "2", "0"},
-     {"\<\"Quagsire\"\>", "\<\"  Physically Defensive\"\>", "115", "48", "0", 
-      "1", "74", "3", "0"},
-     {"\<\"Tentacruel\"\>", "\<\"  Physically Defensive\"\>", "115", "46", 
-      "0", "3", "60", "17", "0"},
-     {"\<\"Gliscor\"\>", "\<\"  Physically Defensive\"\>", "136", "28", "0", 
-      "1", "48", "28", "0"},
-     {"\<\"Mega-Scizor\"\>", "\<\"  Baton Pass\"\>", "131", "33", "0", "1", 
-      "64", "12", "0"},
-     {"\<\"Togekiss\"\>", "\<\"  Stallbreaker\"\>", "122", "43", "0", "2", 
-      "55", "19", "0"},
-     {"\<\"Heatran\"\>", "\<\"  Specially Defensive\"\>", "134", "34", "0", 
-      "1", "68", "4", "0"},
-     {"\<\"Doublade\"\>", "\<\"  Mixed Wall\"\>", "141", "28", "0", "1", "71",
-       "0", "0"},
-     {"\<\"Gliscor\"\>", "\<\"  SubToxic\"\>", "151", "20", "0", "1", "35", 
-      "34", "0"},
-     {"\<\"Gliscor\"\>", "\<\"  Specially Defensive\"\>", "144", "27", "0", 
-      "2", "43", "25", "0"},
-     {"\<\"Empoleon\"\>", "\<\"  Specially Defensive\"\>", "130", "43", "0", 
-      "1", "63", "4", "0"},
-     {"\<\"Amoonguss\"\>", "\<\"  Defensive\"\>", "124", "49", "0", "2", "63",
-       "3", "0"},
-     {"\<\"Ferrothorn\"\>", "\<\"  Utility\"\>", "130", "47", "0", "1", "63", 
-      "0", "0"},
-     {"\<\"Froslass\"\>", "\<\"  Suicide Spiker\"\>", "158", "15", "0", "5", 
-      "26", "37", "0"},
-     {"\<\"Jirachi\"\>", "\<\"  Wishmaker\"\>", "155", "24", "0", "1", "55", 
-      "6", "0"},
-     {"\<\"Politoed\"\>", "\<\"  Specially Defensive\"\>", "140", "40", "0", 
-      "1", "55", "5", "0"},
-     {"\<\"Starmie\"\>", "\<\"  Reflect Type\"\>", "171", "9", "0", "1", "22",
-       "38", "0"},
-     {"\<\"Cofagrigus\"\>", "\<\"  Trick Room Sweeper\"\>", "82", "98", "0", 
-      "3", "56", "2", "0"},
-     {"\<\"Gorebyss\"\>", "\<\"  SmashPass\"\>", "137", "48", "0", "1", "43", 
-      "12", "0"},
-     {"\<\"Charizard\"\>", "\<\"  Bulky Dragon Dance\"\>", "158", "26", "0", 
-      "3", "35", "19", "0"},
-     {"\<\"Breloom\"\>", "\<\"  Offensive\"\>", "128", "64", "0", "1", "21", 
-      "27", "0"},
-     {"\<\"Mew\"\>", "\<\"  Entry Hazard Control\"\>", "161", "31", "0", "2", 
-      "32", "15", "0"},
-     {"\<\"Mew\"\>", "\<\"  Stallbreaker\"\>", "161", "31", "0", "2", "32", 
-      "15", "0"},
-     {"\<\"Mega-Sableye\"\>", "\<\"  Mega Sableye\"\>", "142", "52", "0", "1",
-       "45", "1", "0"},
-     {"\<\"Breloom\"\>", "\<\"  Leech Seed\"\>", "161", "37", "0", "1", "36", 
-      "6", "0"},
-     {"\<\"Dugtrio\"\>", "\<\"  Trapper\"\>", "186", "11", "0", "2", "10", 
-      "32", "0"},
-     {"\<\"Charizard\"\>", "\<\"  Bulky Will-O-Wisp\"\>", "169", "28", "0", 
-      "3", "27", "14", "0"},
-     {"\<\"Sableye\"\>", "\<\"  Prankster Utility\"\>", "175", "28", "0", "1",
-       "33", "4", "0"},
-     {"\<\"Whimsicott\"\>", "\<\"  Support\"\>", "216", "3", "0", "1", "16", 
-      "5", "0"},
-     {"\<\"Wobbuffet\"\>", "\<\"  Oh no it's Wobbuffet!\"\>", "237", "0", "0",
-       "1", "3", "0", "0"},
-     {"\<\"Azelf\"\>", "\<\"  Dual Screens\"\>", "229", "2", "0", "9", "1", 
-      "0", "0"},
-     {"\<\"Cresselia\"\>", "\<\"  Dual Screens\"\>", "231", "0", "0", "9", 
+     {"184", "\<\"Jirachi\"\>", "\<\"  Choice Scarf\"\>", "146", "2", "0", 
+      "2", "40", "48", "0"},
+     {"185", "\<\"Mega-Pinsir\"\>", "\<\"  Swords Dance\"\>", "115", "35", 
+      "0", "1", "26", "61", "0"},
+     {"186", "\<\"Mega-Steelix\"\>", "\<\"  Steelix\"\>", "70", "80", "0", 
+      "2", "85", "1", "0"},
+     {"187", "\<\"Bronzong\"\>", "\<\"  Special Tank\"\>", "99", "53", "0", 
+      "1", "85", "0", "0"},
+     {"188", "\<\"Crawdaunt\"\>", "\<\"  Wallbreaker\"\>", "27", "125", "0", 
+      "1", "51", "34", "0"},
+     {"189", "\<\"Tyranitar\"\>", "\<\"  Support\"\>", "88", "64", "0", "1", 
+      "77", "8", "0"},
+     {"190", "\<\"Chesnaught\"\>", "\<\"  Physical Tank\"\>", "119", "34", 
+      "0", "1", "77", "7", "0"},
+     {"191", "\<\"Moltres\"\>", "\<\"  SubToxic\"\>", "130", "22", "0", "2", 
+      "70", "14", "0"},
+     {"192", "\<\"Slowbro\"\>", "\<\"  Physical Wall\"\>", "107", "45", "0", 
+      "2", "84", "0", "0"},
+     {"193", "\<\"Tangrowth\"\>", "\<\"  Knock it Off Mojonbo Rules \
+Here!\"\>", "101", "51", "0", "2", "83", "1", "0"},
+     {"194", "\<\"Gengar\"\>", "\<\"  Hex\"\>", "123", "25", "0", "7", "38", 
+      "45", "0"},
+     {"195", "\<\"Clefable\"\>", "\<\"  Physically Defensive\"\>", "89", "63",
+       "0", "4", "73", "9", "0"},
+     {"196", "\<\"Mamoswine\"\>", "\<\"  Focus Sash\"\>", "97", "58", "0", 
+      "1", "34", "48", "0"},
+     {"197", "\<\"Kabutops\"\>", "\<\"  Physical Attacker\"\>", "61", "92", 
+      "0", "5", "31", "49", "0"},
+     {"198", "\<\"Talonflame\"\>", "\<\"  Bulk Up\"\>", "124", "32", "0", "2",
+       "51", "29", "0"},
+     {"199", "\<\"Talonflame\"\>", "\<\"  Stallbreaker\"\>", "124", "32", "0",
+       "2", "51", "29", "0"},
+     {"200", "\<\"Bisharp\"\>", "\<\"  Defiant Attacker\"\>", "67", "90", "0",
+       "2", "45", "34", "0"},
+     {"201", "\<\"Togekiss\"\>", "\<\"  Baton Pass\"\>", "107", "50", "0", 
+      "2", "73", "6", "0"},
+     {"202", "\<\"Mega-Scizor\"\>", "\<\"  Baton Pass\"\>", "129", "33", "0", 
+      "1", "63", "12", "0"},
+     {"203", "\<\"Tentacruel\"\>", "\<\"  Physically Defensive\"\>", "115", 
+      "45", "0", "3", "58", "17", "0"},
+     {"204", "\<\"Togekiss\"\>", "\<\"  Defensive\"\>", "107", "55", "0", "1",
+       "73", "2", "0"},
+     {"205", "\<\"Gliscor\"\>", "\<\"  Physically Defensive\"\>", "135", "28",
+       "0", "1", "46", "28", "0"},
+     {"206", "\<\"Quagsire\"\>", "\<\"  Physically Defensive\"\>", "115", 
+      "48", "0", "1", "71", "3", "0"},
+     {"207", "\<\"Heatran\"\>", "\<\"  Specially Defensive\"\>", "131", "34", 
+      "0", "1", "68", "4", "0"},
+     {"208", "\<\"Togekiss\"\>", "\<\"  Stallbreaker\"\>", "123", "41", "0", 
+      "2", "53", "19", "0"},
+     {"209", "\<\"Doublade\"\>", "\<\"  Mixed Wall\"\>", "138", "28", "0", 
+      "1", "71", "0", "0"},
+     {"210", "\<\"Gliscor\"\>", "\<\"  SubToxic\"\>", "148", "20", "0", "1", 
+      "35", "34", "0"},
+     {"211", "\<\"Gliscor\"\>", "\<\"  Specially Defensive\"\>", "141", "27", 
+      "0", "2", "43", "25", "0"},
+     {"212", "\<\"Amoonguss\"\>", "\<\"  Defensive\"\>", "122", "48", "0", 
+      "2", "63", "3", "0"},
+     {"213", "\<\"Empoleon\"\>", "\<\"  Specially Defensive\"\>", "130", "43",
+       "0", "1", "60", "4", "0"},
+     {"214", "\<\"Froslass\"\>", "\<\"  Suicide Spiker\"\>", "155", "15", "0",
+       "5", "26", "37", "0"},
+     {"215", "\<\"Ferrothorn\"\>", "\<\"  Utility\"\>", "129", "46", "0", "1",
+       "62", "0", "0"},
+     {"216", "\<\"Jirachi\"\>", "\<\"  Wishmaker\"\>", "152", "24", "0", "1", 
+      "55", "6", "0"},
+     {"217", "\<\"Politoed\"\>", "\<\"  Specially Defensive\"\>", "140", "40",
+       "0", "1", "52", "5", "0"},
+     {"218", "\<\"Starmie\"\>", "\<\"  Reflect Type\"\>", "171", "9", "0", 
+      "1", "19", "38", "0"},
+     {"219", "\<\"Cofagrigus\"\>", "\<\"  Trick Room Sweeper\"\>", "82", "97",
+       "0", "3", "54", "2", "0"},
+     {"220", "\<\"Gorebyss\"\>", "\<\"  SmashPass\"\>", "137", "48", "0", "1",
+       "40", "12", "0"},
+     {"221", "\<\"Breloom\"\>", "\<\"  Offensive\"\>", "129", "62", "0", "1", 
+      "19", "27", "0"},
+     {"222", "\<\"Mew\"\>", "\<\"  Entry Hazard Control\"\>", "162", "29", 
+      "0", "2", "30", "15", "0"},
+     {"223", "\<\"Mew\"\>", "\<\"  Stallbreaker\"\>", "162", "29", "0", "2", 
+      "30", "15", "0"},
+     {"224", "\<\"Mega-Sableye\"\>", "\<\"  Mega Sableye\"\>", "142", "51", 
+      "0", "1", "43", "1", "0"},
+     {"225", "\<\"Breloom\"\>", "\<\"  Leech Seed\"\>", "159", "36", "0", "1",
+       "36", "6", "0"},
+     {"226", "\<\"Dugtrio\"\>", "\<\"  Trapper\"\>", "183", "11", "0", "2", 
+      "10", "32", "0"},
+     {"227", "\<\"Sableye\"\>", "\<\"  Prankster Utility\"\>", "175", "27", 
+      "0", "1", "31", "4", "0"},
+     {"228", "\<\"Whimsicott\"\>", "\<\"  Support\"\>", "213", "3", "0", "1", 
+      "16", "5", "0"},
+     {"229", "\<\"Wobbuffet\"\>", "\<\"  Oh no it's Wobbuffet!\"\>", "234", 
+      "0", "0", "1", "3", "0", "0"},
+     {"230", "\<\"Azelf\"\>", "\<\"  Dual Screens\"\>", "226", "2", "0", "9", 
       "1", "0", "0"},
-     {"\<\"Espeon\"\>", "\<\"  Dual Screens\"\>", "231", "0", "0", "9", "1", 
-      "0", "0"},
-     {"\<\"Klefki\"\>", "\<\"  Dual Screens\"\>", "230", "1", "0", "9", "1", 
-      "0", "0"},
-     {"\<\"Skarmory\"\>", "\<\"  Physically Defensive\"\>", "229", "2", "0", 
+     {"231", "\<\"Cresselia\"\>", "\<\"  Dual Screens\"\>", "228", "0", "0", 
       "9", "1", "0", "0"},
-     {"\<\"Skarmory\"\>", "\<\"  Spikes\"\>", "229", "2", "0", "9", "1", "0", 
-      "0"},
-     {"\<\"Gourgeist-Small\"\>", "\<\"  SubSeed\"\>", "224", "8", "0", "9", 
-      "0", "0", "0"},
-     {"\<\"Scolipede\"\>", "\<\"  QuickPass\"\>", "232", "0", "0", "9", "0", 
-      "0", "0"},
-     {"\<\"Smeargle\"\>", "\<\"  Sticky Web\"\>", "230", "2", "0", "9", "0", 
-      "0", "0"}
+     {"232", "\<\"Espeon\"\>", "\<\"  Dual Screens\"\>", "228", "0", "0", "9",
+       "1", "0", "0"},
+     {"233", "\<\"Klefki\"\>", "\<\"  Dual Screens\"\>", "227", "1", "0", "9",
+       "1", "0", "0"},
+     {"234", "\<\"Skarmory\"\>", "\<\"  Physically Defensive\"\>", "226", "2",
+       "0", "9", "1", "0", "0"},
+     {"235", "\<\"Skarmory\"\>", "\<\"  Spikes\"\>", "226", "2", "0", "9", 
+      "1", "0", "0"},
+     {"236", "\<\"Gourgeist-Small\"\>", "\<\"  SubSeed\"\>", "221", "8", "0", 
+      "9", "0", "0", "0"},
+     {"237", "\<\"Scolipede\"\>", "\<\"  QuickPass\"\>", "229", "0", "0", "9",
+       "0", "0", "0"},
+     {"238", "\<\"Smeargle\"\>", "\<\"  Sticky Web\"\>", "227", "2", "0", "9",
+       "0", "0", "0"}
     },
     GridBoxAlignment->{
      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
       "RowsIndexed" -> {}},
     GridBoxDividers->{
-     "Columns" -> {{False}}, "ColumnsIndexed" -> {}, 
+     "Columns" -> {False, True, {False}, False}, "ColumnsIndexed" -> {}, 
       "Rows" -> {False, True, {False}, False}, "RowsIndexed" -> {}},
     GridBoxSpacings->{"Columns" -> {
         Offset[0.27999999999999997`], {
@@ -34535,14 +35876,16 @@ Cell[BoxData[
         Offset[0.2], {
          Offset[0.4]}, 
         Offset[0.2]}, "RowsIndexed" -> {}}],
-   {None, OutputFormsDump`HeadedColumns}],
+   {OutputFormsDump`HeadedRows, OutputFormsDump`HeadedColumns}],
   Function[BoxForm`e$, 
    TableForm[
    BoxForm`e$, 
     TableHeadings -> {
-     None, {"Name", "Set", "LD", "LS", "LP", "50", "WD", "WS", 
-       "WP"}}]]]], "Output",
- CellChangeTimes->{3.637409873478025*^9}]
+     Automatic, {
+      "Name", "Set", "LD", "LS", "LP", "50", "WD", "WS", "WP"}}]]]], "Output",\
+
+ CellChangeTimes->{3.637409873478025*^9, 3.641059596696589*^9, 
+  3.6410940671600657`*^9}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -34583,14 +35926,14 @@ Cell[CellGroupData[{
 Cell[244443, 6685, 174, 3, 28, "Input"],
 Cell[244620, 6690, 96, 1, 28, "Output"]
 }, Open  ]],
-Cell[244731, 6694, 7616, 206, 596, "Input"],
+Cell[244731, 6694, 7616, 206, 392, "Input"],
 Cell[CellGroupData[{
-Cell[252372, 6904, 1733, 40, 97, "Input"],
+Cell[252372, 6904, 1733, 40, 63, "Input"],
 Cell[254108, 6946, 597, 11, 28, "Output"]
 }, Open  ]],
-Cell[254720, 6960, 24617, 564, 1729, "Input"],
+Cell[254720, 6960, 24617, 564, 1304, "Input"],
 Cell[CellGroupData[{
-Cell[279362, 7528, 2617, 61, 182, "Input"],
+Cell[279362, 7528, 2617, 61, 80, "Input"],
 Cell[281982, 7591, 548, 10, 28, "Output"],
 Cell[282533, 7603, 575, 10, 28, "Output"]
 }, Open  ]],
@@ -34600,122 +35943,139 @@ Cell[CellGroupData[{
 Cell[283254, 7622, 100, 1, 50, "Section"],
 Cell[CellGroupData[{
 Cell[283379, 7627, 711, 22, 28, "Input"],
-Cell[284093, 7651, 990, 26, 46, "Output"]
+Cell[284093, 7651, 1015, 27, 46, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[285120, 7682, 175, 4, 44, "Subsection"],
-Cell[285298, 7688, 2774, 75, 63, "Input"],
+Cell[285145, 7683, 175, 4, 44, "Subsection"],
+Cell[285323, 7689, 2774, 75, 63, "Input"],
 Cell[CellGroupData[{
-Cell[288097, 7767, 142, 2, 28, "Input"],
-Cell[288242, 7771, 2803, 57, 335, "Output"]
+Cell[288122, 7768, 142, 2, 28, "Input"],
+Cell[288267, 7772, 2803, 57, 335, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[291082, 7833, 402, 11, 46, "Input"],
-Cell[291487, 7846, 1066, 23, 47, "Output"]
+Cell[291107, 7834, 402, 11, 46, "Input"],
+Cell[291512, 7847, 1066, 23, 47, "Output"]
 }, Open  ]],
-Cell[292568, 7872, 573, 11, 46, "Input"],
+Cell[292593, 7873, 573, 11, 46, "Input"],
 Cell[CellGroupData[{
-Cell[293166, 7887, 1794, 53, 46, "Input"],
-Cell[294963, 7942, 5732, 113, 480, "Output"]
+Cell[293191, 7888, 1794, 53, 46, "Input"],
+Cell[294988, 7943, 5732, 113, 480, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[300732, 8060, 2929, 76, 80, "Input"],
-Cell[303664, 8138, 2916, 59, 335, "Output"],
-Cell[306583, 8199, 1061, 20, 394, "Output"]
+Cell[300757, 8061, 2929, 76, 80, "Input"],
+Cell[303689, 8139, 2916, 59, 335, "Output"],
+Cell[306608, 8200, 1061, 20, 394, "Output"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[307693, 8225, 180, 4, 36, "Subsection"],
-Cell[307876, 8231, 986, 26, 46, "Input"],
+Cell[307718, 8226, 180, 4, 36, "Subsection"],
+Cell[307901, 8232, 986, 26, 46, "Input"],
 Cell[CellGroupData[{
-Cell[308887, 8261, 4723, 128, 131, "Input"],
-Cell[313613, 8391, 4839, 122, 337, "Output"]
+Cell[308912, 8262, 4723, 128, 131, "Input"],
+Cell[313638, 8392, 4839, 122, 337, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[318489, 8518, 4811, 116, 114, "Input"],
-Cell[323303, 8636, 52203, 1017, 317, "Output"]
+Cell[318514, 8519, 4811, 116, 114, "Input"],
+Cell[323328, 8637, 52203, 1017, 317, "Output"]
 }, Open  ]],
-Cell[375521, 9656, 2281, 61, 131, "Input"],
+Cell[375546, 9657, 2281, 61, 131, "Input"],
 Cell[CellGroupData[{
-Cell[377827, 9721, 2261, 61, 63, "Input"],
-Cell[380091, 9784, 723, 14, 24, "Message"],
-Cell[380817, 9800, 5552, 109, 547, "Output"]
+Cell[377852, 9722, 2261, 61, 63, "Input"],
+Cell[380116, 9785, 723, 14, 24, "Message"],
+Cell[380842, 9801, 5552, 109, 547, "Output"]
 }, Open  ]],
-Cell[386384, 9912, 92, 1, 28, InheritFromParent],
+Cell[386409, 9913, 92, 1, 28, "Input"],
 Cell[CellGroupData[{
-Cell[386501, 9917, 165, 2, 35, "Subsubsection"],
-Cell[386669, 9921, 6474, 173, 165, "Input"],
+Cell[386526, 9918, 165, 2, 35, "Subsubsection"],
+Cell[386694, 9922, 6474, 173, 165, "Input"],
 Cell[CellGroupData[{
-Cell[393168, 10098, 4224, 107, 114, "Input"],
-Cell[397395, 10207, 1371, 28, 395, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[398803, 10240, 6810, 150, 131, "Input"],
-Cell[405616, 10392, 234369, 5476, 2948, "Output"]
+Cell[393193, 10099, 4224, 107, 114, "Input"],
+Cell[397420, 10208, 1371, 28, 395, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[640022, 15873, 244, 6, 28, "Input"],
-Cell[640269, 15881, 5475, 141, 130, "Output"]
+Cell[398828, 10241, 6810, 150, 131, "Input"],
+Cell[405641, 10393, 234369, 5476, 2948, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[645781, 16027, 1620, 40, 97, "Input"],
-Cell[647404, 16069, 228195, 5597, 857, "Output"]
+Cell[640047, 15874, 244, 6, 28, "Input"],
+Cell[640294, 15882, 5475, 141, 130, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[875636, 21671, 701, 19, 28, "Input"],
-Cell[876340, 21692, 20255, 338, 246, "Output"]
+Cell[645806, 16028, 1620, 40, 97, "Input"],
+Cell[647429, 16070, 228195, 5597, 857, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[896632, 22035, 2266, 60, 80, "Input"],
-Cell[898901, 22097, 927, 16, 24, "Message"],
-Cell[899831, 22115, 258905, 6216, 808, "Output"]
+Cell[875661, 21672, 701, 19, 28, "Input"],
+Cell[876365, 21693, 20255, 338, 246, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[896657, 22036, 2266, 60, 80, "Input"],
+Cell[898926, 22098, 927, 16, 24, "Message"],
+Cell[899856, 22116, 258905, 6216, 808, "Output"]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1158797, 28338, 221, 4, 36, "Subsection"],
+Cell[1158822, 28339, 221, 4, 36, "Subsection"],
 Cell[CellGroupData[{
-Cell[1159043, 28346, 1518, 36, 28, "Input"],
-Cell[1160564, 28384, 610, 13, 24, "Message"],
-Cell[1161177, 28399, 927, 15, 28, "Output"]
+Cell[1159068, 28347, 1518, 36, 28, "Input"],
+Cell[1160589, 28385, 610, 13, 24, "Message"],
+Cell[1161202, 28400, 927, 15, 28, "Output"]
 }, Open  ]],
-Cell[1162119, 28417, 3163, 73, 97, "Input"],
+Cell[1162144, 28418, 3163, 73, 97, "Input"],
 Cell[CellGroupData[{
-Cell[1165307, 28494, 2044, 55, 63, "Input"],
-Cell[1167354, 28551, 702, 13, 24, "Message"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1168093, 28569, 154, 3, 28, "Input"],
-Cell[1168250, 28574, 1625, 33, 124, "Output"]
+Cell[1165332, 28495, 2044, 55, 63, "Input"],
+Cell[1167379, 28552, 702, 13, 24, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1169912, 28612, 2577, 61, 80, "Input"],
-Cell[1172492, 28675, 2793, 56, 788, "Output"]
+Cell[1168118, 28570, 154, 3, 28, "Input"],
+Cell[1168275, 28575, 1625, 33, 124, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1175322, 28736, 2204, 49, 46, "Input"],
-Cell[1177529, 28787, 293706, 4886, 135, "Output"]
+Cell[1169937, 28613, 2577, 61, 80, "Input"],
+Cell[1172517, 28676, 2793, 56, 298, "Output"],
+Cell[1175313, 28734, 532, 11, 24, "Message"],
+Cell[1175848, 28747, 518, 11, 24, "Message"],
+Cell[1176369, 28760, 1007, 19, 41, "Message"],
+Cell[1177379, 28781, 542, 11, 24, "Message"],
+Cell[1177924, 28794, 805, 15, 24, "Message"],
+Cell[1178732, 28811, 1202, 20, 42, "Message"],
+Cell[1179937, 28833, 1205, 20, 42, "Message"],
+Cell[1181145, 28855, 536, 11, 24, "Message"],
+Cell[1181684, 28868, 1351, 24, 42, "Message"],
+Cell[1183038, 28894, 532, 11, 24, "Message"],
+Cell[1183573, 28907, 785, 15, 24, "Message"],
+Cell[1184361, 28924, 3759, 56, 157, "Message"],
+Cell[1188123, 28982, 517, 11, 24, "Message"],
+Cell[1188643, 28995, 534, 11, 24, "Message"],
+Cell[1189180, 29008, 530, 11, 24, "Message"],
+Cell[1189713, 29021, 783, 15, 24, "Message"],
+Cell[1190499, 29038, 3759, 56, 157, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1471272, 33678, 499, 14, 28, "Input"],
-Cell[1471774, 33694, 1086, 16, 63, "Output"]
+Cell[1194295, 29099, 2204, 49, 46, "Input"],
+Cell[1196502, 29150, 293706, 4886, 135, "Output"]
 }, Open  ]],
-Cell[1472875, 33713, 806, 19, 28, "Input"]
+Cell[CellGroupData[{
+Cell[1490245, 34041, 499, 14, 28, "Input"],
+Cell[1490747, 34057, 1086, 16, 63, "Output"]
+}, Open  ]],
+Cell[1491848, 34076, 806, 19, 28, "Input"]
 }, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1492703, 34101, 161, 2, 50, "Section"],
+Cell[1492867, 34105, 965, 21, 46, "Input"],
+Cell[CellGroupData[{
+Cell[1493857, 34130, 648, 16, 28, "Input"],
+Cell[1494508, 34148, 63268, 975, 4070, "Output"]
 }, Open  ]],
+Cell[1557791, 35126, 972, 28, 46, "Input"],
+Cell[1558766, 35156, 2400, 62, 131, "Input"],
+Cell[1561169, 35220, 890, 26, 28, "Input"],
 Cell[CellGroupData[{
-Cell[1473730, 33738, 161, 2, 80, "Section"],
-Cell[1473894, 33742, 965, 21, 46, "Input"],
-Cell[1474862, 33765, 504, 14, 28, "Input"],
-Cell[1475369, 33781, 972, 28, 46, "Input"],
-Cell[CellGroupData[{
-Cell[1476366, 33813, 546, 17, 28, "Input"],
-Cell[1476915, 33832, 207, 4, 28, "Output"]
-}, Open  ]],
-Cell[1477137, 33839, 2400, 62, 131, "Input"],
-Cell[CellGroupData[{
-Cell[1479562, 33905, 4728, 112, 97, "Input"],
-Cell[1484293, 34019, 25608, 525, 4138, "Output"]
+Cell[1562084, 35250, 4779, 112, 97, "Input"],
+Cell[1566866, 35364, 26998, 523, 4077, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
